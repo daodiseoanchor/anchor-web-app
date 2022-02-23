@@ -74,7 +74,7 @@ export function borrowRedeemCollateralTx($: {
       msgs: [
         // unlock collateral
         new MsgExecuteContract($.walletAddr, $.overseerAddr, {
-          // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/overseer/src/msg.rs#L78
+          // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/overseer/src/msg.rs#L78
           unlock_collateral: {
             collaterals: [
               [$.bAssetTokenAddr, formatTokenInput($.redeemAmount)],
@@ -84,7 +84,7 @@ export function borrowRedeemCollateralTx($: {
 
         // withdraw from custody
         new MsgExecuteContract($.walletAddr, $.bAssetCustodyAddr, {
-          // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/custody/src/msg.rs#L69
+          // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/custody/src/msg.rs#L69
           withdraw_collateral: {
             amount: formatTokenInput($.redeemAmount),
           },

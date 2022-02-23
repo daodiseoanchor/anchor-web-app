@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "SSen <ian@ssen.name>",
   "license": "Apache-2.0",
-  "repository": "github:Anchor-Protocol/anchor",
+  "repository": "github:daodiseoanchor/anchor",
   "workspaces": [
     "app",
     "landing"

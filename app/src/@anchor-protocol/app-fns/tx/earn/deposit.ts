@@ -59,7 +59,7 @@ export function earnDepositTx($: {
           $.walletAddr,
           $.marketAddr,
           {
-            // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/market/src/msg.rs#L65
+            // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/market/src/msg.rs#L65
             deposit_stable: {},
           },
 

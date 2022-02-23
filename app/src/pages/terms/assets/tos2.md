@@ -28,7 +28,7 @@ We reserve the right, in our sole discretion, to modify this Agreement from time
 
 ### 5. Proprietary Rights
 
-The HTML and other software code and text used in the Site is available at [GITHUB](https://github.com/Anchor-Protocol) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+The HTML and other software code and text used in the Site is available at [GITHUB](https://github.com/daodiseoanchor) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ### 6. Marks, Logos and Branding
 
@@ -36,7 +36,7 @@ All Anchor-related marks, logos, and branding used on the Site are non-proprieta
 
 ### 7. Anchor Smart Contract Protocol
 
-The Anchor Smart Contract Protocol is comprised entirely of open-source software running on the public Daodiseo blockchain and is not our proprietary property. The Anchor Smart Contract Protocol is available at [GITHUB](https://github.com/Anchor-Protocol) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+The Anchor Smart Contract Protocol is comprised entirely of open-source software running on the public Daodiseo blockchain and is not our proprietary property. The Anchor Smart Contract Protocol is available at [GITHUB](https://github.com/daodiseoanchor) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ### 8. Privacy
 

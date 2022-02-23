@@ -85,7 +85,7 @@ export function borrowProvideCollateralTx($: {
         }),
         // lock_collateral call
         new MsgExecuteContract($.walletAddr, $.overseerAddr, {
-          // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/overseer/src/msg.rs#L75
+          // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/overseer/src/msg.rs#L75
           lock_collateral: {
             collaterals: [
               [$.bAssetTokenAddr, formatTokenInput($.depositAmount)],

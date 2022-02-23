@@ -46,8 +46,8 @@ export function bondClaimTx($: {
     _createTxOptions({
       msgs: [
         new MsgExecuteContract($.walletAddr, $.bAssetRewardAddr, {
-          // @see https://github.com/Anchor-Protocol/anchor-bAsset-contracts/blob/master/contracts/anchor_basset_reward/src/msg.rs#L46
-          // @see https://github.com/Anchor-Protocol/anchor-bAsset-contracts/blob/master/contracts/anchor_basset_reward/src/user.rs#L16
+          // @see https://github.com/daodiseoanchor/anchor-bAsset-contracts/blob/master/contracts/anchor_basset_reward/src/msg.rs#L46
+          // @see https://github.com/daodiseoanchor/anchor-bAsset-contracts/blob/master/contracts/anchor_basset_reward/src/user.rs#L16
           claim_rewards: {},
         }),
       ],

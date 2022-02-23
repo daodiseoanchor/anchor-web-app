@@ -62,7 +62,7 @@ export function borrowBorrowTx($: {
     _createTxOptions({
       msgs: [
         new MsgExecuteContract($.walletAddr, $.marketAddr, {
-          // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/market/src/msg.rs#L68
+          // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/market/src/msg.rs#L68
           borrow_stable: {
             borrow_amount: formatTokenInput($.borrowAmount),
           },

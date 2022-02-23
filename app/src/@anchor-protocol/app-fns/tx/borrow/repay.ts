@@ -66,7 +66,7 @@ export function borrowRepayTx($: {
           $.walletAddr,
           $.marketAddr,
           {
-            // @see https://github.com/Anchor-Protocol/money-market-contracts/blob/master/contracts/market/src/msg.rs#L74
+            // @see https://github.com/daodiseoanchor/money-market-contracts/blob/master/contracts/market/src/msg.rs#L74
             repay_stable: {},
           },
           // sending stablecoin

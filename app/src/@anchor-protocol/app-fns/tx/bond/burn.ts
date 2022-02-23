@@ -62,7 +62,7 @@ export function bondBurnTx($: {
     _createTxOptions({
       msgs: [
         new MsgExecuteContract($.walletAddr, $.bAssetTokenAddr, {
-          // @see https://github.com/Anchor-Protocol/anchor-bAsset-contracts/blob/cce41e707c67ee2852c4929e17fb1472dbd2aa35/contracts/anchor_basset_token/src/handler.rs#L101
+          // @see https://github.com/daodiseoanchor/anchor-bAsset-contracts/blob/cce41e707c67ee2852c4929e17fb1472dbd2aa35/contracts/anchor_basset_token/src/handler.rs#L101
           send: {
             contract: $.bAssetHubAddr,
             amount: formatTokenInput($.burnAmount),

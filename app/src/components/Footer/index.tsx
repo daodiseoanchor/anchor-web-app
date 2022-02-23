@@ -77,7 +77,7 @@ function FooterBase({ className, style }: FooterProps) {
         </IconButton>
         <IconButton
           component="a"
-          href="https://github.com/Anchor-Protocol"
+          href="https://github.com/daodiseoanchor"
           target="_blank"
           rel="noreferrer"
         >

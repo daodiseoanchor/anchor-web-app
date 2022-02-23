@@ -28,11 +28,11 @@ const channels = (
     <li>
       Github Issues :{' '}
       <a
-        href="https://github.com/Anchor-Protocol/anchor-web-app/issues"
+        href="https://github.com/daodiseoanchor/anchor-web-app/issues"
         target="_blank"
         rel="noreferrer"
       >
-        https://github.com/Anchor-Protocol/anchor-web-app
+        https://github.com/daodiseoanchor/anchor-web-app
       </a>
     </li>
   </ul>
@@ -157,11 +157,11 @@ export function renderTxFailedReason({
             <p>
               Github Issues:{' '}
               <a
-                href="https://github.com/Anchor-Protocol/anchor-web-app/issues"
+                href="https://github.com/daodiseoanchor/anchor-web-app/issues"
                 target="_blank"
                 rel="noreferrer"
               >
-                https://github.com/Anchor-Protocol/anchor-web-app
+                https://github.com/daodiseoanchor/anchor-web-app
               </a>
             </p>
           </div>

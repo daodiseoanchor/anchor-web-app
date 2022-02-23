@@ -23,7 +23,7 @@ import { DialogProps, OpenDialog, useDialog } from '@libs/use-dialog';
 import { InputAdornment, Modal } from '@material-ui/core';
 import { ThumbDownOutlined, ThumbUpOutlined } from '@material-ui/icons';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { TxFeeList, TxFeeListItem } from 'components/TxFeeList';

@@ -30,7 +30,7 @@ import { useAlert } from '@libs/neumorphism-ui/components/useAlert';
 import { Gas, Luna, Rate, u, UST } from '@libs/types';
 import { InfoOutlined } from '@material-ui/icons';
 import { StreamStatus } from '@rx-stream/react';
-import { Msg, MsgExecuteContract } from '@terra-money/terra.js';
+import { Msg, MsgExecuteContract } from '@daodiseomoney/daodiseo.js';
 import big, { Big } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { IconLineSeparator } from 'components/primitives/IconLineSeparator';
@@ -186,7 +186,7 @@ export function Component({
 
       const estimated = await estimateFee([
         new MsgExecuteContract(
-          connectedWallet.terraAddress,
+          connectedWallet.daodiseoAddress,
           contractAddress.cw20.bLuna,
           {
             send: {
@@ -258,7 +258,7 @@ export function Component({
 
     estimate([
       new MsgExecuteContract(
-        connectedWallet.terraAddress,
+        connectedWallet.daodiseoAddress,
         contractAddress.cw20.bLuna,
         {
           send: {

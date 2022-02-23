@@ -2,7 +2,7 @@ import { aUST, bLuna, Rate, u, UST } from '@anchor-protocol/types';
 
 export interface MarketUstData {
   borrow_rate: Rate;
-  prev_aterra_supply: u<aUST>;
+  prev_adaodiseo_supply: u<aUST>;
   deposit_rate: Rate;
   last_reward_updated: number;
   last_executed_height: number;
@@ -15,7 +15,7 @@ export interface MarketUstData {
   custody_bluna_balance: u<bLuna>;
   exchange_rate: Rate;
   prev_interest_buffer: '4703286025726';
-  aterra_supply: u<aUST>;
+  adaodiseo_supply: u<aUST>;
   overseer_ust_balance: u<UST>;
   anc_emission_rate: Rate;
   real_deposit_rate: Rate;

@@ -38,7 +38,7 @@ function BorrowBase({ className }: BorrowProps) {
           period: 1000 * 60 * 60 * 24 * 7,
         }}
       >
-        bAssets that have been transferred to Terra through Wormhole (e.g.
+        bAssets that have been transferred to Daodiseo through Wormhole (e.g.
         webETH) must go through the convert operation to be used as collateral
         on Anchor.{' '}
         <a href="/basset">

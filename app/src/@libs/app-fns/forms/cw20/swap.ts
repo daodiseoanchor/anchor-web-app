@@ -3,7 +3,7 @@ import { QueryClient } from '@libs/query-client';
 import { CW20Addr, HumanAddr, Rate, Token, u, UST } from '@libs/types';
 import { FormFunction, FormReturn } from '@libs/use-form';
 import big from 'big.js';
-import { terraswapSimulationQuery } from '../../queries/terraswap/simulation';
+import { daodiseoswapSimulationQuery } from '../../queries/daodiseoswap/simulation';
 
 export interface CW20SwapTokenFormInput<From extends Token, To extends Token> {
   fromAmount?: From;
@@ -109,7 +109,7 @@ export const cw20SwapTokenForm = <From extends Token, To extends Token>({
           invalidToAmount: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           swapPairAddr,
           {
             amount: microfy(fromAmount!).toFixed() as u<From>,
@@ -175,7 +175,7 @@ export const cw20SwapTokenForm = <From extends Token, To extends Token>({
           invalidToAmount: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           swapPairAddr,
           {
             amount: microfy(toAmount!).toFixed() as u<From>,

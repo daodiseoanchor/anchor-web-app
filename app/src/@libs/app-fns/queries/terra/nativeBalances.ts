@@ -106,7 +106,7 @@ export const EMPTY_NATIVE_BALANCES: NativeBalances = {
   uLuna: '0' as u<Luna>,
 };
 
-export async function terraNativeBalancesQuery(
+export async function daodiseoNativeBalancesQuery(
   walletAddr: HumanAddr | undefined,
   queryClient: QueryClient,
 ): Promise<NativeBalances> {

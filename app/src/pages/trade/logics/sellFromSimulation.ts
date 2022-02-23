@@ -1,11 +1,11 @@
-import { ANC, Rate, terraswap, u, UST } from '@anchor-protocol/types';
+import { ANC, Rate, daodiseoswap, u, UST } from '@anchor-protocol/types';
 import { AnchorTax } from '@anchor-protocol/app-fns';
 import { min } from '@libs/big-math';
 import big, { Big, BigSource } from 'big.js';
 import { TradeSimulation } from 'pages/trade/models/tradeSimulation';
 
 export function sellFromSimulation(
-  simulation: terraswap.pair.SimulationResponse<UST, ANC>,
+  simulation: daodiseoswap.pair.SimulationResponse<UST, ANC>,
   toAmount: u<UST>,
   { taxRate, maxTaxUUSD }: AnchorTax,
   fixedGas: u<UST<BigSource>>,

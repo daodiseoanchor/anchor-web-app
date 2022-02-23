@@ -11,7 +11,7 @@ import {
   Gas,
   HumanAddr,
   Rate,
-  terraswap,
+  daodiseoswap,
   u,
   UST,
 } from '@anchor-protocol/types';
@@ -39,8 +39,8 @@ import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import big, { Big } from 'big.js';
 import { Observable } from 'rxjs';
 import { AncPrice } from '../../queries/anc/price';
@@ -103,7 +103,7 @@ export function ancAncUstLpProvideTx($: {
               ],
               slippage_tolerance: $.slippageTolerance,
             },
-          } as terraswap.pair.ProvideLiquidity<ANC, UST>,
+          } as daodiseoswap.pair.ProvideLiquidity<ANC, UST>,
           new Coins([new Coin('uusd', formatTokenInput($.ustAmount))]),
         ),
       ],

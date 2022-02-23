@@ -22,7 +22,7 @@ import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { AnimateNumber } from '@libs/ui';
 import { Send } from '@material-ui/icons';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big, BigSource } from 'big.js';
 import { Sub } from 'components/Sub';
 import { fixHMR } from 'fix-hmr';

@@ -28,8 +28,8 @@ import {
 import { useAlert } from '@libs/neumorphism-ui/components/useAlert';
 import { Luna, Rate } from '@libs/types';
 import { StreamStatus } from '@rx-stream/react';
-import { Msg, MsgExecuteContract } from '@terra-money/terra.js';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { Msg, MsgExecuteContract } from '@daodiseomoney/daodiseo.js';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { IconLineSeparator } from 'components/primitives/IconLineSeparator';
@@ -151,7 +151,7 @@ function Component({ className }: BLunaMintProps) {
 
     estimate([
       new MsgExecuteContract(
-        connectedWallet.terraAddress,
+        connectedWallet.daodiseoAddress,
         contractAddress.bluna.hub,
         {
           bond: {},
@@ -225,7 +225,7 @@ function Component({ className }: BLunaMintProps) {
 
       const estimated = await estimateFee([
         new MsgExecuteContract(
-          connectedWallet.terraAddress,
+          connectedWallet.daodiseoAddress,
           contractAddress.bluna.hub,
           {
             bond: {},

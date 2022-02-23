@@ -37,8 +37,8 @@ import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import { Observable } from 'rxjs';
 
 export function ancAncUstLpWithdrawTx($: {

@@ -2,7 +2,7 @@ import {
   ANC,
   AncUstLP,
   HumanAddr,
-  terraswap,
+  daodiseoswap,
   Token,
   u,
   UST,
@@ -12,8 +12,8 @@ import big from 'big.js';
 
 interface AncPriceWasmQuery {
   ancPrice: WasmQuery<
-    terraswap.pair.Pool,
-    terraswap.pair.PoolResponse<Token, Token>
+    daodiseoswap.pair.Pool,
+    daodiseoswap.pair.PoolResponse<Token, Token>
   >;
 }
 

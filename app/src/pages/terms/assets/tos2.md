@@ -1,10 +1,10 @@
 ### 1. Interface
 
-The Interface provides access to a decentralized protocol on the Terra blockchain that allows suppliers and borrowers of digital assets to interact with the Protocol and transact using smart contracts (“Smart Contracts”).
+The Interface provides access to a decentralized protocol on the Daodiseo blockchain that allows suppliers and borrowers of digital assets to interact with the Protocol and transact using smart contracts (“Smart Contracts”).
 
-Using the Protocol may require that you pay a fee on the Terra network to perform a transaction. You acknowledge and agree that Terra has no control over any transactions, the method of payment of any transactions, or any actual payments of transactions. You must ensure that you have a sufficient balance to complete any transaction on the Protocol before initiating such transaction.
+Using the Protocol may require that you pay a fee on the Daodiseo network to perform a transaction. You acknowledge and agree that Daodiseo has no control over any transactions, the method of payment of any transactions, or any actual payments of transactions. You must ensure that you have a sufficient balance to complete any transaction on the Protocol before initiating such transaction.
 
-You acknowledge and agree that Terra has no control over any transactions over the Protocol, the method of payment of any transactions or any actual payments of transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your Anchor Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any transaction on the Protocol or the Terra network before initiating such transaction.
+You acknowledge and agree that Daodiseo has no control over any transactions over the Protocol, the method of payment of any transactions or any actual payments of transactions. Accordingly, you must ensure that you have a sufficient balance of the applicable cryptocurrency tokens stored at your Anchor Protocol-compatible wallet address (“Cryptocurrency Wallet”) to complete any transaction on the Protocol or the Daodiseo network before initiating such transaction.
 
 When used on this Interface, the terms “debt,” “lend,” “borrow,” “collateral”, “credit,” “leverage,” “bank”, “borrow”, “yield”, “invest” and other similar terms are not meant to be interpreted literally. Rather, such terms are being used to draw rough, fuzzy-logic analogies between the heavily automated and mostly deterministic operations of a decentralized-finance smart contract system and the discretionary performance of traditional-finance transactions by people. When the Interface is used by users to access the Protocol and transact using Smart Contracts, there are no legal agreements, promises of payment, or courts of law, and therefore there are no debts, loans, or other traditional finance transactions involved.
 
@@ -36,7 +36,7 @@ All Anchor-related marks, logos, and branding used on the Site are non-proprieta
 
 ### 7. Anchor Smart Contract Protocol
 
-The Anchor Smart Contract Protocol is comprised entirely of open-source software running on the public Terra blockchain and is not our proprietary property. The Anchor Smart Contract Protocol is available at [GITHUB](https://github.com/Anchor-Protocol) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+The Anchor Smart Contract Protocol is comprised entirely of open-source software running on the public Daodiseo blockchain and is not our proprietary property. The Anchor Smart Contract Protocol is available at [GITHUB](https://github.com/Anchor-Protocol) and is freely licensed under [Apache License v2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ### 8. Privacy
 
@@ -50,7 +50,7 @@ You agree not to engage in, or attempt to engage in, any of the following catego
 - _Cyberattack_. Activity that seeks to interfere with or compromise the integrity, security, or proper functioning of any computer, server, network, personal device, or other information technology system, including (but not limited to) the deployment of viruses and denial of service attacks.
 - _Fraud and Misrepresentation_. Activity that seeks to defraud us or any other person or entity, including (but not limited to) providing any false, inaccurate, or misleading information in order to unlawfully obtain the property of another.
 - _Market Manipulation_. Activity that violates any applicable law, rule, or regulation concerning the integrity of trading markets, including (but not limited to) the manipulative tactics commonly known as spoofing and wash trading.
-- _Other Harmful Acts_. Attempts to engage in or engage in, any potentially harmful acts that are directed against Terraform Labs, including but not limited to violating or attempting to violate any security features of Terraform Labs, using manual or automated software or other means to access, “scrape,” “crawl” or “spider” any pages contained in or on the Interface, introducing viruses, worms, or similar harmful code into the Interface, or interfering or attempting to interfere with use of the Interface by any other user, host or network, including by means of overloading, “flooding,” “spamming,” “mail bombing,” or “crashing” the Interface or any other Terraform Lab properties.
+- _Other Harmful Acts_. Attempts to engage in or engage in, any potentially harmful acts that are directed against Daodiseoform Labs, including but not limited to violating or attempting to violate any security features of Daodiseoform Labs, using manual or automated software or other means to access, “scrape,” “crawl” or “spider” any pages contained in or on the Interface, introducing viruses, worms, or similar harmful code into the Interface, or interfering or attempting to interfere with use of the Interface by any other user, host or network, including by means of overloading, “flooding,” “spamming,” “mail bombing,” or “crashing” the Interface or any other Daodiseoform Lab properties.
 - _Any Other Unlawful Conduct_. Activity that violates any applicable Law, including, without limitation, any relevant and applicable anti-money laundering and anti-terrorist financing laws and any relevant and applicable privacy and data collection laws, in each case as may be amended.
 
 ### 10. No Professional Advice
@@ -85,7 +85,7 @@ By accessing and using the Interface, you represent that you understand the inhe
 
 We make no warranties as to the markets on which digital assets are transferred, purchased, or traded. You are solely responsible for determining what, if any, taxes apply to your digital asset transactions. We are not responsible for determining the taxes that apply to your transactions.
 
-We do not store, send, or receive digital assets or funds. This is because digital assets exist only by virtue of the ownership record maintained on its supporting blockchain. Any transfer of digital assets occurs within the decentralized Protocol and Terra blockchain and not in the Interface. We cannot assist you to cancel or otherwise modify any transaction or transaction details. There are no warranties or guarantees that a transfer initiated via the Interface will successfully transfer title or right in any digital asset.
+We do not store, send, or receive digital assets or funds. This is because digital assets exist only by virtue of the ownership record maintained on its supporting blockchain. Any transfer of digital assets occurs within the decentralized Protocol and Daodiseo blockchain and not in the Interface. We cannot assist you to cancel or otherwise modify any transaction or transaction details. There are no warranties or guarantees that a transfer initiated via the Interface will successfully transfer title or right in any digital asset.
 
 Accordingly, you understand and agree to assume full responsibility for all of the risks of accessing and using the Interface and interacting with the Protocol.
 

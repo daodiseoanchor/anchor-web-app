@@ -10,7 +10,7 @@ import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { AnimateNumber } from '@libs/ui';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { Sub } from 'components/Sub';
 import { fixHMR } from 'fix-hmr';
 import { useRewards } from 'pages/mypage/logics/useRewards';

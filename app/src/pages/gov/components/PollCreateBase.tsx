@@ -22,7 +22,7 @@ import {
 } from '@libs/use-string-bytes-length';
 import { InputAdornment } from '@material-ui/core';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { TxFeeList, TxFeeListItem } from 'components/TxFeeList';

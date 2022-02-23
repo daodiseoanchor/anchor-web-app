@@ -2,7 +2,7 @@ import { validateTxFee } from '@anchor-protocol/app-fns';
 import {
   useAnchorWebapp,
   useBAssetInfoAndBalanceTotalQuery,
-  useTerraSendTx,
+  useDaodiseoSendTx,
 } from '@anchor-protocol/app-provider';
 import {
   AnchorBank,
@@ -38,8 +38,8 @@ import { DialogProps, OpenDialog, useDialog } from '@libs/use-dialog';
 import { Modal, NativeSelect as MuiNativeSelect } from '@material-ui/core';
 import { Warning } from '@material-ui/icons';
 import { StreamStatus } from '@rx-stream/react';
-import { AccAddress } from '@terra-money/terra.js';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { AccAddress } from '@daodiseomoney/daodiseo.js';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big, BigSource } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { TxResultRenderer } from 'components/tx/TxResultRenderer';
@@ -86,7 +86,7 @@ function ComponentBase({
   const { data: { infoAndBalances = [] } = {} } =
     useBAssetInfoAndBalanceTotalQuery();
 
-  const [send, sendResult] = useTerraSendTx();
+  const [send, sendResult] = useDaodiseoSendTx();
 
   const currencies = useMemo<CurrencyInfo[]>(
     () => [

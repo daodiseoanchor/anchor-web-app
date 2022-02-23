@@ -21,7 +21,7 @@ import { NumberInput } from '@libs/neumorphism-ui/components/NumberInput';
 import { SelectAndTextInputContainer } from '@libs/neumorphism-ui/components/SelectAndTextInputContainer';
 import { Input, InputAdornment } from '@material-ui/core';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { IconLineSeparator } from 'components/primitives/IconLineSeparator';

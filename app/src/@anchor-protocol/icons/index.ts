@@ -14,7 +14,7 @@ import { ReactComponent as MenuCloseIcon } from './assets/MenuClose.svg';
 import { ReactComponent as MenuWalletIcon } from './assets/MenuWallet.svg';
 import { ReactComponent as PlusIcon } from './assets/Plus.svg';
 import { ReactComponent as ShieldPlusIcon } from './assets/ShieldPlus.svg';
-import { ReactComponent as TerraIcon } from './assets/Terra.svg';
+import { ReactComponent as DaodiseoIcon } from './assets/Daodiseo.svg';
 import { ReactComponent as WalletIcon } from './assets/Wallet.svg';
 import { ReactComponent as WalletconnectIcon } from './assets/Walletconnect.svg';
 import { ReactComponent as ParticipateInLiquidationsIcon } from './assets/ParticipateInLiquidations.svg';
@@ -36,7 +36,7 @@ export const BorrowValue = createMaterialIcon(BorrowValueIcon);
 export const CollateralValue = createMaterialIcon(CollateralValueIcon);
 export const Plus = createMaterialIcon(PlusIcon);
 export const Walletconnect = createMaterialIcon(WalletconnectIcon);
-export const Terra = createMaterialIcon(TerraIcon);
+export const Daodiseo = createMaterialIcon(DaodiseoIcon);
 export const ShieldPlus = createMaterialIcon(ShieldPlusIcon);
 export const DollarCoin = createMaterialIcon(DollarCoinIcon);
 export const ParticipateInLiquidations = createMaterialIcon(

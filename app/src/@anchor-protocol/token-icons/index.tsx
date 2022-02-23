@@ -104,7 +104,7 @@ export const tokenImages: Record<Tokens, Record<IconVariant, TokenImage>> = {
     '@4x': convert(beth4x),
   },
 
-  // TODO: need to load all of his from the terra assets as opposed to including here
+  // TODO: need to load all of his from the daodiseo assets as opposed to including here
   wheth: {
     // 'svg': convert(wheth),
     // '@2x': convert(wheth2x),

@@ -4,7 +4,7 @@ import { CW20Addr, HumanAddr, Token, u } from '@libs/types';
 import { useMemo } from 'react';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
 const queryFn = createQueryFn(cw20BalanceQuery);
 
@@ -15,7 +15,7 @@ export function useCW20BalanceQuery<T extends Token>(
   const { queryClient, queryErrorReporter } = useApp();
 
   const result = useQuery(
-    [TERRA_QUERY_KEY.CW20_BALANCE, walletAddr, tokenAddr, queryClient],
+    [DAODISEO_QUERY_KEY.CW20_BALANCE, walletAddr, tokenAddr, queryClient],
     queryFn as any,
     {
       refetchInterval: 1000 * 60 * 5,

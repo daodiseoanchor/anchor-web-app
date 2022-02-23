@@ -1,7 +1,7 @@
-import type { Rate, terraswap, Token, u } from '@anchor-protocol/types';
+import type { Rate, daodiseoswap, Token, u } from '@anchor-protocol/types';
 
 export interface SwapSimulation<Get extends Token, Burn extends Token>
-  extends terraswap.pair.SimulationResponse<Get> {
+  extends daodiseoswap.pair.SimulationResponse<Get> {
   beliefPrice: Rate;
   //maxSpread: Rate;
   minimumReceived: u<Get>;

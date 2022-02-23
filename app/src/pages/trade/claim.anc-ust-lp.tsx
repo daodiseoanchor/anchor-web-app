@@ -15,7 +15,7 @@ import { demicrofy, formatUToken } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { CenteredLayout } from 'components/layouts/CenteredLayout';
 import { MessageBox } from 'components/MessageBox';
@@ -54,7 +54,7 @@ function ClaimAncUstLpBase({ className }: ClaimAncUstLpProps) {
   const { data: { userLPPendingToken } = {} } =
     useRewardsAncUstLpRewardsQuery();
 
-  //const rewards = useCheckTerraswapLpRewards();
+  //const rewards = useCheckDaodiseoswapLpRewards();
 
   // ---------------------------------------------
   // logics

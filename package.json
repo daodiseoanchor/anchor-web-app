@@ -23,7 +23,7 @@
     "landing:build": "yarn workspace @anchor-web-app/landing run build",
     "landing:test": "yarn workspace @anchor-web-app/landing run test",
     "landing:coverage": "yarn workspace @anchor-web-app/landing run coverage",
-    "graphql:download-schema": "apollo client:download-schema --endpoint \"https://bombay-mantle.terra.dev\" \"schema.graphql\"",
+    "graphql:download-schema": "apollo client:download-schema --endpoint \"https://bombay-mantle.daodiseo.dev\" \"schema.graphql\"",
     "markdown:build": "markdown-source-import **/src/**/*.md",
     "postinstall": "husky install"
   },
@@ -54,6 +54,6 @@
     "@material-ui/core": "4.11.3",
     "babel-loader": "8.1.0",
     "webpack": "4.44.2",
-    "@terra-money/terra.js": "3.0.2"
+    "@daodiseomoney/daodiseo.js": "3.0.2"
   }
 }

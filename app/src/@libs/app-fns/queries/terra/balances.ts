@@ -4,7 +4,7 @@ import {
   HumanAddr,
   NativeDenom,
   Num,
-  terraswap,
+  daodiseoswap,
   Token,
   u,
 } from '@libs/types';
@@ -36,16 +36,16 @@ interface LcdBankBalances {
   result: Array<{ denom: NativeDenom; amount: u<Token> }>;
 }
 
-export type TerraBalances = {
-  balances: Array<{ asset: terraswap.AssetInfo; balance: u<Token> }>;
-  balancesIndex: Map<terraswap.AssetInfo, u<Token>>;
+export type DaodiseoBalances = {
+  balances: Array<{ asset: daodiseoswap.AssetInfo; balance: u<Token> }>;
+  balancesIndex: Map<daodiseoswap.AssetInfo, u<Token>>;
 };
 
-export async function terraBalancesQuery(
+export async function daodiseoBalancesQuery(
   walletAddr: HumanAddr | undefined,
-  assets: terraswap.AssetInfo[],
+  assets: daodiseoswap.AssetInfo[],
   queryClient: QueryClient,
-): Promise<TerraBalances> {
+): Promise<DaodiseoBalances> {
   type CW20Query = Record<
     string,
     { contractAddress: string; query: cw20.Balance }
@@ -57,7 +57,7 @@ export async function terraBalancesQuery(
       balance: '0' as u<Token>,
     }));
 
-    const balancesIndex = new Map<terraswap.AssetInfo, u<Token>>();
+    const balancesIndex = new Map<daodiseoswap.AssetInfo, u<Token>>();
 
     for (const { asset, balance } of balances) {
       balancesIndex.set(asset, balance);
@@ -80,7 +80,7 @@ export async function terraBalancesQuery(
     return wq;
   }, {} as CW20Query);
 
-  const balancesPromise: Promise<TerraBalances['balances']> =
+  const balancesPromise: Promise<DaodiseoBalances['balances']> =
     'lcdEndpoint' in queryClient
       ? Promise.all([
           queryClient.lcdFetcher<LcdBankBalances>(
@@ -89,7 +89,7 @@ export async function terraBalancesQuery(
           ),
           lcdFetch<any>({
             ...queryClient,
-            id: `terra-balances=${walletAddr}`,
+            id: `daodiseo-balances=${walletAddr}`,
             wasmQuery,
           }),
         ]).then(([nativeTokenBalances, cw20TokenBalances]) => {
@@ -110,7 +110,7 @@ export async function terraBalancesQuery(
       : hiveFetch<any, NativeBalancesQueryVariables, NativeBalancesQueryResult>(
           {
             ...queryClient,
-            id: `terra-balances=${walletAddr}`,
+            id: `daodiseo-balances=${walletAddr}`,
             variables: {
               walletAddress: walletAddr,
             },
@@ -136,7 +136,7 @@ export async function terraBalancesQuery(
 
   const balances = await balancesPromise;
 
-  const balancesIndex = new Map<terraswap.AssetInfo, u<Token>>();
+  const balancesIndex = new Map<daodiseoswap.AssetInfo, u<Token>>();
 
   for (const { asset, balance } of balances) {
     balancesIndex.set(asset, balance);

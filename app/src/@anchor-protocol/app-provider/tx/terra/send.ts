@@ -1,13 +1,13 @@
 import { CW20Addr, HumanAddr, Token, u, UST } from '@anchor-protocol/types';
-import { terraSendTx } from '@anchor-protocol/app-fns';
+import { daodiseoSendTx } from '@anchor-protocol/app-fns';
 import { useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';
 
-export interface TerraSendTxParams {
+export interface DaodiseoSendTxParams {
   toWalletAddress: HumanAddr;
   currency: { cw20Contract: CW20Addr } | { tokenDenom: string };
   memo?: string;
@@ -16,7 +16,7 @@ export interface TerraSendTxParams {
   onTxSucceed?: () => void;
 }
 
-export function useTerraSendTx() {
+export function useDaodiseoSendTx() {
   const connectedWallet = useConnectedWallet();
 
   const { queryClient, txErrorReporter, constants } = useAnchorWebapp();
@@ -31,12 +31,12 @@ export function useTerraSendTx() {
       amount,
       txFee,
       onTxSucceed,
-    }: TerraSendTxParams) => {
+    }: DaodiseoSendTxParams) => {
       if (!connectedWallet || !connectedWallet.availablePost) {
         throw new Error('Can not post!');
       }
 
-      return terraSendTx({
+      return daodiseoSendTx({
         myWalletAddress: connectedWallet.walletAddress,
         toWalletAddress,
         amount,
@@ -55,7 +55,7 @@ export function useTerraSendTx() {
         // side effect
         onTxSucceed: () => {
           onTxSucceed?.();
-          refetchQueries(ANCHOR_TX_KEY.TERRA_SEND);
+          refetchQueries(ANCHOR_TX_KEY.DAODISEO_SEND);
         },
       });
     },

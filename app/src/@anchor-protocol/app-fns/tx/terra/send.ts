@@ -26,11 +26,11 @@ import {
   Fee,
   MsgExecuteContract,
   MsgSend,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import { Observable } from 'rxjs';
 
-export function terraSendTx($: {
+export function daodiseoSendTx($: {
   myWalletAddress: HumanAddr;
   toWalletAddress: HumanAddr;
   currency: { cw20Contract: CW20Addr } | { tokenDenom: string };

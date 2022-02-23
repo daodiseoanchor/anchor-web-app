@@ -23,7 +23,7 @@ export namespace anchorToken {
      */
     export interface ConfigResponse {
       gov_contract: HumanAddr;
-      terraswap_factory: HumanAddr;
+      daodiseoswap_factory: HumanAddr;
       anchor_token: HumanAddr;
       distributor_contract: HumanAddr;
       reward_weight: Rate;
@@ -256,7 +256,7 @@ export namespace anchorToken {
       distribution_schedule: Array<[number, number, u<ANC>]>;
     }
 
-    // TODO remove after terraswap
+    // TODO remove after daodiseoswap
     /**
      * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stakerinfo
      */

@@ -1,10 +1,10 @@
 import { cw20TokenInfoQuery, TokenDisplayInfo } from '@libs/app-fns';
 import { QueryClient } from '@libs/query-client';
 import { CW20Addr } from '@libs/types';
-import { NetworkInfo } from '@terra-money/use-wallet';
-import { AccAddress } from '@terra-money/terra.js';
+import { NetworkInfo } from '@daodiseomoney/use-wallet';
+import { AccAddress } from '@daodiseomoney/daodiseo.js';
 import { useEffect, useState } from 'react';
-import { useTokenDisplayInfosQuery } from '../queries/terra/tokenDisplayInfos';
+import { useTokenDisplayInfosQuery } from '../queries/daodiseo/tokenDisplayInfos';
 
 export function useTokenSearch(
   search: string,
@@ -41,7 +41,7 @@ export function useTokenSearch(
                 },
               },
               // TODO change to empty icon
-              icon: 'https://assets.terra.money/icon/60/UST.png',
+              icon: 'https://assets.daodiseo.money/icon/60/UST.png',
             },
           ]);
         })

@@ -1,7 +1,7 @@
 import { QueryClient } from '@libs/query-client';
 import { Gas, Rate, u, UST } from '@libs/types';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
-import { CreateTxOptions } from '@terra-money/terra.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
+import { CreateTxOptions } from '@daodiseomoney/daodiseo.js';
 
 export interface TxCommonParams {
   // tx

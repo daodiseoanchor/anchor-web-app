@@ -8,10 +8,10 @@ import {
 } from '@anchor-protocol/types';
 import {
   useCW20Balance,
-  useTerraNativeBalances,
+  useDaodiseoNativeBalances,
   useUstTax,
 } from '@libs/app-provider';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useMemo } from 'react';
 import { useAnchorWebapp } from '../contexts/context';
 
@@ -29,7 +29,7 @@ export function useAnchorBank(): AnchorBank {
 
   const { taxRate, maxTax } = useUstTax();
 
-  const { uUST, uLuna } = useTerraNativeBalances(
+  const { uUST, uLuna } = useDaodiseoNativeBalances(
     connectedWallet?.walletAddress,
   );
 

@@ -8,7 +8,7 @@ import { UIElementProps } from 'components/layouts/UIElementProps';
 import errorImage from '../assets/error.svg';
 import { useAncVestingAccountQuery } from '@anchor-protocol/app-provider/queries/anc/vestingClaim';
 import { useLocalStorage } from '@libs/use-local-storage';
-import { Dec } from '@terra-money/terra.js';
+import { Dec } from '@daodiseomoney/daodiseo.js';
 import { DropdownContainer, DropdownBox } from '../desktop/DropdownContainer';
 
 type VestingClaimNotificationReturn = [JSX.Element | undefined, () => void];

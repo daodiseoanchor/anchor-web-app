@@ -16,7 +16,7 @@ import {
   ReadonlyWalletSession,
   WalletControllerChainOptions,
   WalletProvider,
-} from '@terra-money/wallet-provider';
+} from '@daodiseomoney/wallet-provider';
 import { useReadonlyWalletDialog } from 'components/dialogs/useReadonlyWalletDialog';
 import { useRequestReloadDialog } from 'components/dialogs/useRequestReloadDialog';
 import { SnackbarContainer } from 'components/SnackbarContainer';
@@ -99,18 +99,18 @@ export function AppProviders({
   useLongtimeNoSee({ longtime: 1000 * 60 * 60 * 48, onSee: openRequestReload });
 
   return (
-    /** Terra Station Wallet Address :: useWallet() */
+    /** Daodiseo Station Wallet Address :: useWallet() */
     <WalletProvider
       defaultNetwork={defaultNetwork}
       walletConnectChainIds={walletConnectChainIds}
-      connectorOpts={{ bridge: 'https://walletconnect.terra.dev/' }}
+      connectorOpts={{ bridge: 'https://walletconnect.daodiseo.dev/' }}
       createReadonlyWalletSession={createReadonlyWalletSession}
     >
       <Providers>
         {/* Router Actions ======================== */}
         {/** Scroll Restore every Router's basepath changed */}
         <RouterScrollRestoration />
-        {/** Re-Check Terra Station Wallet Status every Router's pathname changed */}
+        {/** Re-Check Daodiseo Station Wallet Status every Router's pathname changed */}
         <RouterWalletStatusRecheck />
         {/* Theme ================================= */}
         {/** Styled-Components Global CSS */}

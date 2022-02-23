@@ -4,38 +4,38 @@ import {
   WasmQuery,
   WasmQueryData,
 } from '@libs/query-client';
-import { HumanAddr, LP, terraswap, Token, u, UST } from '@libs/types';
+import { HumanAddr, LP, daodiseoswap, Token, u, UST } from '@libs/types';
 import big from 'big.js';
 
-interface TerraswapPoolWasmQuery<T extends Token> {
-  terraswapPool: WasmQuery<
-    terraswap.pair.Pool,
-    terraswap.pair.PoolResponse<T, UST>
+interface DaodiseoswapPoolWasmQuery<T extends Token> {
+  daodiseoswapPool: WasmQuery<
+    daodiseoswap.pair.Pool,
+    daodiseoswap.pair.PoolResponse<T, UST>
   >;
 }
 
-export type TerraswapPoolInfo<T extends Token> = {
+export type DaodiseoswapPoolInfo<T extends Token> = {
   tokenPoolSize: u<T>;
   ustPoolSize: u<UST>;
   tokenPrice: UST;
   lpShare: u<LP>;
 };
 
-export type TerraswapPool<T extends Token> = WasmQueryData<
-  TerraswapPoolWasmQuery<T>
+export type DaodiseoswapPool<T extends Token> = WasmQueryData<
+  DaodiseoswapPoolWasmQuery<T>
 > & {
-  terraswapPoolInfo: TerraswapPoolInfo<T>;
+  daodiseoswapPoolInfo: DaodiseoswapPoolInfo<T>;
 };
 
-export async function terraswapPoolQuery<T extends Token>(
+export async function daodiseoswapPoolQuery<T extends Token>(
   ustPairAddr: HumanAddr,
   queryClient: QueryClient,
-): Promise<TerraswapPool<T>> {
-  const { terraswapPool } = await wasmFetch<TerraswapPoolWasmQuery<T>>({
+): Promise<DaodiseoswapPool<T>> {
+  const { daodiseoswapPool } = await wasmFetch<DaodiseoswapPoolWasmQuery<T>>({
     ...queryClient,
-    id: `terraswap--pool=${ustPairAddr}`,
+    id: `daodiseoswap--pool=${ustPairAddr}`,
     wasmQuery: {
-      terraswapPool: {
+      daodiseoswapPool: {
         // pair contract address
         contractAddress: ustPairAddr,
         query: {
@@ -45,27 +45,27 @@ export async function terraswapPoolQuery<T extends Token>(
     },
   });
 
-  const ustIndex = terraswapPool.assets.findIndex(
+  const ustIndex = daodiseoswapPool.assets.findIndex(
     (asset) =>
       'native_token' in asset.info && asset.info.native_token.denom === 'uusd',
   )!;
   const tokenIndex = ustIndex === 0 ? 1 : 0;
 
-  const tokenAsset = terraswapPool.assets[tokenIndex] as terraswap.CW20Asset<T>;
-  const ustAsset = terraswapPool.assets[
+  const tokenAsset = daodiseoswapPool.assets[tokenIndex] as daodiseoswap.CW20Asset<T>;
+  const ustAsset = daodiseoswapPool.assets[
     tokenIndex === 0 ? 1 : 0
-  ] as terraswap.NativeAsset<UST>;
+  ] as daodiseoswap.NativeAsset<UST>;
 
   const tokenPoolSize = tokenAsset.amount;
   const ustPoolSize = ustAsset.amount;
   const tokenPrice = big(ustPoolSize)
     .div(+tokenPoolSize === 0 ? 1 : tokenPoolSize)
     .toFixed() as UST;
-  const lpShare = terraswapPool.total_share;
+  const lpShare = daodiseoswapPool.total_share;
 
   return {
-    terraswapPool,
-    terraswapPoolInfo: {
+    daodiseoswapPool,
+    daodiseoswapPoolInfo: {
       tokenPoolSize,
       ustPoolSize,
       tokenPrice,

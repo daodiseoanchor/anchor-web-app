@@ -17,12 +17,12 @@ import {
 import {
   ANC,
   NativeDenom,
-  terraswap,
+  daodiseoswap,
   Token,
   u,
   UST,
 } from '@anchor-protocol/types';
-import { terraswapSimulationQuery } from '@libs/app-fns';
+import { daodiseoswapSimulationQuery } from '@libs/app-fns';
 import { useFixedFee } from '@libs/app-provider';
 import { max, min } from '@libs/big-math';
 import { demicrofy, formatFluidDecimalPoints, microfy } from '@libs/formatter';
@@ -34,7 +34,7 @@ import { useConfirm } from '@libs/neumorphism-ui/components/useConfirm';
 import { useResolveLast } from '@libs/use-resolve-last';
 import { NativeSelect as MuiNativeSelect } from '@material-ui/core';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { DiscloseSlippageSelector } from 'components/DiscloseSlippageSelector';
 import { MessageBox } from 'components/MessageBox';
@@ -231,8 +231,8 @@ export function TradeBuy() {
         const amount = microfy(fromAmount).toString() as u<UST>;
 
         resolveSimulation(
-          terraswapSimulationQuery(
-            address.terraswap.ancUstPair,
+          daodiseoswapSimulationQuery(
+            address.daodiseoswap.ancUstPair,
             {
               info: {
                 native_token: {
@@ -245,7 +245,7 @@ export function TradeBuy() {
           ).then(({ simulation }) => {
             return simulation
               ? buyToSimulation(
-                  simulation as terraswap.pair.SimulationResponse<ANC>,
+                  simulation as daodiseoswap.pair.SimulationResponse<ANC>,
                   amount,
                   bank.tax,
                   fixedFee,
@@ -257,7 +257,7 @@ export function TradeBuy() {
       }
     },
     [
-      address.terraswap.ancUstPair,
+      address.daodiseoswap.ancUstPair,
       bank.tax,
       fixedFee,
       queryClient,
@@ -284,8 +284,8 @@ export function TradeBuy() {
         const amount = microfy(toAmount).toString() as u<ANC>;
 
         resolveSimulation(
-          terraswapSimulationQuery(
-            address.terraswap.ancUstPair,
+          daodiseoswapSimulationQuery(
+            address.daodiseoswap.ancUstPair,
             {
               info: {
                 token: {
@@ -298,7 +298,7 @@ export function TradeBuy() {
           ).then(({ simulation }) => {
             return simulation
               ? buyFromSimulation(
-                  simulation as terraswap.pair.SimulationResponse<ANC, UST>,
+                  simulation as daodiseoswap.pair.SimulationResponse<ANC, UST>,
                   amount,
                   bank.tax,
                   fixedFee,
@@ -311,7 +311,7 @@ export function TradeBuy() {
     },
     [
       address.cw20.ANC,
-      address.terraswap.ancUstPair,
+      address.daodiseoswap.ancUstPair,
       bank.tax,
       fixedFee,
       queryClient,

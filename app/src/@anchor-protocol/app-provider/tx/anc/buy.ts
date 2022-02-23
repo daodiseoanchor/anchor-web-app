@@ -3,7 +3,7 @@ import { Rate, u, UST } from '@anchor-protocol/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { formatExecuteMsgNumber } from '@libs/formatter';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
@@ -43,7 +43,7 @@ export function useAncBuyTx() {
         // fabricatebBuy
         walletAddr: connectedWallet.walletAddress,
         fromAmount,
-        ancUstPairAddr: contractAddress.terraswap.ancUstPair,
+        ancUstPairAddr: contractAddress.daodiseoswap.ancUstPair,
         beliefPrice: formatExecuteMsgNumber(
           big(ancPrice.USTPoolSize).div(ancPrice.ANCPoolSize),
         ) as UST,
@@ -70,7 +70,7 @@ export function useAncBuyTx() {
     [
       connectedWallet,
       ancPrice,
-      contractAddress.terraswap.ancUstPair,
+      contractAddress.daodiseoswap.ancUstPair,
       tax,
       fixedFee,
       constants.gasWanted,

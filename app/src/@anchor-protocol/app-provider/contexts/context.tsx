@@ -1,6 +1,6 @@
 import { App, useApp } from '@libs/app-provider';
-import { NetworkInfo } from '@terra-money/use-wallet';
-import { useWallet } from '@terra-money/wallet-provider';
+import { NetworkInfo } from '@daodiseomoney/use-wallet';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import React, {
   Context,
   createContext,

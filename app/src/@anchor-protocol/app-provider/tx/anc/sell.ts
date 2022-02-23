@@ -4,7 +4,7 @@ import { ANC, Rate, UST } from '@anchor-protocol/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { formatExecuteMsgNumber } from '@libs/formatter';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
@@ -47,7 +47,7 @@ export function useAncSellTx() {
         ) as UST,
         maxSpread: maxSpread.toString() as Rate,
         ancTokenAddr: contractAddress.cw20.ANC,
-        ancUstPairAddr: contractAddress.terraswap.ancUstPair,
+        ancUstPairAddr: contractAddress.daodiseoswap.ancUstPair,
         // post
         network: connectedWallet.network,
         post: connectedWallet.post,
@@ -70,7 +70,7 @@ export function useAncSellTx() {
       connectedWallet,
       ancPrice,
       contractAddress.cw20.ANC,
-      contractAddress.terraswap.ancUstPair,
+      contractAddress.daodiseoswap.ancUstPair,
       fixedFee,
       bank.tax,
       constants.gasWanted,

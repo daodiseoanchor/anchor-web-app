@@ -29,7 +29,7 @@ export function TxResultRenderer({
               <PushSpinner color={dimTextColor} />
             </figure>
 
-            <h2>Waiting for Terra Station...</h2>
+            <h2>Waiting for Daodiseo Station...</h2>
 
             <Receipts resultRendering={resultRendering} />
 

@@ -15,7 +15,7 @@ import { demicrofy, formatUToken } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { CenteredLayout } from 'components/layouts/CenteredLayout';
 import { MessageBox } from 'components/MessageBox';
@@ -23,7 +23,7 @@ import { TxResultRenderer } from 'components/tx/TxResultRenderer';
 import { TxFeeList, TxFeeListItem } from 'components/TxFeeList';
 import { ViewAddressWarning } from 'components/ViewAddressWarning';
 import { MINIMUM_CLAIM_BALANCE } from 'pages/trade/env';
-import { useCheckTerraswapLpRewards } from 'queries/checkTerraswapLpBalance';
+import { useCheckDaodiseoswapLpRewards } from 'queries/checkDaodiseoswapLpBalance';
 import React, { useCallback, useMemo } from 'react';
 import { useHistory } from 'react-router-dom';
 import styled from 'styled-components';
@@ -55,7 +55,7 @@ function ClaimAllBase({ className }: ClaimAllProps) {
   const { data: { userLPPendingToken } = {} } =
     useRewardsAncUstLpRewardsQuery();
 
-  const rewards = useCheckTerraswapLpRewards();
+  const rewards = useCheckDaodiseoswapLpRewards();
 
   // ---------------------------------------------
   // logics
@@ -137,7 +137,7 @@ function ClaimAllBase({ className }: ClaimAllProps) {
         <MessageBox level="info">
           To claim rewards earned on the previous LP staking contract,{' '}
           <a
-            href="https://terraswap-app.anchorprotocol.com/claim/anc-ust-lp"
+            href="https://daodiseoswap-app.anchorprotocol.com/claim/anc-ust-lp"
             target="_blank"
             rel="noreferrer"
           >
@@ -146,7 +146,7 @@ function ClaimAllBase({ className }: ClaimAllProps) {
           <br />
           <br />
           <a
-            href="https://terraswap-app.anchorprotocol.com/claim/anc-ust-lp"
+            href="https://daodiseoswap-app.anchorprotocol.com/claim/anc-ust-lp"
             target="_blank"
             rel="noreferrer"
           >

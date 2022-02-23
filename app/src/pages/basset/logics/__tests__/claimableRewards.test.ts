@@ -1,12 +1,12 @@
 import { bluna } from '@anchor-protocol/types';
-import { Dec, Int } from '@terra-money/terra.js';
+import { Dec, Int } from '@daodiseomoney/daodiseo.js';
 
 test('claimable rewards error case 1', () => {
   const data = {
     data: {
       claimableReward: {
         Result:
-          '{"address":"terra1zaj0537x67s9vjtg06d2xu0fagvnqacrecq0zd","balance":"240000000","index":"0","pending_rewards":"0"}',
+          '{"address":"daodiseo1zaj0537x67s9vjtg06d2xu0fagvnqacrecq0zd","balance":"240000000","index":"0","pending_rewards":"0"}',
         __typename: 'GetWasmContractsContractAddressStorePayload',
       },
       rewardState: {

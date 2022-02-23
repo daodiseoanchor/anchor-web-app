@@ -12,7 +12,7 @@ import {
   ConnectType,
   useWallet,
   WalletStatus,
-} from '@terra-money/wallet-provider';
+} from '@daodiseomoney/wallet-provider';
 import { IconOnlyWalletButton } from 'components/Header/desktop/IconOnlyWalletButton';
 import { useBuyUstDialog } from 'pages/earn/components/useBuyUstDialog';
 import { useSendDialog } from 'pages/send/useSendDialog';
@@ -170,8 +170,8 @@ function WalletSelectorBase({ className }: WalletSelectorProps) {
                             <img
                               src={
                                 icon ===
-                                'https://assets.terra.money/icon/station-extension/icon.png'
-                                  ? 'https://assets.terra.money/icon/wallet-provider/station.svg'
+                                'https://assets.daodiseo.money/icon/station-extension/icon.png'
+                                  ? 'https://assets.daodiseo.money/icon/wallet-provider/station.svg'
                                   : icon
                               }
                               alt={name}
@@ -205,7 +205,7 @@ function WalletSelectorBase({ className }: WalletSelectorProps) {
 
                     {availableConnectTypes.includes(ConnectType.READONLY) && (
                       <Tooltip
-                        title="Read-only mode for viewing information. Please connect through Terra Station (extension or mobile) to make transactions."
+                        title="Read-only mode for viewing information. Please connect through Daodiseo Station (extension or mobile) to make transactions."
                         placement="bottom"
                       >
                         <BorderButton
@@ -239,7 +239,7 @@ function WalletSelectorBase({ className }: WalletSelectorProps) {
               <IconOnlyWalletButton onClick={toggleOpen} connected />
             ) : (
               <ConnectedButton
-                walletAddress={wallets[0].terraAddress}
+                walletAddress={wallets[0].daodiseoAddress}
                 bank={bank}
                 onClick={toggleOpen}
               />
@@ -266,7 +266,7 @@ function WalletSelectorBase({ className }: WalletSelectorProps) {
                     connection={connection ?? availableConnections[0]}
                     bank={bank}
                     availablePost={supportFeatures.has('post')}
-                    walletAddress={wallets[0].terraAddress}
+                    walletAddress={wallets[0].daodiseoAddress}
                     network={network}
                     closePopup={() => setOpenDropdown(false)}
                     disconnectWallet={disconnectWallet}

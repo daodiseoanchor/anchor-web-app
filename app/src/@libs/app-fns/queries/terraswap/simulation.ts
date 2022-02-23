@@ -4,23 +4,23 @@ import {
   WasmQuery,
   WasmQueryData,
 } from '@libs/query-client';
-import { HumanAddr, terraswap, Token } from '@libs/types';
+import { HumanAddr, daodiseoswap, Token } from '@libs/types';
 
-export interface TerraswapSimulationWasmQuery {
+export interface DaodiseoswapSimulationWasmQuery {
   simulation: WasmQuery<
-    terraswap.pair.Simulation<Token>,
-    terraswap.pair.SimulationResponse<Token>
+    daodiseoswap.pair.Simulation<Token>,
+    daodiseoswap.pair.SimulationResponse<Token>
   >;
 }
 
-export type TerraswapSimulation = WasmQueryData<TerraswapSimulationWasmQuery>;
+export type DaodiseoswapSimulation = WasmQueryData<DaodiseoswapSimulationWasmQuery>;
 
-export async function terraswapSimulationQuery(
+export async function daodiseoswapSimulationQuery(
   ustPairAddr: HumanAddr,
-  offerAssetQuery: terraswap.pair.Simulation<Token>['simulation']['offer_asset'],
+  offerAssetQuery: daodiseoswap.pair.Simulation<Token>['simulation']['offer_asset'],
   queryClient: QueryClient,
-): Promise<TerraswapSimulation> {
-  const data = await wasmFetch<TerraswapSimulationWasmQuery>({
+): Promise<DaodiseoswapSimulation> {
+  const data = await wasmFetch<DaodiseoswapSimulationWasmQuery>({
     ...queryClient,
     wasmQuery: {
       simulation: {

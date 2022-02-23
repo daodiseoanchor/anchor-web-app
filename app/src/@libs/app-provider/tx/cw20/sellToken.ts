@@ -2,14 +2,14 @@ import { cw20SellTokenTx } from '@libs/app-fns';
 import { useFixedFee } from '@libs/app-provider/hooks/useFixedFee';
 import { formatExecuteMsgNumber } from '@libs/formatter';
 import { CW20Addr, HumanAddr, Rate, Token, u, UST } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import big from 'big.js';
 import { useCallback } from 'react';
 import { useApp } from '../../contexts/app';
-import { TERRA_TX_KEYS } from '../../env';
+import { DAODISEO_TX_KEYS } from '../../env';
 import { useRefetchQueries } from '../../hooks/useRefetchQueries';
-import { useUstTax } from '../../queries/terra/tax';
-import { useTerraswapPoolQuery } from '../../queries/terraswap/pool';
+import { useUstTax } from '../../queries/daodiseo/tax';
+import { useDaodiseoswapPoolQuery } from '../../queries/daodiseoswap/pool';
 
 export interface CW20SellTokenTxParams<T extends Token> {
   sellAmount: u<T>;
@@ -34,8 +34,8 @@ export function useCW20SellTokenTx<T extends Token>(
 
   const { taxRate, maxTax } = useUstTax();
 
-  const { data: { terraswapPool } = {} } =
-    useTerraswapPoolQuery<Token>(tokenUstPairAddr);
+  const { data: { daodiseoswapPool } = {} } =
+    useDaodiseoswapPoolQuery<Token>(tokenUstPairAddr);
 
   const stream = useCallback(
     ({
@@ -47,13 +47,13 @@ export function useCW20SellTokenTx<T extends Token>(
       if (
         !connectedWallet ||
         !connectedWallet.availablePost ||
-        !terraswapPool
+        !daodiseoswapPool
       ) {
         throw new Error(`Can't post!`);
       }
 
-      const tokenPoolSize = terraswapPool.assets[0]?.amount as u<Token>;
-      const ustPoolSize = terraswapPool.assets[1]?.amount as u<UST>;
+      const tokenPoolSize = daodiseoswapPool.assets[0]?.amount as u<Token>;
+      const ustPoolSize = daodiseoswapPool.assets[1]?.amount as u<UST>;
 
       return cw20SellTokenTx<T>({
         txFee,
@@ -75,7 +75,7 @@ export function useCW20SellTokenTx<T extends Token>(
         txErrorReporter,
         onTxSucceed: () => {
           onTxSucceed?.();
-          refetchQueries(TERRA_TX_KEYS.CW20_SELL);
+          refetchQueries(DAODISEO_TX_KEYS.CW20_SELL);
         },
         network: connectedWallet.network,
         post: connectedWallet.post,
@@ -89,7 +89,7 @@ export function useCW20SellTokenTx<T extends Token>(
       maxTax,
       refetchQueries,
       taxRate,
-      terraswapPool,
+      daodiseoswapPool,
       tokenAddr,
       tokenSymbol,
       tokenUstPairAddr,

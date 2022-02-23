@@ -7,7 +7,7 @@ import {
   Gas,
   HumanAddr,
   Rate,
-  terraswap,
+  daodiseoswap,
   u,
   UST,
 } from '@anchor-protocol/types';
@@ -35,8 +35,8 @@ import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import big, { Big } from 'big.js';
 import { Observable } from 'rxjs';
 import { AnchorTax } from '../../types';
@@ -80,7 +80,7 @@ export function ancBuyTx($: {
               belief_price: $.beliefPrice,
               max_spread: $.maxSpread,
             },
-          } as terraswap.pair.Swap<UST>,
+          } as daodiseoswap.pair.Swap<UST>,
           new Coins([new Coin('uusd', formatTokenInput($.fromAmount))]),
         ),
       ],

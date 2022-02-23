@@ -6,7 +6,7 @@ import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/Horizonta
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';
 import { Section } from '@libs/neumorphism-ui/components/Section';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { fixHMR } from 'fix-hmr';
 import { EmptySection } from 'pages/mypage/components/EmptySection';
 import React from 'react';

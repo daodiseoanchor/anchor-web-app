@@ -2,7 +2,7 @@ import { bondSwapTx } from '@anchor-protocol/app-fns';
 import { bLuna, Rate } from '@anchor-protocol/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';
@@ -33,13 +33,13 @@ export function useBondSwapTx() {
       }
 
       return bondSwapTx({
-        // fabricateTerraswapSwapbLuna
+        // fabricateDaodiseoswapSwapbLuna
         burnAmount,
         beliefPrice,
         maxSpread: maxSpread.toString() as Rate,
         walletAddr: connectedWallet.walletAddress,
         bAssetTokenAddr: contractAddress.cw20.bLuna,
-        bAssetPairAddr: contractAddress.terraswap.blunaLunaPair,
+        bAssetPairAddr: contractAddress.daodiseoswap.blunaLunaPair,
         // post
         network: connectedWallet.network,
         post: connectedWallet.post,
@@ -60,7 +60,7 @@ export function useBondSwapTx() {
     [
       connectedWallet,
       contractAddress.cw20.bLuna,
-      contractAddress.terraswap.blunaLunaPair,
+      contractAddress.daodiseoswap.blunaLunaPair,
       fixedFee,
       constants.gasWanted,
       constants.gasAdjustment,

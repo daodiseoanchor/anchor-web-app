@@ -5,7 +5,7 @@ import {
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';
 import { HumanAddr } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_QUERY_KEY } from '../../env';

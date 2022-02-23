@@ -521,7 +521,7 @@ function DashboardBase({ className }: DashboardProps) {
                       </i>
                       <div>
                         <div className="coin">UST</div>
-                        <p className="name">Terra USD</p>
+                        <p className="name">Daodiseo USD</p>
                       </div>
                     </div>
                   </td>

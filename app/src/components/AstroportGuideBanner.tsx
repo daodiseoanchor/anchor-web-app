@@ -1,6 +1,6 @@
 import { formatUToken } from '@libs/formatter';
 import { fixHMR } from 'fix-hmr';
-import { useCheckTerraswapLpBalance } from 'queries/checkTerraswapLpBalance';
+import { useCheckDaodiseoswapLpBalance } from 'queries/checkDaodiseoswapLpBalance';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -9,9 +9,9 @@ export interface AstroportGuideBannerProps {
 }
 
 function Component({ className }: AstroportGuideBannerProps) {
-  const terraswapLpBalances = useCheckTerraswapLpBalance();
+  const daodiseoswapLpBalances = useCheckDaodiseoswapLpBalance();
 
-  if (!terraswapLpBalances) {
+  if (!daodiseoswapLpBalances) {
     return null;
   }
 
@@ -24,10 +24,10 @@ function Component({ className }: AstroportGuideBannerProps) {
         To use Astroport, users should go through a one-time process to migrate
         liquidity and claim unclaimed rewards.
         <br />
-        To withdraw liquidity on Terraswap /Unstake LP tokens from previous
+        To withdraw liquidity on Daodiseoswap /Unstake LP tokens from previous
         staking contract,{' '}
         <a
-          href="https://terraswap-app.anchorprotocol.com/anc-ust-lp/withdraw"
+          href="https://daodiseoswap-app.anchorprotocol.com/anc-ust-lp/withdraw"
           target="_blank"
           rel="noreferrer"
         >
@@ -35,7 +35,7 @@ function Component({ className }: AstroportGuideBannerProps) {
         </a>
         . To claim rewards earned on the previous LP staking contract,{' '}
         <a
-          href="https://terraswap-app.anchorprotocol.com/claim/anc-ust-lp"
+          href="https://daodiseoswap-app.anchorprotocol.com/claim/anc-ust-lp"
           target="_blank"
           rel="noreferrer"
         >
@@ -45,28 +45,28 @@ function Component({ className }: AstroportGuideBannerProps) {
         <br />
         <br />
         <a
-          href="https://terraswap-app.anchorprotocol.com/anc-ust-lp/withdraw"
+          href="https://daodiseoswap-app.anchorprotocol.com/anc-ust-lp/withdraw"
           target="_blank"
           rel="noreferrer"
         >
           Your ANC-UST LP Balance :{' '}
-          {formatUToken(terraswapLpBalances.lpBalance)}
+          {formatUToken(daodiseoswapLpBalances.lpBalance)}
         </a>
         ,{' '}
         <a
-          href="https://terraswap-app.anchorprotocol.com/anc-ust-lp/unstake"
+          href="https://daodiseoswap-app.anchorprotocol.com/anc-ust-lp/unstake"
           target="_blank"
           rel="noreferrer"
         >
-          Staked : {formatUToken(terraswapLpBalances.lpStaked)}
+          Staked : {formatUToken(daodiseoswapLpBalances.lpStaked)}
         </a>
         ,{' '}
         <a
-          href="https://terraswap-app.anchorprotocol.com/claim/anc-ust-lp"
+          href="https://daodiseoswap-app.anchorprotocol.com/claim/anc-ust-lp"
           target="_blank"
           rel="noreferrer"
         >
-          Rewards: {formatUToken(terraswapLpBalances.lpRewards)} ANC
+          Rewards: {formatUToken(daodiseoswapLpBalances.lpRewards)} ANC
         </a>
       </article>
     </div>

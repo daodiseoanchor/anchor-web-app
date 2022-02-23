@@ -21,7 +21,7 @@ export async function cw20TokenDisplayInfosQuery(): Promise<CW20TokenDisplayInfo
   }
 
   const data: CW20TokenDisplayInfos = await fetch(
-    `https://assets.terra.money/cw20/tokens.json`,
+    `https://assets.daodiseo.money/cw20/tokens.json`,
   ).then((res) => res.json());
 
   cache = data;

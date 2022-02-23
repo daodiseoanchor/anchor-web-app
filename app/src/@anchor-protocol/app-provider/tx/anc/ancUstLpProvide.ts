@@ -2,7 +2,7 @@ import { ancAncUstLpProvideTx } from '@anchor-protocol/app-fns';
 import { ANC, Rate, u, UST } from '@anchor-protocol/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';
@@ -42,9 +42,9 @@ export function useAncAncUstLpProvideTx() {
       }
 
       return ancAncUstLpProvideTx({
-        // fabricateTerraswapProvideLiquidityANC
+        // fabricateDaodiseoswapProvideLiquidityANC
         ancTokenAddr: contractAddress.cw20.ANC,
-        ancUstPairAddr: contractAddress.terraswap.ancUstPair,
+        ancUstPairAddr: contractAddress.daodiseoswap.ancUstPair,
         walletAddr: connectedWallet.walletAddress,
         ancAmount,
         ustAmount,
@@ -74,7 +74,7 @@ export function useAncAncUstLpProvideTx() {
       connectedWallet,
       ancPrice,
       contractAddress.cw20.ANC,
-      contractAddress.terraswap.ancUstPair,
+      contractAddress.daodiseoswap.ancUstPair,
       tax,
       fixedFee,
       constants.gasWanted,

@@ -2,10 +2,10 @@ import path from 'path';
 import puppeteer from 'puppeteer';
 
 const extension = [
-  process.env.TERRA_EXTENSION!,
-  process.env.TERRA_EXTENSION_RELOADER!,
-  process.env.TERRA_LEGACY_EXTENSION_1!,
-  process.env.TERRA_LEGACY_EXTENSION_2!,
+  process.env.DAODISEO_EXTENSION!,
+  process.env.DAODISEO_EXTENSION_RELOADER!,
+  process.env.DAODISEO_LEGACY_EXTENSION_1!,
+  process.env.DAODISEO_LEGACY_EXTENSION_2!,
 ].join(',');
 
 const userDataDir = path.resolve(

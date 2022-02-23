@@ -35,7 +35,7 @@ function Component({ className }: BAssetMainProps) {
         level="info"
         hide={{ id: 'basset_transfer', period: 1000 * 60 * 60 * 24 * 7 }}
       >
-        bAssets that have been transferred to Terra through Wormhole (webETH)
+        bAssets that have been transferred to Daodiseo through Wormhole (webETH)
         must go through the convert operation to be used as collateral on
         Anchor.
       </MessageBox>

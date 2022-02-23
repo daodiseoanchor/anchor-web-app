@@ -3,7 +3,7 @@ import { createQueryFn } from '@libs/react-query-utils';
 import { CW20Addr, Token } from '@libs/types';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
 const queryFn = createQueryFn(cw20PoolInfoQuery);
 
@@ -14,9 +14,9 @@ export function useCW20PoolInfoQuery<T extends Token>(
 
   const result = useQuery(
     [
-      TERRA_QUERY_KEY.STAKING_POOL_INFO,
+      DAODISEO_QUERY_KEY.STAKING_POOL_INFO,
       tokenAddr,
-      contractAddress.terraswap.factory,
+      contractAddress.daodiseoswap.factory,
       queryClient,
     ],
     queryFn as any,

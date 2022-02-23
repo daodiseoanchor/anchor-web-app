@@ -1,9 +1,9 @@
 import { EMPTY_NATIVE_BALANCES, pickNativeBalance } from '@libs/app-fns';
 import { CW20Addr, HumanAddr, NativeDenom, Token, u } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useMemo } from 'react';
 import { useCW20BalanceQuery } from '../cw20/balance';
-import { useTerraNativeBalancesQuery } from '../terra/nativeBalances';
+import { useDaodiseoNativeBalancesQuery } from '../daodiseo/nativeBalances';
 
 export function useSendBalanceQuery<T extends Token>(
   token: NativeDenom | CW20Addr,
@@ -12,7 +12,7 @@ export function useSendBalanceQuery<T extends Token>(
   const connectedWallet = useConnectedWallet();
 
   const { data: nativeBalances = EMPTY_NATIVE_BALANCES } =
-    useTerraNativeBalancesQuery(walletAddr ?? connectedWallet?.walletAddress);
+    useDaodiseoNativeBalancesQuery(walletAddr ?? connectedWallet?.walletAddress);
 
   const { data: { tokenBalance } = {} } = useCW20BalanceQuery<Token>(
     token.length > 10 ? (token as CW20Addr) : undefined,

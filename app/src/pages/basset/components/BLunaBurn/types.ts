@@ -1,5 +1,5 @@
 import { bLuna, Luna, u, UST } from '@anchor-protocol/types';
-import { ConnectedWallet } from '@terra-money/use-wallet';
+import { ConnectedWallet } from '@daodiseomoney/use-wallet';
 
 export interface BurnComponent {
   burnAmount: bLuna;

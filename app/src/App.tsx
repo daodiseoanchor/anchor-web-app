@@ -1,4 +1,4 @@
-import { useChainOptions } from '@terra-money/wallet-provider';
+import { useChainOptions } from '@daodiseomoney/wallet-provider';
 import { AstroportGuideBanner } from 'components/AstroportGuideBanner';
 import { GlobalStyle } from 'components/GlobalStyle';
 import { Header } from 'components/Header';

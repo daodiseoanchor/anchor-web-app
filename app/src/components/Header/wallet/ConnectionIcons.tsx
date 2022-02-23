@@ -1,5 +1,5 @@
 import { Wallet } from '@anchor-protocol/icons';
-import { Connection, ConnectType } from '@terra-money/wallet-provider';
+import { Connection, ConnectType } from '@daodiseomoney/wallet-provider';
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 

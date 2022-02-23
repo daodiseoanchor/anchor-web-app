@@ -1,5 +1,5 @@
 query {
-  nativeTokenBalances: BankBalancesAddress(Address: "terra12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9") {
+  nativeTokenBalances: BankBalancesAddress(Address: "daodiseo12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9") {
     Result {
       Denom
       Amount
@@ -7,8 +7,8 @@ query {
   }
 
   ubLuna: WasmContractsContractAddressStore(
-    ContractAddress: "terra1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x"
-    QueryMsg: "{\"balance\":{\"address\":\"terra12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9\"}}"
+    ContractAddress: "daodiseo1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x"
+    QueryMsg: "{\"balance\":{\"address\":\"daodiseo12hnhh5vtyg5juqnzm43970nh4fw42pt27nw9g9\"}}"
   ) {
     Result
   }

@@ -10,7 +10,7 @@ import { bAsset } from '@anchor-protocol/types';
 import { useCW20Balance, useFixedFee } from '@libs/app-provider';
 import { CW20Addr } from '@libs/types';
 import { useForm } from '@libs/use-form';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 
 export function useBorrowRedeemCollateralForm(
   collateralToken: CW20Addr,

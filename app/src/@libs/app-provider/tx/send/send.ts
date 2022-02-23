@@ -1,17 +1,17 @@
 import { sendTx } from '@libs/app-fns';
 import { useFixedFee } from '@libs/app-provider/hooks/useFixedFee';
-import { HumanAddr, terraswap, Token, u, UST } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { HumanAddr, daodiseoswap, Token, u, UST } from '@libs/types';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useCallback } from 'react';
 import { useApp } from '../../contexts/app';
-import { TERRA_TX_KEYS } from '../../env';
+import { DAODISEO_TX_KEYS } from '../../env';
 import { useRefetchQueries } from '../../hooks/useRefetchQueries';
-import { useUstTax } from '../../queries/terra/tax';
+import { useUstTax } from '../../queries/daodiseo/tax';
 
 export interface SendTxParams {
   amount: u<Token>;
   toAddr: HumanAddr;
-  asset: terraswap.AssetInfo;
+  asset: daodiseoswap.AssetInfo;
   memo?: string;
   txFee: u<UST>;
 
@@ -51,7 +51,7 @@ export function useSendTx() {
         txErrorReporter,
         onTxSucceed: () => {
           onTxSucceed?.();
-          refetchQueries(TERRA_TX_KEYS.SEND);
+          refetchQueries(DAODISEO_TX_KEYS.SEND);
         },
         network: connectedWallet.network,
         post: connectedWallet.post,

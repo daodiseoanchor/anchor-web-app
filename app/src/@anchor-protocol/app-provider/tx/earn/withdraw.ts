@@ -2,7 +2,7 @@ import { earnWithdrawTx } from '@anchor-protocol/app-fns';
 import { aUST, u, UST } from '@anchor-protocol/types';
 import { useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';

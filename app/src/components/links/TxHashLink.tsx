@@ -1,5 +1,5 @@
 import { truncate } from '@libs/formatter';
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import React from 'react';
 
 export interface TxHashProps {
@@ -11,7 +11,7 @@ export function TxHashLink({ txHash }: TxHashProps) {
 
   return (
     <a
-      href={`https://finder.terra.money/${network.chainID}/tx/${txHash}`}
+      href={`https://finder.daodiseo.money/${network.chainID}/tx/${txHash}`}
       target="_blank"
       rel="noreferrer"
     >

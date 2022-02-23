@@ -1,5 +1,5 @@
 import { Tooltip } from '@libs/neumorphism-ui/components/Tooltip';
-import { ConnectType, useConnectedWallet } from '@terra-money/wallet-provider';
+import { ConnectType, useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ export function ViewAddressWarning({ children }: ViewAddressStrikeProps) {
 
   return connectedWallet?.connectType === ConnectType.READONLY ? (
     <Tooltip
-      title="Currently in “View an Address” mode. To make transactions, please disconnect and reconnect using Terra Station (extension or mobile)."
+      title="Currently in “View an Address” mode. To make transactions, please disconnect and reconnect using Daodiseo Station (extension or mobile)."
       placement="bottom"
     >
       <Warning>{children}</Warning>

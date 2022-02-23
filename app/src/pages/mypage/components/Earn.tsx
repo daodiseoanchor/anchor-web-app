@@ -14,7 +14,7 @@ import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/HorizontalScrollTable';
 import { Section } from '@libs/neumorphism-ui/components/Section';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { fixHMR } from 'fix-hmr';
 import { useDepositDialog } from 'pages/earn/components/useDepositDialog';
 import { useWithdrawDialog } from 'pages/earn/components/useWithdrawDialog';
@@ -103,7 +103,7 @@ function EarnBase({ className }: EarnProps) {
                 </i>
                 <div>
                   <div className="coin">UST</div>
-                  <p className="name">Terra USD</p>
+                  <p className="name">Daodiseo USD</p>
                 </div>
               </div>
             </td>

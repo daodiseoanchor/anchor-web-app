@@ -1160,7 +1160,7 @@ type RootQuery {
   MarketSwap(AskDenom: String, OfferCoin: String): GetMarketSwapPayload
 
   """"""
-  MarketTerraPoolDelta: GetMarketTerraPoolDeltaPayload
+  MarketDaodiseoPoolDelta: GetMarketDaodiseoPoolDeltaPayload
 
   """"""
   MintingAnnualProvisions: GetMintingAnnualProvisionsPayload
@@ -1911,7 +1911,7 @@ type GetMintingInflationPayload {
 }
 
 """"""
-type GetMarketTerraPoolDeltaPayload {
+type GetMarketDaodiseoPoolDeltaPayload {
   """"""
   Height: String
 

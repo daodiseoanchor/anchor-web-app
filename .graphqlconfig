@@ -4,7 +4,7 @@
   "extensions": {
     "endpoints": {
       "Development": {
-        "url": "https://bombay-mantle.terra.dev",
+        "url": "https://bombay-mantle.daodiseo.dev",
         "headers": {
           "user-agent": "JS GraphQL"
         },

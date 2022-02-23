@@ -1,12 +1,12 @@
 import type { bLuna, Luna, Rate, u, UST } from '@anchor-protocol/types';
-import { terraswap } from '@anchor-protocol/types';
+import { daodiseoswap } from '@anchor-protocol/types';
 import { AnchorTax } from '@anchor-protocol/app-fns';
 import { min } from '@libs/big-math';
 import big, { Big } from 'big.js';
 import { SwapSimulation } from '../models/swapSimulation';
 
 export function swapBurnSimulation(
-  simulation: terraswap.pair.SimulationResponse<Luna>,
+  simulation: daodiseoswap.pair.SimulationResponse<Luna>,
   getAmount: u<Luna>,
   { taxRate, maxTaxUUSD }: AnchorTax,
   maxSpread: number,

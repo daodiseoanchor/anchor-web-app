@@ -3,10 +3,10 @@ import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';
 import { NativeSelect } from '@libs/neumorphism-ui/components/NativeSelect';
 import { TextInput } from '@libs/neumorphism-ui/components/TextInput';
-import { ReadonlyWalletSession } from '@terra-money/wallet-provider';
+import { ReadonlyWalletSession } from '@daodiseomoney/wallet-provider';
 import { DialogProps, OpenDialog, useDialog } from '@libs/use-dialog';
-import { NetworkInfo } from '@terra-money/use-wallet';
-import { AccAddress } from '@terra-money/terra.js';
+import { NetworkInfo } from '@daodiseomoney/use-wallet';
+import { AccAddress } from '@daodiseomoney/daodiseo.js';
 import React, {
   ChangeEvent,
   KeyboardEvent,
@@ -48,10 +48,10 @@ function ComponentBase({
   }, [address]);
 
   const submit = useCallback(
-    (terraAddress: string, networkChainID: string) => {
-      if (AccAddress.validate(terraAddress)) {
+    (daodiseoAddress: string, networkChainID: string) => {
+      if (AccAddress.validate(daodiseoAddress)) {
         closeDialog({
-          terraAddress,
+          daodiseoAddress,
           network:
             networks.find(({ chainID }) => chainID === networkChainID) ??
             networks[0],

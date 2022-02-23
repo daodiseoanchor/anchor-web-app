@@ -1,6 +1,6 @@
 import { Gas, HumanAddr } from '@libs/types';
-import { LCDClient, Msg } from '@terra-money/terra.js';
-import { useWallet } from '@terra-money/wallet-provider';
+import { LCDClient, Msg } from '@daodiseomoney/daodiseo.js';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { useCallback, useMemo } from 'react';
 import { useApp } from '../contexts/app';

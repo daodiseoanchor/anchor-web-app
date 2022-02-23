@@ -27,9 +27,9 @@ __metadata:
     "@storybook/preset-create-react-app": ^3.2.0
     "@storybook/react": ^6.3.4
     "@storybook/theming": ^6.3.4
-    "@terra-money/terra.js": ^3.0.2
-    "@terra-money/use-wallet": ^3.7.0-alpha.1
-    "@terra-money/wallet-provider": ^3.7.0-alpha.1
+    "@daodiseomoney/daodiseo.js": ^3.0.2
+    "@daodiseomoney/use-wallet": ^3.7.0-alpha.1
+    "@daodiseomoney/wallet-provider": ^3.7.0-alpha.1
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/react-hooks": ^7.0.1
@@ -123,7 +123,7 @@ __metadata:
     "@material-ui/icons": ^4.11.2
     "@rocket-scripts/read-package-alias": ^4.0.0-alpha.3
     "@ssen/jest-transform": ^3.0.0
-    "@terra-money/terra.js": ^3.0.0
+    "@daodiseomoney/daodiseo.js": ^3.0.0
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^12.0.0
     "@testing-library/user-event": ^13.1.9
@@ -5093,29 +5093,29 @@ __metadata:
 
 "@terra-dev/wallet-types@npm:^3.7.0-alpha.1":
   version: 3.7.0-alpha.1
-  resolution: "@terra-dev/wallet-types@npm:3.7.0-alpha.1"
+  resolution: "@daodiseo-dev/wallet-types@npm:3.7.0-alpha.1"
   peerDependencies:
-    "@terra-money/terra.js": ^3.0.0
+    "@daodiseomoney/daodiseo.js": ^3.0.0
   checksum: 41582d55066628638e80503ae5b0f05a324b8e3b2d8e59579d669fe6e9a505c52eab17c8cb6d487c33efb63991cac00f00a62ce0effc8dfa3b9f19ddb116427d
   languageName: node
   linkType: hard
 
 "@terra-dev/web-extension-interface@npm:^0.14.0":
   version: 0.14.0
-  resolution: "@terra-dev/web-extension-interface@npm:0.14.0"
+  resolution: "@daodiseo-dev/web-extension-interface@npm:0.14.0"
   dependencies:
     rxjs: ^7.4.0
   peerDependencies:
-    "@terra-money/terra.js": ^3.0.0
+    "@daodiseomoney/daodiseo.js": ^3.0.0
   checksum: 7ceb2c8d6a24653ed54c547e505a7646e76bb098e64bb401388a0b629af7f024a6c1bc47166583cae72b74e06ba244c61e681be943a321c5fa613f6353ca6493
   languageName: node
   linkType: hard
 
 "@terra-money/terra.js@npm:3.0.2":
   version: 3.0.2
-  resolution: "@terra-money/terra.js@npm:3.0.2"
+  resolution: "@daodiseomoney/daodiseo.js@npm:3.0.2"
   dependencies:
-    "@terra-money/terra.proto": ^0.1.7
+    "@daodiseomoney/daodiseo.proto": ^0.1.7
     axios: ^0.24.0
     bech32: ^2.0.0
     bip32: ^2.0.6
@@ -5134,7 +5134,7 @@ __metadata:
 
 "@terra-money/terra.proto@npm:^0.1.7":
   version: 0.1.7
-  resolution: "@terra-money/terra.proto@npm:0.1.7"
+  resolution: "@daodiseomoney/daodiseo.proto@npm:0.1.7"
   dependencies:
     google-protobuf: ^3.17.3
     long: ^4.0.0
@@ -5145,11 +5145,11 @@ __metadata:
 
 "@terra-money/use-wallet@npm:^3.7.0-alpha.1":
   version: 3.7.0-alpha.1
-  resolution: "@terra-money/use-wallet@npm:3.7.0-alpha.1"
+  resolution: "@daodiseomoney/use-wallet@npm:3.7.0-alpha.1"
   dependencies:
-    "@terra-dev/wallet-types": ^3.7.0-alpha.1
+    "@daodiseo-dev/wallet-types": ^3.7.0-alpha.1
   peerDependencies:
-    "@terra-money/terra.js": ^3.0.0
+    "@daodiseomoney/daodiseo.js": ^3.0.0
     react: ">=17.0.0"
   checksum: ea086e121558870f495c80988f7eb199cbd1b05cb59c941db8cc5b3a1d136610cad29d2aaeca860ca08fa47941543d6fb1095e47c27014f2c3bc124ef4939711
   languageName: node
@@ -5157,10 +5157,10 @@ __metadata:
 
 "@terra-money/wallet-controller@npm:^3.7.0-alpha.1":
   version: 3.7.0-alpha.1
-  resolution: "@terra-money/wallet-controller@npm:3.7.0-alpha.1"
+  resolution: "@daodiseomoney/wallet-controller@npm:3.7.0-alpha.1"
   dependencies:
-    "@terra-dev/wallet-types": ^3.7.0-alpha.1
-    "@terra-dev/web-extension-interface": ^0.14.0
+    "@daodiseo-dev/wallet-types": ^3.7.0-alpha.1
+    "@daodiseo-dev/web-extension-interface": ^0.14.0
     "@walletconnect/core": ^1.6.6
     "@walletconnect/iso-crypto": ^1.6.6
     "@walletconnect/types": ^1.6.6
@@ -5174,18 +5174,18 @@ __metadata:
     secp256k1: ^4.0.0
     ws: ^7.5.5
   peerDependencies:
-    "@terra-money/terra.js": ^3.0.0
+    "@daodiseomoney/daodiseo.js": ^3.0.0
   checksum: a5d274fc4628c8d7542ffcc01c14fc4d9578d0d994154583b8add4bea274d37d931d3b7a09b7feee72d9987ecad90a9b51f9f3ea3e8d3f62de59cd49fc1ed8a4
   languageName: node
   linkType: hard
 
 "@terra-money/wallet-provider@npm:^3.7.0-alpha.1":
   version: 3.7.0-alpha.1
-  resolution: "@terra-money/wallet-provider@npm:3.7.0-alpha.1"
+  resolution: "@daodiseomoney/wallet-provider@npm:3.7.0-alpha.1"
   dependencies:
-    "@terra-dev/web-extension-interface": ^0.14.0
-    "@terra-money/use-wallet": ^3.7.0-alpha.1
-    "@terra-money/wallet-controller": ^3.7.0-alpha.1
+    "@daodiseo-dev/web-extension-interface": ^0.14.0
+    "@daodiseomoney/use-wallet": ^3.7.0-alpha.1
+    "@daodiseomoney/wallet-controller": ^3.7.0-alpha.1
   peerDependencies:
     react: ">=17.0.0"
   checksum: 1fe7010a998e790d21184650536cae978d18687258f7289a1d44294b875b45ec70b027b47bbfd43ff06f3a2162ca5ea81ee118d3500088f19b9b6dca2c056236

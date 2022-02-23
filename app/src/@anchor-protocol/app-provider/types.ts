@@ -61,11 +61,11 @@ export interface AnchorContractAddress extends AppContractAddress {
     /** addressProvider.vesting() */
     vesting: HumanAddr;
   };
-  terraswap: {
+  daodiseoswap: {
     factory: HumanAddr;
-    /** addressProvider.terraswapblunaLunaPair() */
+    /** addressProvider.daodiseoswapblunaLunaPair() */
     blunaLunaPair: HumanAddr;
-    /** addressProvider.terraswapbAncUstPair() */
+    /** addressProvider.daodiseoswapbAncUstPair() */
     ancUstPair: HumanAddr;
   };
   astroport: {
@@ -78,13 +78,13 @@ export interface AnchorContractAddress extends AppContractAddress {
     ///** addressProvider.bEthToken() */
     //bEth: CW20Addr;
 
-    /** addressProvider.aTerra() */
+    /** addressProvider.aDaodiseo() */
     aUST: CW20Addr;
     /** addressProvider.ANC() */
     ANC: CW20Addr;
-    /** addressProvider.terraswapbAncUstLPToken() */
+    /** addressProvider.daodiseoswapbAncUstLPToken() */
     AncUstLP: CW20Addr;
-    /** addressProvider.terraswapblunaLunaLPToken() */
+    /** addressProvider.daodiseoswapblunaLunaLPToken() */
     bLunaLunaLP: CW20Addr;
   };
 }

@@ -1,10 +1,10 @@
 import { QueryClient } from '@libs/query-client';
-import { cw20, terraswap, Token } from '@libs/types';
+import { cw20, daodiseoswap, Token } from '@libs/types';
 import { nativeTokenInfoQuery } from '../cw20/nativeTokenInfo';
 import { cw20TokenInfoQuery } from '../cw20/tokenInfo';
 
-export async function terraTokenInfoQuery<T extends Token>(
-  asset: terraswap.AssetInfo,
+export async function daodiseoTokenInfoQuery<T extends Token>(
+  asset: daodiseoswap.AssetInfo,
   queryClient: QueryClient,
 ): Promise<cw20.TokenInfoResponse<T> | undefined> {
   return 'native_token' in asset

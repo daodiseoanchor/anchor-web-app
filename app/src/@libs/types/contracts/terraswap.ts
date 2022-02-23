@@ -11,7 +11,7 @@ import {
   UST,
 } from '@libs/types';
 
-export namespace terraswap {
+export namespace daodiseoswap {
   export type CW20AssetInfo = { token: { contract_addr: CW20Addr } };
   export type NativeAssetInfo = { native_token: { denom: NativeDenom } };
 

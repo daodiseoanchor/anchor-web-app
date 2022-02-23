@@ -5,7 +5,7 @@ import { CW20Addr, HumanAddr, Rate, Token, u, UST } from '@libs/types';
 import { FormFunction, FormReturn } from '@libs/use-form';
 import big, { Big, BigSource } from 'big.js';
 import { computeMaxUstBalanceForUstTransfer } from '../../logics/computeMaxUstBalanceForUstTransfer';
-import { terraswapSimulationQuery } from '../../queries/terraswap/simulation';
+import { daodiseoswapSimulationQuery } from '../../queries/daodiseoswap/simulation';
 
 export interface CW20BuyTokenFormInput<T extends Token> {
   ustAmount?: UST;
@@ -119,7 +119,7 @@ export const cw20BuyTokenForm = <T extends Token>({
           warningNextTxFee: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           ustTokenPairAddr,
           {
             amount: microfy(ustAmount!).toFixed() as u<UST>,
@@ -209,7 +209,7 @@ export const cw20BuyTokenForm = <T extends Token>({
           warningNextTxFee: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           ustTokenPairAddr,
           {
             amount: microfy(tokenAmount!).toFixed() as u<Token>,

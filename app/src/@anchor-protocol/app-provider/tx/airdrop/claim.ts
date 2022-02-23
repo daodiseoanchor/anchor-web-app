@@ -2,7 +2,7 @@ import { Airdrop, airdropClaimTx } from '@anchor-protocol/app-fns';
 import { useGasPrice, useRefetchQueries } from '@libs/app-provider';
 import { u, UST } from '@libs/types';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';

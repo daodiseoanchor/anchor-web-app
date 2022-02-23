@@ -57,8 +57,8 @@ function SubscribeBase({ className }: SubscribeProps) {
         <a href={links.forum} target="_blank" rel="noreferrer">
           FORUM
         </a>
-        <a href={links.terra} target="_blank" rel="noreferrer">
-          Terra WEBSITE
+        <a href={links.daodiseo} target="_blank" rel="noreferrer">
+          Daodiseo WEBSITE
         </a>
       </div>
     </section>

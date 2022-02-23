@@ -8,7 +8,7 @@ import {
 } from '@anchor-protocol/app-provider';
 import { u, UST } from '@anchor-protocol/types';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import React, { useMemo } from 'react';
 import { useBorrowDialog } from './useBorrowDialog';

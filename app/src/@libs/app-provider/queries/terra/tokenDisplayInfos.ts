@@ -1,9 +1,9 @@
 import { TokenDisplayInfo, tokenDisplayInfosQuery } from '@libs/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
-import { useWallet } from '@terra-money/use-wallet';
+import { useWallet } from '@daodiseomoney/use-wallet';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
 const queryFn = createQueryFn(tokenDisplayInfosQuery);
 
@@ -14,7 +14,7 @@ export function useTokenDisplayInfosQuery(
   const { queryErrorReporter } = useApp();
 
   const result = useQuery(
-    [TERRA_QUERY_KEY.TERRA_TOKEN_DISPLAY_INFOS, networkName ?? network.name],
+    [DAODISEO_QUERY_KEY.DAODISEO_TOKEN_DISPLAY_INFOS, networkName ?? network.name],
     queryFn,
     {
       keepPreviousData: true,

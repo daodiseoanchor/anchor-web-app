@@ -15,13 +15,13 @@ import {
   CW20Addr,
   HumanAddr,
   Rate,
-  terraswap,
+  daodiseoswap,
   Token,
   u,
   UST,
 } from '@libs/types';
 import { pipe } from '@rx-stream/pipe';
-import { MsgExecuteContract, Fee } from '@terra-money/terra.js';
+import { MsgExecuteContract, Fee } from '@daodiseomoney/daodiseo.js';
 import big, { Big } from 'big.js';
 import { Observable } from 'rxjs';
 import {
@@ -63,7 +63,7 @@ export function cw20SellTokenTx<T extends Token>(
                   belief_price: $.beliefPrice,
                   max_spread: $.maxSpread,
                 },
-              } as terraswap.pair.SwapHook),
+              } as daodiseoswap.pair.SwapHook),
             ).toString('base64'),
           },
         } as cw20.Send<T>),

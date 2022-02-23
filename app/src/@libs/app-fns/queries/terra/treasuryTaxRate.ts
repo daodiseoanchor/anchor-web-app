@@ -1,7 +1,7 @@
 import { LcdQueryClient } from '@libs/query-client';
 import { Rate } from '@libs/types';
 
-export async function terraTreasuryTaxRateQuery(
+export async function daodiseoTreasuryTaxRateQuery(
   lcdClient: LcdQueryClient,
 ): Promise<Rate> {
   return lcdClient

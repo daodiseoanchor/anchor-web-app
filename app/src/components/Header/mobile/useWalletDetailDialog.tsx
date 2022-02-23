@@ -4,7 +4,7 @@ import { buttonBaseStyle } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';
 import { DialogProps, OpenDialog, useDialog } from '@libs/use-dialog';
 import { Modal } from '@material-ui/core';
-import { useConnectedWallet, useWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet, useWallet } from '@daodiseomoney/wallet-provider';
 import React, { ReactNode, useCallback } from 'react';
 import styled from 'styled-components';
 import { WalletDetailContent } from '../wallet/WalletDetailContent';

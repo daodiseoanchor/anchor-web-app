@@ -1,4 +1,4 @@
-import { CreateTxOptions } from '@terra-money/terra.js';
+import { CreateTxOptions } from '@daodiseomoney/daodiseo.js';
 import { TxResultRendering, TxStreamPhase } from '../../models/tx';
 
 export function _createTxOptions(tx: CreateTxOptions) {

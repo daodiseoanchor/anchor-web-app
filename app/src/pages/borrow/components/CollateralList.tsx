@@ -19,7 +19,7 @@ import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { Launch } from '@material-ui/icons';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big, BigSource } from 'big.js';
 import { BuyLink } from 'components/BuyButton';
 import React, { ReactNode, useMemo } from 'react';

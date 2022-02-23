@@ -1,7 +1,7 @@
 import { Rate } from '@anchor-protocol/types';
 import { useAnchorWebapp } from '@anchor-protocol/app-provider';
 import { formatRate } from '@libs/formatter';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { useNotification } from 'contexts/notification';
 import { useCallback, useEffect, useRef } from 'react';

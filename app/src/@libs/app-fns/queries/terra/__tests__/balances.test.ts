@@ -1,8 +1,8 @@
-import { terraBalancesQuery } from '@libs/app-fns';
+import { daodiseoBalancesQuery } from '@libs/app-fns';
 import { TEST_HIVE_CLIENT, TEST_WALLET_ADDRESS } from '@libs/app-fns/test-env';
-import { terraswap } from '@libs/types';
+import { daodiseoswap } from '@libs/types';
 
-const assetInfos: terraswap.AssetInfo[] = [
+const assetInfos: daodiseoswap.AssetInfo[] = [
   {
     native_token: {
       denom: 'uluna',
@@ -11,20 +11,20 @@ const assetInfos: terraswap.AssetInfo[] = [
   {
     token: {
       // bLuna
-      contract_addr: 'terra1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x',
+      contract_addr: 'daodiseo1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x',
     },
   },
   {
     token: {
       // ANC
-      contract_addr: 'terra1747mad58h0w4y589y3sk84r5efqdev9q4r02pc',
+      contract_addr: 'daodiseo1747mad58h0w4y589y3sk84r5efqdev9q4r02pc',
     },
   },
 ] as any;
 
 describe('terraBalancesQuery()', () => {
   test('should get result', async () => {
-    const result = await terraBalancesQuery(
+    const result = await daodiseoBalancesQuery(
       TEST_WALLET_ADDRESS,
       assetInfos,
       TEST_HIVE_CLIENT,
@@ -35,12 +35,12 @@ describe('terraBalancesQuery()', () => {
     });
     expect(result.balances[1].asset).toEqual({
       token: {
-        contract_addr: 'terra1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x',
+        contract_addr: 'daodiseo1u0t35drzyy0mujj8rkdyzhe264uls4ug3wdp3x',
       },
     });
     expect(result.balances[2].asset).toEqual({
       token: {
-        contract_addr: 'terra1747mad58h0w4y589y3sk84r5efqdev9q4r02pc',
+        contract_addr: 'daodiseo1747mad58h0w4y589y3sk84r5efqdev9q4r02pc',
       },
     });
     expect(+result.balances[0].balance).not.toBeNaN();

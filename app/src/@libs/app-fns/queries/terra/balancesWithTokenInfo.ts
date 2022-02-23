@@ -1,23 +1,23 @@
 import { QueryClient } from '@libs/query-client';
-import { cw20, HumanAddr, terraswap, Token, u } from '@libs/types';
+import { cw20, HumanAddr, daodiseoswap, Token, u } from '@libs/types';
 import { nativeTokenInfoQuery } from '../cw20/nativeTokenInfo';
 import { cw20TokenInfoQuery } from '../cw20/tokenInfo';
-import { terraBalancesQuery } from './balances';
+import { daodiseoBalancesQuery } from './balances';
 
-export type TerraBalancesWithTokenInfo = {
+export type DaodiseoBalancesWithTokenInfo = {
   tokens: Array<{
-    asset: terraswap.AssetInfo;
+    asset: daodiseoswap.AssetInfo;
     balance: u<Token>;
     info: cw20.TokenInfoResponse<Token> | undefined;
   }>;
 };
 
-export async function terraBalancesWithTokenInfoQuery(
+export async function daodiseoBalancesWithTokenInfoQuery(
   walletAddr: HumanAddr | undefined,
-  assets: terraswap.AssetInfo[],
+  assets: daodiseoswap.AssetInfo[],
   queryClient: QueryClient,
-): Promise<TerraBalancesWithTokenInfo> {
-  const { balances } = await terraBalancesQuery(
+): Promise<DaodiseoBalancesWithTokenInfo> {
+  const { balances } = await daodiseoBalancesQuery(
     walletAddr,
     assets,
     queryClient,

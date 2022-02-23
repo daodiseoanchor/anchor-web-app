@@ -1,19 +1,19 @@
-import { TerraswapPool, terraswapPoolQuery } from '@libs/app-fns';
+import { DaodiseoswapPool, daodiseoswapPoolQuery } from '@libs/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { HumanAddr, Token } from '@libs/types';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
-const queryFn = createQueryFn(terraswapPoolQuery);
+const queryFn = createQueryFn(daodiseoswapPoolQuery);
 
-export function useTerraswapPoolQuery<T extends Token>(
-  terraswapPairAddr: HumanAddr | undefined,
-): UseQueryResult<TerraswapPool<T> | undefined> {
+export function useDaodiseoswapPoolQuery<T extends Token>(
+  daodiseoswapPairAddr: HumanAddr | undefined,
+): UseQueryResult<DaodiseoswapPool<T> | undefined> {
   const { queryClient, queryErrorReporter } = useApp();
 
   const result = useQuery(
-    [TERRA_QUERY_KEY.TERRASWAP_POOL, terraswapPairAddr, queryClient],
+    [DAODISEO_QUERY_KEY.DAODISEOSWAP_POOL, daodiseoswapPairAddr, queryClient],
     queryFn as any,
     {
       refetchInterval: 1000 * 60 * 5,
@@ -22,5 +22,5 @@ export function useTerraswapPoolQuery<T extends Token>(
     },
   );
 
-  return result as UseQueryResult<TerraswapPool<T> | undefined>;
+  return result as UseQueryResult<DaodiseoswapPool<T> | undefined>;
 }

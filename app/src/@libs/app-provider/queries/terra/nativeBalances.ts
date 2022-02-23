@@ -2,19 +2,19 @@ import {
   EMPTY_NATIVE_BALANCES,
   NativeBalances,
   pickNativeBalance,
-  terraNativeBalancesQuery,
+  daodiseoNativeBalancesQuery,
 } from '@libs/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { HumanAddr, NativeDenom, Token, u, UST } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useMemo } from 'react';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
-const queryFn = createQueryFn(terraNativeBalancesQuery);
+const queryFn = createQueryFn(daodiseoNativeBalancesQuery);
 
-export function useTerraNativeBalancesQuery(
+export function useDaodiseoNativeBalancesQuery(
   walletAddr?: HumanAddr,
 ): UseQueryResult<NativeBalances | undefined> {
   const { queryClient, queryErrorReporter } = useApp();
@@ -23,7 +23,7 @@ export function useTerraNativeBalancesQuery(
 
   const result = useQuery(
     [
-      TERRA_QUERY_KEY.TERRA_NATIVE_BALANCES,
+      DAODISEO_QUERY_KEY.DAODISEO_NATIVE_BALANCES,
       walletAddr ?? connectedWallet?.walletAddress,
       queryClient,
     ],
@@ -39,19 +39,19 @@ export function useTerraNativeBalancesQuery(
   return result;
 }
 
-export function useTerraNativeBalances(walletAddr?: HumanAddr): NativeBalances {
+export function useDaodiseoNativeBalances(walletAddr?: HumanAddr): NativeBalances {
   const { data: nativeBalances = EMPTY_NATIVE_BALANCES } =
-    useTerraNativeBalancesQuery(walletAddr);
+    useDaodiseoNativeBalancesQuery(walletAddr);
 
   return nativeBalances;
 }
 
-export function useTerraNativeBalanceQuery<T extends Token>(
+export function useDaodiseoNativeBalanceQuery<T extends Token>(
   denom: NativeDenom,
   walletAddr?: HumanAddr,
 ): u<T> {
   const { data: nativeBalances = EMPTY_NATIVE_BALANCES } =
-    useTerraNativeBalancesQuery(walletAddr);
+    useDaodiseoNativeBalancesQuery(walletAddr);
 
   return useMemo<u<T>>(() => {
     return pickNativeBalance(denom, nativeBalances);
@@ -59,5 +59,5 @@ export function useTerraNativeBalanceQuery<T extends Token>(
 }
 
 export function useUstBalance(walletAddr?: HumanAddr | undefined): u<UST> {
-  return useTerraNativeBalanceQuery<UST>('uusd', walletAddr);
+  return useDaodiseoNativeBalanceQuery<UST>('uusd', walletAddr);
 }

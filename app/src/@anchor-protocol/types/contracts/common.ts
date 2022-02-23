@@ -67,11 +67,11 @@ export const __foo__ = 'bar';
 //    /** addressProvider.collector() */
 //    collector: HumanAddr;
 //  };
-//  terraswap: {
+//  daodiseoswap: {
 //    factory: HumanAddr;
-//    /** addressProvider.terraswapblunaLunaPair() */
+//    /** addressProvider.daodiseoswapblunaLunaPair() */
 //    blunaLunaPair: HumanAddr;
-//    /** addressProvider.terraswapbAncUstPair() */
+//    /** addressProvider.daodiseoswapbAncUstPair() */
 //    ancUstPair: HumanAddr;
 //  };
 //  cw20: {
@@ -79,13 +79,13 @@ export const __foo__ = 'bar';
 //    bLuna: CW20Addr;
 //    /** addressProvider.bEthToken() */
 //    bEth: CW20Addr;
-//    /** addressProvider.aTerra() */
+//    /** addressProvider.aDaodiseo() */
 //    aUST: CW20Addr;
 //    /** addressProvider.ANC() */
 //    ANC: CW20Addr;
-//    /** addressProvider.terraswapbAncUstLPToken() */
+//    /** addressProvider.daodiseoswapbAncUstLPToken() */
 //    AncUstLP: CW20Addr;
-//    /** addressProvider.terraswapblunaLunaLPToken() */
+//    /** addressProvider.daodiseoswapblunaLunaLPToken() */
 //    bLunaLunaLP: CW20Addr;
 //  };
 //}

@@ -2,7 +2,7 @@ import {
   MypageTxHistory,
   mypageTxHistoryQuery,
 } from '@anchor-protocol/app-fns';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback, useEffect, useState } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 
@@ -39,7 +39,7 @@ export function useMypageTxHistoryQuery(): TxHistoryReturn {
 
     mypageTxHistoryQuery({
       endpoint,
-      //walletAddress: 'terra1vz0k2glwuhzw3yjau0su5ejk3q9z2zj4ess86s',
+      //walletAddress: 'daodiseo1vz0k2glwuhzw3yjau0su5ejk3q9z2zj4ess86s',
       walletAddress: connectedWallet.walletAddress,
       offset: null,
     })
@@ -62,7 +62,7 @@ export function useMypageTxHistoryQuery(): TxHistoryReturn {
 
       mypageTxHistoryQuery({
         endpoint,
-        //walletAddress: 'terra1vz0k2glwuhzw3yjau0su5ejk3q9z2zj4ess86s',
+        //walletAddress: 'daodiseo1vz0k2glwuhzw3yjau0su5ejk3q9z2zj4ess86s',
         walletAddress: connectedWallet.walletAddress,
         offset: next,
       }).then(({ history, next }) => {

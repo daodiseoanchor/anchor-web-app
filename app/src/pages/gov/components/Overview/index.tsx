@@ -62,11 +62,11 @@ function OverviewBase({ className }: OverviewProps) {
     contractAddress.anchorToken.staking,
   );
   const { data: { ancBalance: airdropANCBalance } = {} } = useAncBalanceQuery(
-    'terra146ahqn6d3qgdvmj8cj96hh03dzmeedhsf0kxqm' as HumanAddr,
+    'daodiseo146ahqn6d3qgdvmj8cj96hh03dzmeedhsf0kxqm' as HumanAddr,
   );
   const { data: { ancBalance: investorTeamLockANCBalance } = {} } =
     useAncBalanceQuery(
-      'terra1dp0taj85ruc299rkdvzp4z5pfg6z6swaed74e6' as HumanAddr,
+      'daodiseo1dp0taj85ruc299rkdvzp4z5pfg6z6swaed74e6' as HumanAddr,
     );
   const { data: { govState, govConfig } = {} } = useGovStateQuery();
 

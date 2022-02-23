@@ -1,6 +1,6 @@
 import { govMyPollsQuery, MyPoll } from '@anchor-protocol/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_QUERY_KEY } from '../../env';

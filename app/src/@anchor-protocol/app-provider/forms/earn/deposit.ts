@@ -5,7 +5,7 @@ import {
 import { UST } from '@anchor-protocol/types';
 import { useFixedFee } from '@libs/app-provider';
 import { useForm } from '@libs/use-form';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorBank } from '../../hooks/useAnchorBank';
 

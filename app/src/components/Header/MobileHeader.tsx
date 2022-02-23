@@ -5,7 +5,7 @@ import {
   ConnectType,
   useWallet,
   WalletStatus,
-} from '@terra-money/wallet-provider';
+} from '@daodiseomoney/wallet-provider';
 import { menus, RouteMenu } from 'configurations/menu';
 import { mobileHeaderHeight } from 'env';
 import { useBuyUstDialog } from 'pages/earn/components/useBuyUstDialog';

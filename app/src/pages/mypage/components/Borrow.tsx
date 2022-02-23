@@ -9,7 +9,7 @@ import {
 } from '@anchor-protocol/app-provider';
 import { bAsset, Rate, u, UST } from '@anchor-protocol/types';
 import { sum, vectorMultiply } from '@libs/big-math';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';
 import { useBorrowOverviewData } from 'pages/borrow/logics/useBorrowOverviewData';
 import { BorrowedValue } from 'pages/mypage/components/BorrowedValue';

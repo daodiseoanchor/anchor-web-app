@@ -6,7 +6,7 @@ export namespace lp {
   }
 
   export interface MinterResponse {
-    /** terraswap pair address */
+    /** daodiseoswap pair address */
     minter: HumanAddr;
   }
 }

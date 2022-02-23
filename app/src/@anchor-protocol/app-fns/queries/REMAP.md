@@ -15,8 +15,8 @@ anc/totalStakedMain
 - useAncBalance() + anchorToken.community -> communityANCBalance
 - useAncBalance() + anchorToken.distributor -> distributorANCBalance
 - useAncBalance() + anchorToken.staking -> lpStakingANCBalance
-- useAncBalance() + 'terra146ahqn6d3qgdvmj8cj96hh03dzmeedhsf0kxqm' -> airdropANCBalance
-- useAncBalance() + 'terra1dp0taj85ruc299rkdvzp4z5pfg6z6swaed74e6' -> investorTeamLockANCBalance
+- useAncBalance() + 'daodiseo146ahqn6d3qgdvmj8cj96hh03dzmeedhsf0kxqm' -> airdropANCBalance
+- useAncBalance() + 'daodiseo1dp0taj85ruc299rkdvzp4z5pfg6z6swaed74e6' -> investorTeamLockANCBalance
 
 poll/canIVote
 

@@ -1,10 +1,10 @@
-import { terraNativeBalancesQuery } from '@libs/app-fns/queries/terra/nativeBalances';
+import { daodiseoNativeBalancesQuery } from '@libs/app-fns/queries/daodiseo/nativeBalances';
 import { TEST_LCD_CLIENT, TEST_WALLET_ADDRESS } from '@libs/app-fns/test-env';
 import big from 'big.js';
 
 describe('terraNativeBalancesQuery()', () => {
   test('should get native balances', async () => {
-    const balances = await terraNativeBalancesQuery(
+    const balances = await daodiseoNativeBalancesQuery(
       TEST_WALLET_ADDRESS,
       TEST_LCD_CLIENT,
     );

@@ -1,7 +1,7 @@
 import { useInterval } from '@libs/use-interval';
 import { useCallback, useContext, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import { WalletContext } from '@terra-money/wallet-provider';
+import { WalletContext } from '@daodiseomoney/wallet-provider';
 
 const interval = 1000 * 60;
 

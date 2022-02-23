@@ -1,7 +1,7 @@
 import { lastSyncedHeightQuery } from '@libs/app-fns';
 import { QueryClient } from '@libs/query-client';
 import { createQueryFn } from '@libs/react-query-utils';
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_QUERY_KEY } from '../../env';
@@ -21,7 +21,7 @@ export function useLastSyncedHeightQuery(): UseQueryResult<number> {
   const { queryClient, queryErrorReporter } = useAnchorWebapp();
 
   const result = useQuery(
-    [ANCHOR_QUERY_KEY.TERRA_LAST_SYNCED_HEIGHT, queryClient, network.chainID],
+    [ANCHOR_QUERY_KEY.DAODISEO_LAST_SYNCED_HEIGHT, queryClient, network.chainID],
     queryFn,
     {
       refetchInterval: 1000 * 60,

@@ -1,22 +1,22 @@
 import { TokenDisplayInfo } from '@libs/app-fns';
-import { cw20, terraswap, Token } from '@libs/types';
-import { useWallet } from '@terra-money/use-wallet';
+import { cw20, daodiseoswap, Token } from '@libs/types';
+import { useWallet } from '@daodiseomoney/use-wallet';
 import { useMemo } from 'react';
 import { useTokenDisplayInfosQuery } from './tokenDisplayInfos';
-import { useTerraTokenInfo } from './tokenInfo';
+import { useDaodiseoTokenInfo } from './tokenInfo';
 
 interface DisplayInfo {
   tokenInfo: cw20.TokenInfoResponse<Token> | undefined;
   tokenDisplayInfo: TokenDisplayInfo | undefined;
 }
 
-export function useTerraTokenDisplayInfo(
-  assetInfo: terraswap.AssetInfo,
+export function useDaodiseoTokenDisplayInfo(
+  assetInfo: daodiseoswap.AssetInfo,
   networkName?: string,
 ): DisplayInfo {
   const { network } = useWallet();
 
-  const { data: tokenInfo } = useTerraTokenInfo(assetInfo);
+  const { data: tokenInfo } = useDaodiseoTokenInfo(assetInfo);
   const { data: tokenDisplayInfos } = useTokenDisplayInfosQuery(
     networkName ?? network.name,
   );

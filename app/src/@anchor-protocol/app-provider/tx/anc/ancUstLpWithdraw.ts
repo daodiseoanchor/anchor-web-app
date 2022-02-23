@@ -2,7 +2,7 @@ import { ancAncUstLpWithdrawTx } from '@anchor-protocol/app-fns';
 import { AncUstLP } from '@anchor-protocol/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_TX_KEY } from '../../env';
@@ -29,10 +29,10 @@ export function useAncAncUstLpWithdrawTx() {
       }
 
       return ancAncUstLpWithdrawTx({
-        // fabricateTerraswapWithdrawLiquidityANC
+        // fabricateDaodiseoswapWithdrawLiquidityANC
         walletAddr: connectedWallet.walletAddress,
         lpAmount,
-        ancUstPairAddr: contractAddress.terraswap.ancUstPair,
+        ancUstPairAddr: contractAddress.daodiseoswap.ancUstPair,
         ancUstLpTokenAddr: contractAddress.cw20.AncUstLP,
         // post
         network: connectedWallet.network,
@@ -53,7 +53,7 @@ export function useAncAncUstLpWithdrawTx() {
     },
     [
       connectedWallet,
-      contractAddress.terraswap.ancUstPair,
+      contractAddress.daodiseoswap.ancUstPair,
       contractAddress.cw20.AncUstLP,
       fixedFee,
       constants.gasWanted,

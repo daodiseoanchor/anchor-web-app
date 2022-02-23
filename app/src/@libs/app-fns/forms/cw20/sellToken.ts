@@ -4,7 +4,7 @@ import { QueryClient } from '@libs/query-client';
 import { CW20Addr, HumanAddr, Rate, Token, u, UST } from '@libs/types';
 import { FormFunction, FormReturn } from '@libs/use-form';
 import big, { Big, BigSource } from 'big.js';
-import { terraswapSimulationQuery } from '../../queries/terraswap/simulation';
+import { daodiseoswapSimulationQuery } from '../../queries/daodiseoswap/simulation';
 
 export interface CW20SellTokenFormInput<T extends Token> {
   ustAmount?: UST;
@@ -110,7 +110,7 @@ export const cw20SellTokenForm = <T extends Token>({
           invalidTokenAmount: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           ustTokenPairAddr,
           {
             amount: microfy(tokenAmount!).toFixed() as u<Token>,
@@ -193,7 +193,7 @@ export const cw20SellTokenForm = <T extends Token>({
           invalidTokenAmount: null,
           availableTx: false,
         },
-        terraswapSimulationQuery(
+        daodiseoswapSimulationQuery(
           ustTokenPairAddr,
           {
             amount: microfy(ustAmount!).toFixed() as u<UST>,

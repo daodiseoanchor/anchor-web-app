@@ -7,28 +7,28 @@ import {
   WasmQueryData,
 } from '@libs/query-client';
 import { CW20Addr, HumanAddr, u } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { useEffect, useState } from 'react';
 
 const address = {
   'columbus-5': {
-    terraswapAncUstPair:
-      'terra1gm5p3ner9x9xpwugn9sp6gvhd0lwrtkyrecdn3' as HumanAddr,
-    terraswapAncUstLPToken:
-      'terra1gecs98vcuktyfkrve9czrpgtg0m3aq586x6gzm' as CW20Addr,
-    staking: 'terra1897an2xux840p9lrh6py3ryankc6mspw49xse3' as HumanAddr,
+    daodiseoswapAncUstPair:
+      'daodiseo1gm5p3ner9x9xpwugn9sp6gvhd0lwrtkyrecdn3' as HumanAddr,
+    daodiseoswapAncUstLPToken:
+      'daodiseo1gecs98vcuktyfkrve9czrpgtg0m3aq586x6gzm' as CW20Addr,
+    staking: 'daodiseo1897an2xux840p9lrh6py3ryankc6mspw49xse3' as HumanAddr,
   },
   'bombay-12': {
-    terraswapAncUstPair:
-      'terra1wfvczps2865j0awnurk9m04u7wdmd6qv3fdnvz' as HumanAddr,
-    terraswapAncUstLPToken:
-      'terra1vg0qyq92ky9z9dp0j9fv5rmr2s80sg605dah6f' as CW20Addr,
-    staking: 'terra19nxz35c8f7t3ghdxrxherym20tux8eccar0c3k' as HumanAddr,
+    daodiseoswapAncUstPair:
+      'daodiseo1wfvczps2865j0awnurk9m04u7wdmd6qv3fdnvz' as HumanAddr,
+    daodiseoswapAncUstLPToken:
+      'daodiseo1vg0qyq92ky9z9dp0j9fv5rmr2s80sg605dah6f' as CW20Addr,
+    staking: 'daodiseo19nxz35c8f7t3ghdxrxherym20tux8eccar0c3k' as HumanAddr,
   },
 } as const;
 
-export function useCheckTerraswapLpBalance() {
+export function useCheckDaodiseoswapLpBalance() {
   const connectedWallet = useConnectedWallet();
 
   const { queryClient } = useAnchorWebapp();
@@ -44,19 +44,19 @@ export function useCheckTerraswapLpBalance() {
       return;
     }
 
-    const { terraswapAncUstLPToken, staking } =
+    const { daodiseoswapAncUstLPToken, staking } =
       address[
         connectedWallet.network.chainID === 'columbus-5'
           ? 'columbus-5'
           : 'bombay-12'
       ];
 
-    //console.log('checkTerraswapLpBalance.ts..()', connectedWallet.network.chainID === 'columbus-5', connectedWallet.network.chainID, terraswapAncUstLPToken, staking);
+    //console.log('checkDaodiseoswapLpBalance.ts..()', connectedWallet.network.chainID === 'columbus-5', connectedWallet.network.chainID, daodiseoswapAncUstLPToken, staking);
 
     rewardsAncUstLpRewardsQuery(
       connectedWallet.walletAddress,
       staking,
-      terraswapAncUstLPToken,
+      daodiseoswapAncUstLPToken,
       queryClient,
     ).then((result) => {
       if (!result) {
@@ -80,7 +80,7 @@ export function useCheckTerraswapLpBalance() {
   return balances;
 }
 
-export function useCheckTerraswapLpRewards() {
+export function useCheckDaodiseoswapLpRewards() {
   const connectedWallet = useConnectedWallet();
 
   const { queryClient } = useAnchorWebapp();
@@ -94,7 +94,7 @@ export function useCheckTerraswapLpRewards() {
       return;
     }
 
-    const { terraswapAncUstLPToken, staking } =
+    const { daodiseoswapAncUstLPToken, staking } =
       address[
         connectedWallet.network.chainID === 'columbus-5'
           ? 'columbus-5'
@@ -104,7 +104,7 @@ export function useCheckTerraswapLpRewards() {
     rewardsAncUstLpRewardsQuery(
       connectedWallet.walletAddress,
       staking,
-      terraswapAncUstLPToken,
+      daodiseoswapAncUstLPToken,
       queryClient,
     ).then((result) => {
       if (!result) {

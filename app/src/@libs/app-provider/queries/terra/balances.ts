@@ -1,24 +1,24 @@
-import { TerraBalances, terraBalancesQuery } from '@libs/app-fns';
+import { DaodiseoBalances, daodiseoBalancesQuery } from '@libs/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
-import { HumanAddr, terraswap } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { HumanAddr, daodiseoswap } from '@libs/types';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
-const queryFn = createQueryFn(terraBalancesQuery);
+const queryFn = createQueryFn(daodiseoBalancesQuery);
 
-export function useTerraBalancesQuery(
-  assets: terraswap.AssetInfo[],
+export function useDaodiseoBalancesQuery(
+  assets: daodiseoswap.AssetInfo[],
   walletAddress?: HumanAddr,
-): UseQueryResult<TerraBalances | undefined> {
+): UseQueryResult<DaodiseoBalances | undefined> {
   const { queryClient, queryErrorReporter } = useApp();
 
   const connectedWallet = useConnectedWallet();
 
   const result = useQuery(
     [
-      TERRA_QUERY_KEY.TERRA_BALANCES,
+      DAODISEO_QUERY_KEY.DAODISEO_BALANCES,
       walletAddress ?? connectedWallet?.walletAddress,
       assets,
       queryClient,

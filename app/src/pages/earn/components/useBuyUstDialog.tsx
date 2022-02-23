@@ -56,7 +56,7 @@ function ComponentBase({
 
           <EmbossButton
             component="a"
-            href="https://trading.bitfinex.com/t/TERRAUST:USD?demo=true"
+            href="https://trading.bitfinex.com/t/DAODISEOUST:USD?demo=true"
             target="_blank"
             rel="noreferrer"
           >
@@ -111,7 +111,7 @@ function ComponentBase({
 
           <EmbossButton
             component="a"
-            href="https://global.transak.com/?apiKey=db70aca0-ca84-4344-8dcc-036f470414fc&cryptoCurrencyList=UST,LUNA&defaultCryptoCurrency=UST&networks=terra"
+            href="https://global.transak.com/?apiKey=db70aca0-ca84-4344-8dcc-036f470414fc&cryptoCurrencyList=UST,LUNA&defaultCryptoCurrency=UST&networks=daodiseo"
             target="_blank"
             rel="noreferrer"
           >

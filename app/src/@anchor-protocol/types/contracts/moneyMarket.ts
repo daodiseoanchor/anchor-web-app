@@ -215,7 +215,7 @@ export namespace moneyMarket {
      */
     export interface ConfigResponse {
       owner_addr: HumanAddr;
-      aterra_contract: HumanAddr;
+      adaodiseo_contract: HumanAddr;
       interest_model: HumanAddr;
       distribution_model: HumanAddr;
       overseer_contract: HumanAddr;
@@ -240,7 +240,7 @@ export namespace moneyMarket {
      */
     export interface EpochStateResponse {
       exchange_rate: UST;
-      aterra_supply: Num;
+      adaodiseo_supply: Num;
     }
 
     /**
@@ -462,7 +462,7 @@ export namespace moneyMarket {
      */
     export interface EpochStateResponse {
       deposit_rate: Rate;
-      prev_aterra_supply: u<aToken>;
+      prev_adaodiseo_supply: u<aToken>;
       prev_exchange_rate: Rate;
       last_executed_height: number;
     }

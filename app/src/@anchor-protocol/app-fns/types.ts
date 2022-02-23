@@ -57,5 +57,5 @@ export interface AnchorTax {
 }
 
 //export interface ExpandAddressMap extends AddressMap {
-//  terraswapFactory: string;
+//  daodiseoswapFactory: string;
 //}

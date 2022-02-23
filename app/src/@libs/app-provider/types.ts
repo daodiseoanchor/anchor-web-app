@@ -8,7 +8,7 @@ export interface QueryRefetch {
 export type TxRefetchMap = Record<string, (string | QueryRefetch)[]>;
 
 export interface AppContractAddress {
-  terraswap: {
+  daodiseoswap: {
     factory: HumanAddr;
   };
   astroport: {

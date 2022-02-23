@@ -12,8 +12,8 @@ import {
   LUNA_INPUT_MAXIMUM_INTEGER_POINTS,
 } from '@anchor-protocol/notation';
 import { TokenIcon } from '@anchor-protocol/token-icons';
-import { bLuna, NativeDenom, Rate, terraswap, u } from '@anchor-protocol/types';
-import { terraswapSimulationQuery } from '@libs/app-fns';
+import { bLuna, NativeDenom, Rate, daodiseoswap, u } from '@anchor-protocol/types';
+import { daodiseoswapSimulationQuery } from '@libs/app-fns';
 import {
   demicrofy,
   formatExecuteMsgNumber,
@@ -146,8 +146,8 @@ export function Component({
         const amount = microfy(burnAmount).toString() as u<bLuna>;
 
         resolveSimulation(
-          terraswapSimulationQuery(
-            address.terraswap.blunaLunaPair,
+          daodiseoswapSimulationQuery(
+            address.daodiseoswap.blunaLunaPair,
             {
               info: {
                 token: {
@@ -160,7 +160,7 @@ export function Component({
           ).then(({ simulation }) => {
             return simulation
               ? swapGetSimulation(
-                  simulation as terraswap.pair.SimulationResponse<Luna>,
+                  simulation as daodiseoswap.pair.SimulationResponse<Luna>,
                   amount,
                   bank.tax,
                   maxSpread,
@@ -172,7 +172,7 @@ export function Component({
     },
     [
       address.cw20.bLuna,
-      address.terraswap.blunaLunaPair,
+      address.daodiseoswap.blunaLunaPair,
       bank.tax,
       queryClient,
       resolveSimulation,
@@ -200,8 +200,8 @@ export function Component({
         const amount = microfy(getAmount).toString() as u<Luna>;
 
         resolveSimulation(
-          terraswapSimulationQuery(
-            address.terraswap.blunaLunaPair,
+          daodiseoswapSimulationQuery(
+            address.daodiseoswap.blunaLunaPair,
             {
               info: {
                 native_token: {
@@ -214,7 +214,7 @@ export function Component({
           ).then(({ simulation }) => {
             return simulation
               ? swapBurnSimulation(
-                  simulation as terraswap.pair.SimulationResponse<Luna>,
+                  simulation as daodiseoswap.pair.SimulationResponse<Luna>,
                   amount,
                   bank.tax,
                   maxSpread,
@@ -225,7 +225,7 @@ export function Component({
       }
     },
     [
-      address.terraswap.blunaLunaPair,
+      address.daodiseoswap.blunaLunaPair,
       bank.tax,
       queryClient,
       resolveSimulation,

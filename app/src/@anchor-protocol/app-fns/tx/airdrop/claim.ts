@@ -10,12 +10,12 @@ import {
 import { floor } from '@libs/big-math';
 import { QueryClient } from '@libs/query-client';
 import { pipe } from '@rx-stream/pipe';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
+} from '@daodiseomoney/daodiseo.js';
 import { Observable } from 'rxjs';
 import { airdropStageCache } from '../../caches/airdropStage';
 import { Airdrop } from '../../queries/airdrop/check';

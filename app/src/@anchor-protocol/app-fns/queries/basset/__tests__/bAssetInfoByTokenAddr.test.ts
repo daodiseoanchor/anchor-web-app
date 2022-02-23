@@ -7,7 +7,7 @@ describe('bAssetInfoByTokenAddrQuery', () => {
   test('should get result from query', async () => {
     const info = await bAssetInfoByTokenAddrQuery(
       TEST_ADDRESSES.moneyMarket.overseer,
-      'terra19mkj9nec6e3y5754tlnuz4vem7lzh4n0lc2s3l' as CW20Addr,
+      'daodiseo19mkj9nec6e3y5754tlnuz4vem7lzh4n0lc2s3l' as CW20Addr,
       TEST_LCD_CLIENT,
     );
 

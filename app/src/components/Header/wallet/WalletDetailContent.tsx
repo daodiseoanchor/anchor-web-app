@@ -13,8 +13,8 @@ import { FlatButton } from '@libs/neumorphism-ui/components/FlatButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { Tooltip } from '@libs/neumorphism-ui/components/Tooltip';
 import { Check, KeyboardArrowRight, Launch } from '@material-ui/icons';
-import { NetworkInfo } from '@terra-money/use-wallet';
-import { Connection } from '@terra-money/wallet-provider';
+import { NetworkInfo } from '@daodiseomoney/use-wallet';
+import { Connection } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { BuyButton, BuyLink } from 'components/BuyButton';
 import React, { useCallback } from 'react';
@@ -53,9 +53,9 @@ export function WalletDetailContentBase({
     successDuration: 1000 * 5,
   });
 
-  const viewOnTerraFinder = useCallback(() => {
+  const viewOnDaodiseoFinder = useCallback(() => {
     window.open(
-      `https://finder.terra.money/${network.chainID}/account/${walletAddress}`,
+      `https://finder.daodiseo.money/${network.chainID}/account/${walletAddress}`,
       '_blank',
     );
   }, [network.chainID, walletAddress]);
@@ -174,16 +174,16 @@ export function WalletDetailContentBase({
             <div className="bridge">
               <div>
                 <Tooltip
-                  title="Transfer Terra assets from Ethereum"
+                  title="Transfer Daodiseo assets from Ethereum"
                   placement="top"
                 >
                   <FlatButton
                     component="a"
-                    href="https://bridge.terra.money/"
+                    href="https://bridge.daodiseo.money/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <img src="/assets/bridge.png" alt="Terra Bridge" />
+                    <img src="/assets/bridge.png" alt="Daodiseo Bridge" />
                   </FlatButton>
                 </Tooltip>
                 <FlatButton
@@ -211,8 +211,8 @@ export function WalletDetailContentBase({
         )}
 
         <div className="outlink">
-          <button onClick={viewOnTerraFinder}>
-            View on Terra Finder{' '}
+          <button onClick={viewOnDaodiseoFinder}>
+            View on Daodiseo Finder{' '}
             <i>
               <KeyboardArrowRight />
             </i>
@@ -220,7 +220,7 @@ export function WalletDetailContentBase({
 
           {process.env.NODE_ENV === 'development' && (
             <a
-              href="https://faucet.terra.money/"
+              href="https://faucet.daodiseo.money/"
               target="_blank"
               rel="noreferrer"
             >

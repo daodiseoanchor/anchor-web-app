@@ -1,5 +1,5 @@
 import { truncate as _truncate } from '@libs/formatter';
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,7 +16,7 @@ function AccountLinkBase({ address, truncate, className }: AccountLinkProps) {
   return (
     <a
       className={className}
-      href={`https://finder.terra.money/${network.chainID}/account/${address}`}
+      href={`https://finder.daodiseo.money/${network.chainID}/account/${address}`}
       target="_blank"
       rel="noreferrer"
     >

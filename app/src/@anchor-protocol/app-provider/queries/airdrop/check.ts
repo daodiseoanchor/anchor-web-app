@@ -2,7 +2,7 @@ import { Airdrop, airdropCheckQuery } from '@anchor-protocol/app-fns';
 import { airdropStageCache } from '@anchor-protocol/app-fns/caches/airdropStage';
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';
-import { useConnectedWallet, useWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet, useWallet } from '@daodiseomoney/wallet-provider';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';
 import { ANCHOR_QUERY_KEY } from '../../env';

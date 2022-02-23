@@ -36,8 +36,8 @@ import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import { QueryObserverResult } from 'react-query';
 import { Observable } from 'rxjs';
 import { BorrowBorrower } from '../../queries/borrow/borrower';

@@ -3,9 +3,9 @@ import {
   formatTokenWithPostfixUnits,
   formatUTokenIntegerWithPostfixUnits,
 } from '@libs/formatter';
-import { HumanAddr, Rate, terraswap, Token, u, UST } from '@libs/types';
+import { HumanAddr, Rate, daodiseoswap, Token, u, UST } from '@libs/types';
 import { pipe } from '@rx-stream/pipe';
-import { MsgExecuteContract, Fee } from '@terra-money/terra.js';
+import { MsgExecuteContract, Fee } from '@daodiseomoney/daodiseo.js';
 import big, { Big } from 'big.js';
 import { Observable } from 'rxjs';
 import { TxResultRendering, TxStreamPhase } from '../../models/tx';
@@ -58,7 +58,7 @@ export function cw20BuyTokenTx(
               belief_price: $.beliefPrice,
               max_spread: $.maxSpread,
             },
-          } as terraswap.pair.Swap<UST>,
+          } as daodiseoswap.pair.Swap<UST>,
           $.buyAmount + 'uusd',
         ),
       ],

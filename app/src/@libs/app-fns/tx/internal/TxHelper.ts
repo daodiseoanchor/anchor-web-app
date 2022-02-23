@@ -1,7 +1,7 @@
 import { formatUToken } from '@libs/formatter';
 import { u, UST } from '@libs/types';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
-import { CreateTxOptions } from '@terra-money/terra.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
+import { CreateTxOptions } from '@daodiseomoney/daodiseo.js';
 import { BigSource } from 'big.js';
 import { TxReceipt, TxResultRendering, TxStreamPhase } from '../../models/tx';
 
@@ -33,7 +33,7 @@ export class TxHelper {
 
     const chainID = this.$.network.chainID;
     const txhash = this._savedTxResult.result.txhash;
-    const html = `<a href="https://finder.terra.money/${chainID}/tx/${txhash}" target="_blank" rel="noreferrer">${truncate(
+    const html = `<a href="https://finder.daodiseo.money/${chainID}/tx/${txhash}" target="_blank" rel="noreferrer">${truncate(
       txhash,
     )}</a>`;
 

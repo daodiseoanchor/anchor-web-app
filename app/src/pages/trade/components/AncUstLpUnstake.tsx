@@ -18,7 +18,7 @@ import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { NumberInput } from '@libs/neumorphism-ui/components/NumberInput';
 import { InputAdornment } from '@material-ui/core';
 import { StreamStatus } from '@rx-stream/react';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { TxResultRenderer } from 'components/tx/TxResultRenderer';

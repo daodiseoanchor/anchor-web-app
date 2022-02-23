@@ -1,6 +1,6 @@
 import { MypageTxHistory } from '@anchor-protocol/app-fns';
 import { rulerLightColor, rulerShadowColor } from '@libs/styled-neumorphism';
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import useResizeObserver from 'use-resize-observer/polyfilled';
@@ -27,7 +27,7 @@ function TransactionHistoryListBase({
         return (
           <li key={'txhistory' + tx_hash + '_' + i}>
             <a
-              href={`https://finder.terra.money/${network.chainID}/tx/${tx_hash}`}
+              href={`https://finder.daodiseo.money/${network.chainID}/tx/${tx_hash}`}
               target="_blank"
               rel="noreferrer"
             >

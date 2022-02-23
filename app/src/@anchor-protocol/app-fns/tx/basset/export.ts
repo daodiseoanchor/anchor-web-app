@@ -32,8 +32,8 @@ import {
   CreateTxOptions,
   Fee,
   MsgExecuteContract,
-} from '@terra-money/terra.js';
-import { NetworkInfo, TxResult } from '@terra-money/use-wallet';
+} from '@daodiseomoney/daodiseo.js';
+import { NetworkInfo, TxResult } from '@daodiseomoney/use-wallet';
 import { Observable } from 'rxjs';
 
 export function bAssetExportTx($: {
@@ -86,7 +86,7 @@ export function bAssetExportTx($: {
       }
 
       // TODO: need to fix this to pull the asset symbols, names, and decimals
-      // from the Terra asset info
+      // from the Daodiseo asset info
 
       try {
         const returnAmount = pickAttributeValue<u<bAsset>>(fromContract, 16);

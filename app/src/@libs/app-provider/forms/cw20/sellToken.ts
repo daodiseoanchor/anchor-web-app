@@ -5,12 +5,12 @@ import {
 } from '@libs/app-fns';
 import { CW20Addr, HumanAddr, Token } from '@libs/types';
 import { useForm } from '@libs/use-form';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useApp } from '../../contexts/app';
 import { useFixedFee } from '../../hooks/useFixedFee';
 import { useCW20Balance } from '../../queries/cw20/balance';
-import { useUstBalance } from '../../queries/terra/nativeBalances';
-import { useUstTax } from '../../queries/terra/tax';
+import { useUstBalance } from '../../queries/daodiseo/nativeBalances';
+import { useUstTax } from '../../queries/daodiseo/tax';
 
 export interface CW20SellTokenFormParams {
   ustTokenPairAddr: HumanAddr;
@@ -31,7 +31,7 @@ export function useCW20SellTokenForm<T extends Token>({
 
   const uUST = useUstBalance(connectedWallet?.walletAddress);
 
-  const uToken = useCW20Balance<T>(tokenAddr, connectedWallet?.terraAddress);
+  const uToken = useCW20Balance<T>(tokenAddr, connectedWallet?.daodiseoAddress);
 
   const form: CW20SellTokenForm<T> = cw20SellTokenForm;
 

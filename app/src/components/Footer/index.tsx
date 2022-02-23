@@ -10,7 +10,7 @@ import {
   Twitter,
 } from '@material-ui/icons';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@daodiseomoney/wallet-provider';
 import { useTheme } from 'contexts/theme';
 import { screen } from 'env';
 import c from 'color';
@@ -33,7 +33,7 @@ function FooterBase({ className, style }: FooterProps) {
     <footer className={className} style={style}>
       <div>
         <a
-          href={`https://finder.terra.money/${network.chainID}/blocks/${lastSyncedHeight}`}
+          href={`https://finder.daodiseo.money/${network.chainID}/blocks/${lastSyncedHeight}`}
           target="_blank"
           rel="noreferrer"
         >

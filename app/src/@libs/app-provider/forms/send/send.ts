@@ -6,12 +6,12 @@ import {
 } from '@libs/app-fns';
 import { Token } from '@libs/types';
 import { useForm } from '@libs/use-form';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useApp } from '../../contexts/app';
 import { useFixedFee } from '../../hooks/useFixedFee';
 import { useSendBalanceQuery } from '../../queries/send/balance';
-import { useUstBalance } from '../../queries/terra/nativeBalances';
-import { useUstTax } from '../../queries/terra/tax';
+import { useUstBalance } from '../../queries/daodiseo/nativeBalances';
+import { useUstTax } from '../../queries/daodiseo/tax';
 
 export interface SendFormParams {
   tokenInfo: SendTokenInfo;

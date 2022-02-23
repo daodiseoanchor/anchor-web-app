@@ -5,7 +5,7 @@ import {
   TxFailed,
   TxUnspecifiedError,
   UserDenied,
-} from '@terra-money/wallet-provider';
+} from '@daodiseomoney/wallet-provider';
 import React, { ReactNode } from 'react';
 
 // ----------------------------------------------------------------
@@ -90,7 +90,7 @@ export function renderTxFailedReason({
   error,
   errorId,
 }: TxErrorRendering): ReactNode {
-  // @terra-money/wallet-provider
+  // @daodiseomoney/wallet-provider
   if (
     error instanceof UserDenied ||
     instanceofWithName<UserDenied>(error, 'UserDenied')

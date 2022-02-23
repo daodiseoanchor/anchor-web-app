@@ -1,7 +1,7 @@
 import { bLuna, Luna } from '@anchor-protocol/types';
 import { useFixedFee } from '@libs/app-provider';
 import { Section } from '@libs/neumorphism-ui/components/Section';
-import { useConnectedWallet } from '@terra-money/wallet-provider';
+import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { fixHMR } from 'fix-hmr';
 import React, { useState } from 'react';
 import styled from 'styled-components';

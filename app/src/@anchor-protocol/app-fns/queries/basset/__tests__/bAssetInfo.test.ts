@@ -10,9 +10,9 @@ describe('bAssetInfoQuery', () => {
         symbol: 'BETH',
         max_ltv: '0.6' as Rate,
         custody_contract:
-          'terra1j6fey5tl70k9fvrv7mea7ahfr8u2yv7l23w5e6' as HumanAddr,
+          'daodiseo1j6fey5tl70k9fvrv7mea7ahfr8u2yv7l23w5e6' as HumanAddr,
         collateral_token:
-          'terra19mkj9nec6e3y5754tlnuz4vem7lzh4n0lc2s3l' as CW20Addr,
+          'daodiseo19mkj9nec6e3y5754tlnuz4vem7lzh4n0lc2s3l' as CW20Addr,
       },
       TEST_LCD_CLIENT,
     );

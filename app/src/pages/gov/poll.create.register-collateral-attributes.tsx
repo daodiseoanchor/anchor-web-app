@@ -6,7 +6,7 @@ import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';
 import { NumberInput } from '@libs/neumorphism-ui/components/NumberInput';
 import { TextInput } from '@libs/neumorphism-ui/components/TextInput';
-import { AccAddress } from '@terra-money/terra.js';
+import { AccAddress } from '@daodiseomoney/daodiseo.js';
 import big from 'big.js';
 import { PollCreateBase } from 'pages/gov/components/PollCreateBase';
 import React, { ChangeEvent, useCallback, useMemo, useState } from 'react';

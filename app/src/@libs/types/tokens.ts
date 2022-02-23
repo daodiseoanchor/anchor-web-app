@@ -1,5 +1,5 @@
 import { NominalType } from './common';
-import { terraswap } from './contracts';
+import { daodiseoswap } from './contracts';
 
 export type u<T = string> = T & { __micro: true };
 export type NoMicro = { __micro?: false };
@@ -93,7 +93,7 @@ export const NATIVE_TOKEN_DENOMS = [
 ];
 
 // utility constants
-export const NATIVE_TOKEN_ASSET_INFOS: terraswap.AssetInfo[] = [
+export const NATIVE_TOKEN_ASSET_INFOS: daodiseoswap.AssetInfo[] = [
   { native_token: { denom: 'uusd' } },
   { native_token: { denom: 'uluna' } },
   { native_token: { denom: 'uaud' } },

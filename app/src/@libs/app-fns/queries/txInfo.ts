@@ -1,7 +1,7 @@
 import { LcdFetchError, QueryClient } from '@libs/query-client';
 import { Gas, ISODateFormat, Num } from '@libs/types';
-import { TxFailed } from '@terra-money/use-wallet';
-import { CreateTxOptions } from '@terra-money/terra.js';
+import { TxFailed } from '@daodiseomoney/use-wallet';
+import { CreateTxOptions } from '@daodiseomoney/daodiseo.js';
 import { PollingTimeout } from '../errors';
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));

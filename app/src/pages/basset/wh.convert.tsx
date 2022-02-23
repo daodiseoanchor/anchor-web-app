@@ -78,7 +78,7 @@ function Component({ className, match, history }: WormholeConvertProps) {
       <TitleContainer>
         <PageTitle
           title="CONVERT"
-          tooltip="Tokens transferred to the terra chain through wormhole must be converted to bAssets useable on Anchor to be deposited as collateral."
+          tooltip="Tokens transferred to the daodiseo chain through wormhole must be converted to bAssets useable on Anchor to be deposited as collateral."
         />
       </TitleContainer>
       <Tab

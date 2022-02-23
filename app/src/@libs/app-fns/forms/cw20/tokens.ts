@@ -1,11 +1,11 @@
 import { QueryClient } from '@libs/query-client';
-import { cw20, CW20Addr, NativeDenom, terraswap, Token } from '@libs/types';
+import { cw20, CW20Addr, NativeDenom, daodiseoswap, Token } from '@libs/types';
 import { FormReturn } from '@libs/use-form';
 import { nativeTokenInfoQuery } from '../../queries/cw20/nativeTokenInfo';
 import { cw20TokenInfoQuery } from '../../queries/cw20/tokenInfo';
 
 export type SendTokenInfo = {
-  assetInfo: terraswap.AssetInfo;
+  assetInfo: daodiseoswap.AssetInfo;
   tokenInfo: cw20.TokenInfoResponse<Token>;
 };
 
@@ -64,7 +64,7 @@ export const sendTokensForm = (
                     native_token: {
                       denom,
                     },
-                  } as terraswap.AssetInfo,
+                  } as daodiseoswap.AssetInfo,
                   tokenInfo,
                 },
             ),

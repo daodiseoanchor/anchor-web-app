@@ -1,4 +1,4 @@
-import { useWallet, WalletStatus } from '@terra-money/wallet-provider';
+import { useWallet, WalletStatus } from '@daodiseomoney/wallet-provider';
 import { useNotification } from 'contexts/notification';
 import { useJobs } from 'jobs/Jobs';
 import React, { useMemo } from 'react';

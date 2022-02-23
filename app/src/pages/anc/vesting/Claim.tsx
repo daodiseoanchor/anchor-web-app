@@ -21,8 +21,8 @@ import { useHistory } from 'react-router-dom';
 import { MessageBox } from 'components/MessageBox';
 import { useAncVestingAccountQuery } from '@anchor-protocol/app-provider/queries/anc/vestingClaim';
 import { ANC, u } from '@anchor-protocol/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
-import { Dec } from '@terra-money/terra.js';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
+import { Dec } from '@daodiseomoney/daodiseo.js';
 import { useVestingClaimNotification } from 'components/Header/vesting/VestingClaimNotification';
 
 interface ClaimableListProps {

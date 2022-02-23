@@ -1,27 +1,27 @@
 import {
-  TerraBalancesWithTokenInfo,
-  terraBalancesWithTokenInfoQuery,
+  DaodiseoBalancesWithTokenInfo,
+  daodiseoBalancesWithTokenInfoQuery,
 } from '@libs/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
-import { HumanAddr, terraswap } from '@libs/types';
-import { useConnectedWallet } from '@terra-money/use-wallet';
+import { HumanAddr, daodiseoswap } from '@libs/types';
+import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useApp } from '../../contexts/app';
-import { TERRA_QUERY_KEY } from '../../env';
+import { DAODISEO_QUERY_KEY } from '../../env';
 
-const queryFn = createQueryFn(terraBalancesWithTokenInfoQuery);
+const queryFn = createQueryFn(daodiseoBalancesWithTokenInfoQuery);
 
-export function useTerraBalancesWithTokenInfoQuery(
-  assets: terraswap.AssetInfo[],
+export function useDaodiseoBalancesWithTokenInfoQuery(
+  assets: daodiseoswap.AssetInfo[],
   walletAddress?: HumanAddr,
-): UseQueryResult<TerraBalancesWithTokenInfo | undefined> {
+): UseQueryResult<DaodiseoBalancesWithTokenInfo | undefined> {
   const { queryClient, queryErrorReporter } = useApp();
 
   const connectedWallet = useConnectedWallet();
 
   const result = useQuery(
     [
-      TERRA_QUERY_KEY.TERRA_BALANCES_WITH_TOKEN_INFO,
+      DAODISEO_QUERY_KEY.DAODISEO_BALANCES_WITH_TOKEN_INFO,
       walletAddress ?? connectedWallet?.walletAddress,
       assets,
       queryClient,

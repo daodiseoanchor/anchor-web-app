@@ -1,8 +1,8 @@
-import { terraswap } from '@libs/types';
+import { daodiseoswap } from '@libs/types';
 
 export interface TokenDisplayInfo {
   protocol: string;
   symbol: string;
-  asset: terraswap.AssetInfo;
+  asset: daodiseoswap.AssetInfo;
   icon: string;
 }

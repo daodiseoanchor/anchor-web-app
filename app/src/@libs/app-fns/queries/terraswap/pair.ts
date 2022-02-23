@@ -4,22 +4,22 @@ import {
   WasmQuery,
   WasmQueryData,
 } from '@libs/query-client';
-import { HumanAddr, terraswap } from '@libs/types';
+import { HumanAddr, daodiseoswap } from '@libs/types';
 
-export interface TerraswapPairWasmQuery {
-  terraswapPair: WasmQuery<
-    terraswap.factory.Pair,
-    terraswap.factory.PairResponse
+export interface DaodiseoswapPairWasmQuery {
+  daodiseoswapPair: WasmQuery<
+    daodiseoswap.factory.Pair,
+    daodiseoswap.factory.PairResponse
   >;
 }
 
-export type TerraswapPair = WasmQueryData<TerraswapPairWasmQuery>;
+export type DaodiseoswapPair = WasmQueryData<DaodiseoswapPairWasmQuery>;
 
-export async function terraswapPairQuery(
-  terraswapFactoryAddr: HumanAddr,
-  assetInfos: [terraswap.AssetInfo, terraswap.AssetInfo],
+export async function daodiseoswapPairQuery(
+  daodiseoswapFactoryAddr: HumanAddr,
+  assetInfos: [daodiseoswap.AssetInfo, daodiseoswap.AssetInfo],
   queryClient: QueryClient,
-): Promise<TerraswapPair> {
+): Promise<DaodiseoswapPair> {
   const urlQuery = assetInfos
     .reduce((urlQueries, asset, i) => {
       if ('token' in asset) {
@@ -31,12 +31,12 @@ export async function terraswapPairQuery(
     }, [] as string[])
     .join('&');
 
-  return wasmFetch<TerraswapPairWasmQuery>({
+  return wasmFetch<DaodiseoswapPairWasmQuery>({
     ...queryClient,
-    id: `terraswap--pair&${urlQuery}`,
+    id: `daodiseoswap--pair&${urlQuery}`,
     wasmQuery: {
-      terraswapPair: {
-        contractAddress: terraswapFactoryAddr,
+      daodiseoswapPair: {
+        contractAddress: daodiseoswapFactoryAddr,
         query: {
           pair: {
             asset_infos: assetInfos,

@@ -1,8 +1,8 @@
 import {
   BAssetInfo,
   bAssetInfoByTokenAddrQuery,
-} from '@anchor-protocol/app-fns';
-import { CW20Addr } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { CW20Addr } from '@daodiseoanchor/types';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

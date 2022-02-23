@@ -1,4 +1,4 @@
-import { Tokens } from '@anchor-protocol/token-icons';
+import { Tokens } from '@daodiseoanchor/token-icons';
 
 export function symbolToTokenIcon(symbol: string): Tokens {
   switch (symbol) {

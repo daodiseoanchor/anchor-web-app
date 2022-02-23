@@ -2,9 +2,9 @@ import {
   AnchorTokenBalances,
   AncPrice,
   BAssetInfoAndBalancesTotal,
-} from '@anchor-protocol/app-fns';
-import { AnchorContractAddress } from '@anchor-protocol/app-provider';
-import { moneyMarket, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { AnchorContractAddress } from '@daodiseoanchor/app-provider';
+import { moneyMarket, u, UST } from '@daodiseoanchor/types';
 import { sum, vectorMultiply } from '@libs/big-math';
 import { Big } from 'big.js';
 

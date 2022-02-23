@@ -1,6 +1,6 @@
-import { useBAssetClaimableRewardsQuery } from '@anchor-protocol/app-provider';
-import { formatUST } from '@anchor-protocol/notation';
-import { bAsset } from '@anchor-protocol/types';
+import { useBAssetClaimableRewardsQuery } from '@daodiseoanchor/app-provider';
+import { formatUST } from '@daodiseoanchor/notation';
+import { bAsset } from '@daodiseoanchor/types';
 import { useCW20Balance } from '@libs/app-provider';
 import { demicrofy, formatUToken } from '@libs/formatter';
 import { CW20Addr, HumanAddr } from '@libs/types';

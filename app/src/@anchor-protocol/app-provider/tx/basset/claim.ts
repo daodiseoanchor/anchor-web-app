@@ -1,4 +1,4 @@
-import { bAssetClaimTx } from '@anchor-protocol/app-fns';
+import { bAssetClaimTx } from '@daodiseoanchor/app-fns';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { HumanAddr } from '@libs/types';
 import { useStream } from '@rx-stream/react';

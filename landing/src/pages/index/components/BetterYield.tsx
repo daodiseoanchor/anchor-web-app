@@ -1,4 +1,4 @@
-import { CircleArrowRight } from '@anchor-protocol/icons';
+import { CircleArrowRight } from '@daodiseoanchor/icons';
 import { scaleLinear } from 'd3-scale';
 import { arc } from 'd3-shape';
 import { links } from 'env';

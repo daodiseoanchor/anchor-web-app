@@ -1,4 +1,4 @@
-import { aUST, bLuna, Luna, Percent, Rate, UST } from '@anchor-protocol/types';
+import { aUST, bLuna, Luna, Percent, Rate, UST } from '@daodiseoanchor/types';
 import { formatPercentage, formatRate } from '@libs/formatter';
 import {
   formatAUST,

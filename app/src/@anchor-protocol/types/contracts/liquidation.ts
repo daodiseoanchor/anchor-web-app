@@ -11,7 +11,7 @@ import {
 export namespace liquidation {
   export namespace liquidationContract {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bid
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bid
      */
     export interface Bid {
       collateral_token: HumanAddr;
@@ -19,7 +19,7 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidresponse
      */
     export interface BidResponse {
       collateral_token: HumanAddr;
@@ -29,7 +29,7 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbycollateral
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbycollateral
      */
     export interface BidsByCollateral {
       bids_by_collateral: {
@@ -40,14 +40,14 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbycollateralresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbycollateralresponse
      */
     export interface BidsByCollateralResponse {
       bids: Array<BidResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbyuser
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbyuser
      */
     export interface BidsByUser {
       bids_by_user: {
@@ -58,21 +58,21 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbyuserresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#bidsbyuserresponse
      */
     export interface BidsByUserResponse {
       bids: Array<BidResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -86,7 +86,7 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#liquidationamount
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#liquidationamount
      */
     export interface LiquidationAmount {
       liquidation_amount: {
@@ -104,7 +104,7 @@ export namespace liquidation {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#liquidationamountresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/liquidations/liquidation-contract#liquidationamountresponse
      */
     export interface LiquidationAmountResponse {
       collaterals: Array<[CW20Addr, u<UST>]>;

@@ -2,7 +2,7 @@ import {
   AnchorConstants,
   AnchorContractAddress,
   AnchorWebappProvider,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { AppProvider } from '@libs/app-provider';
 import { GlobalStyle } from '@libs/neumorphism-ui/themes/GlobalStyle';
 import { patchReactQueryFocusRefetching } from '@libs/patch-react-query-focus-refetching';

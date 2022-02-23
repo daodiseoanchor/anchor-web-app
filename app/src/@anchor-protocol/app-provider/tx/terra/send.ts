@@ -1,5 +1,5 @@
-import { CW20Addr, HumanAddr, Token, u, UST } from '@anchor-protocol/types';
-import { daodiseoSendTx } from '@anchor-protocol/app-fns';
+import { CW20Addr, HumanAddr, Token, u, UST } from '@daodiseoanchor/types';
+import { daodiseoSendTx } from '@daodiseoanchor/app-fns';
 import { useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

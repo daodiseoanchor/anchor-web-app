@@ -1,7 +1,7 @@
 import {
   computeCollateralsTotalUST,
   computeTotalDeposit,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useAnchorWebapp,
   useAncPriceQuery,
@@ -10,10 +10,10 @@ import {
   useBorrowMarketQuery,
   useEarnEpochStatesQuery,
   useRewardsAncGovernanceRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { u, UST } from '@daodiseoanchor/types';
 import { sum } from '@libs/big-math';
 import { demicrofy } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';

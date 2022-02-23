@@ -1,4 +1,4 @@
-import { ANC, anchorToken, cw20 } from '@anchor-protocol/types';
+import { ANC, anchorToken, cw20 } from '@daodiseoanchor/types';
 
 export interface PollList {
   isLast: boolean;

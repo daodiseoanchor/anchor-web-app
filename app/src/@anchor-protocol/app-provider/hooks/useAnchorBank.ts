@@ -1,11 +1,11 @@
-import { AnchorTax, AnchorTokenBalances } from '@anchor-protocol/app-fns';
+import { AnchorTax, AnchorTokenBalances } from '@daodiseoanchor/app-fns';
 import {
   ANC,
   AncUstLP,
   aUST,
   bLuna,
   bLunaLunaLP,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   useCW20Balance,
   useDaodiseoNativeBalances,

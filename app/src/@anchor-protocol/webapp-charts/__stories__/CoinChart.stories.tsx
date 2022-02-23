@@ -1,4 +1,4 @@
-import { CoinChart } from '@anchor-protocol/webapp-charts/CoinChart';
+import { CoinChart } from '@daodiseoanchor/webapp-charts/CoinChart';
 import React from 'react';
 
 export default {

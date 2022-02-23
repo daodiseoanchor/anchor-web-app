@@ -1,5 +1,5 @@
-import { BAssetInfo, bAssetInfoQuery } from '@anchor-protocol/app-fns';
-import { moneyMarket } from '@anchor-protocol/types';
+import { BAssetInfo, bAssetInfoQuery } from '@daodiseoanchor/app-fns';
+import { moneyMarket } from '@daodiseoanchor/types';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

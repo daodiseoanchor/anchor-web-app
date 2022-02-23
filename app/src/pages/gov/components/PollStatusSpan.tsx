@@ -1,4 +1,4 @@
-import { anchorToken } from '@anchor-protocol/types';
+import { anchorToken } from '@daodiseoanchor/types';
 import React, { ReactNode } from 'react';
 import { useTheme } from 'styled-components';
 

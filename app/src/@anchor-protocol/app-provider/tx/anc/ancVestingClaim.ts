@@ -1,4 +1,4 @@
-import { vestingClaimTx } from '@anchor-protocol/app-fns/tx/anc/vestingClaim';
+import { vestingClaimTx } from '@daodiseoanchor/app-fns/tx/anc/vestingClaim';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

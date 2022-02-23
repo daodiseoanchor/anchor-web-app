@@ -1,7 +1,7 @@
 import {
   formatAUSTWithPostfixUnits,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import {
   aUST,
   CW20Addr,
@@ -10,7 +10,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

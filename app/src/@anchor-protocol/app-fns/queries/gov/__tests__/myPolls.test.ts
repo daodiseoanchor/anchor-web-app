@@ -1,8 +1,8 @@
-import { govMyPollsQuery } from '@anchor-protocol/app-fns';
+import { govMyPollsQuery } from '@daodiseoanchor/app-fns';
 import {
   TEST_ADDRESSES,
   TEST_WALLET_ADDRESS,
-} from '@anchor-protocol/app-fns/test-env';
+} from '@daodiseoanchor/app-fns/test-env';
 import { TEST_LCD_CLIENT } from '@libs/app-fns/test-env';
 
 describe('queries/myPolls', () => {

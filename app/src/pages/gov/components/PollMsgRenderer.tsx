@@ -1,8 +1,8 @@
-import { anchorToken } from '@anchor-protocol/types';
+import { anchorToken } from '@daodiseoanchor/types';
 import {
   useAnchorWebapp,
   useContractNickname,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { AccountLink } from 'components/links/AccountLink';
 import React, { Fragment, useMemo } from 'react';
 import { getMsgDetails } from '../logics/getMsgDetails';

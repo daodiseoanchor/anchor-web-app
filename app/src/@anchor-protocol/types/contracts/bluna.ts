@@ -4,7 +4,7 @@ import { bLuna } from '../currencies';
 export namespace bluna {
   export namespace airdropRegistry {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#airdropinfo
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#airdropinfo
      */
     export interface AirdropInfo {
       airdrop_info: {
@@ -15,7 +15,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#airdropinforesponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#airdropinforesponse
      */
     export interface AirdropInfoResponse {
       airdrop_info: Array<{
@@ -42,14 +42,14 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/airdrop-registry#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -61,7 +61,7 @@ export namespace bluna {
 
   export namespace hub {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#allhistory
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#allhistory
      */
     export interface AllHistory {
       all_history: {
@@ -71,7 +71,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#allhistoryresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#allhistoryresponse
      */
     export interface AllHistoryResponse {
       history: Array<{
@@ -85,14 +85,14 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -102,14 +102,14 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#currentbatch
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#currentbatch
      */
     export interface CurrentBatch {
       current_batch: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#currentbatchresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#currentbatchresponse
      */
     export interface CurrentBatchResponse {
       id: number;
@@ -117,14 +117,14 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#parameters-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#parameters-1
      */
     export interface Parameters {
       parameters: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#parametersresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#parametersresponse
      */
     export interface ParametersResponse {
       epoch_period: number;
@@ -136,14 +136,14 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#state
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#state
      */
     export interface State {
       state: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#stateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#stateresponse
      */
     export interface StateResponse {
       exchange_rate: Rate;
@@ -156,7 +156,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#unbondrequests
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#unbondrequests
      */
     export interface UnbondRequests {
       unbond_requests: {
@@ -165,7 +165,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#unbondrequestsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#unbondrequestsresponse
      */
     export interface UnbondRequestsResponse {
       address: HumanAddr;
@@ -173,21 +173,21 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#whitelistedvalidators
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#whitelistedvalidators
      */
     export interface WhitelistedValidators {
       whitelisted_validators: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#whitelistedvalidatorsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#whitelistedvalidatorsresponse
      */
     export interface WhitelistedValidatorsResponse {
       validators: HumanAddr[];
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#withdrawableunbonded
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#withdrawableunbonded
      */
     export interface WithdrawableUnbonded {
       withdrawable_unbonded: {
@@ -197,7 +197,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#withdrawableunbondedresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/hub-1#withdrawableunbondedresponse
      */
     export interface WithdrawableUnbondedResponse {
       withdrawable: u<Luna>;
@@ -206,7 +206,7 @@ export namespace bluna {
 
   export namespace reward {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#accruedrewards
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#accruedrewards
      */
     export interface AccruedRewards {
       accrued_rewards: {
@@ -215,21 +215,21 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#accruedrewardsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#accruedrewardsresponse
      */
     export interface AccruedRewardsResponse {
       amount: u<Token>; // depends on reward_denom of ConfigResponse
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#configresponse
      */
     export interface ConfigResponse {
       hub_contract: HumanAddr;
@@ -237,7 +237,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#holder
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#holder
      */
     export interface Holder {
       holder: {
@@ -246,7 +246,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#holderresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#holderresponse
      */
     export interface HolderResponse {
       address: HumanAddr;
@@ -256,7 +256,7 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#holders
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#holders
      */
     export interface Holders {
       holders: {
@@ -266,21 +266,21 @@ export namespace bluna {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#holdersresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#holdersresponse
      */
     export interface HoldersResponse {
       holders: Array<HolderResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#state
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#state
      */
     export interface State {
       state: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/bluna/reward#stateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/bluna/reward#stateresponse
      */
     export interface StateResponse {
       global_index: Num;

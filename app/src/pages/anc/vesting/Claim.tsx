@@ -5,22 +5,22 @@ import { CenteredLayout } from 'components/layouts/CenteredLayout';
 import { UIElementProps } from 'components/layouts/UIElementProps';
 import { TxFeeList, TxFeeListItem } from 'components/TxFeeList';
 import { ViewAddressWarning } from 'components/ViewAddressWarning';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import React, { useMemo } from 'react';
 import { demicrofy } from '@libs/formatter';
 import {
   formatUST,
   formatANCWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import styled from 'styled-components';
-import { useAncVestingClaimTx } from '@anchor-protocol/app-provider/tx/anc/ancVestingClaim';
+import { useAncVestingClaimTx } from '@daodiseoanchor/app-provider/tx/anc/ancVestingClaim';
 import { StreamStatus } from '@rx-stream/react';
 import { TxResultRenderer } from 'components/tx/TxResultRenderer';
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import { useHistory } from 'react-router-dom';
 import { MessageBox } from 'components/MessageBox';
-import { useAncVestingAccountQuery } from '@anchor-protocol/app-provider/queries/anc/vestingClaim';
-import { ANC, u } from '@anchor-protocol/types';
+import { useAncVestingAccountQuery } from '@daodiseoanchor/app-provider/queries/anc/vestingClaim';
+import { ANC, u } from '@daodiseoanchor/types';
 import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 import { Dec } from '@daodiseomoney/daodiseo.js';
 import { useVestingClaimNotification } from 'components/Header/vesting/VestingClaimNotification';

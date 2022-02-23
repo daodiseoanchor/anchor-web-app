@@ -1,4 +1,4 @@
-import { anchorToken } from '@anchor-protocol/types';
+import { anchorToken } from '@daodiseoanchor/types';
 
 export function getMsgTitle(
   msg: anchorToken.gov.ParsedExecuteMsg | undefined | null,

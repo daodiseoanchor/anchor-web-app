@@ -1,7 +1,7 @@
 import {
   BAssetInfoAndBalancesTotal,
   bAssetInfoAndBalanceTotalQuery,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useQuery, UseQueryResult } from 'react-query';

@@ -1,4 +1,4 @@
-import { ShieldPlus } from '@anchor-protocol/icons';
+import { ShieldPlus } from '@daodiseoanchor/icons';
 import { ButtonBaseProps } from '@material-ui/core';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import React from 'react';

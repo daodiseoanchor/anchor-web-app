@@ -1,4 +1,4 @@
-import { ANC, AncUstLP, Rate, u, UST } from '@anchor-protocol/types';
+import { ANC, AncUstLP, Rate, u, UST } from '@daodiseoanchor/types';
 
 export interface AncUstLpSimulation<T> {
   poolPrice: u<UST<T>>;

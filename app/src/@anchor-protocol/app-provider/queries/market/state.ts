@@ -1,4 +1,4 @@
-import { MarketState, marketStateQuery } from '@anchor-protocol/app-fns';
+import { MarketState, marketStateQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

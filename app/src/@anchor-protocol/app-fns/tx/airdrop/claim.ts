@@ -1,4 +1,4 @@
-import { Gas, HumanAddr, Rate, u, UST } from '@anchor-protocol/types';
+import { Gas, HumanAddr, Rate, u, UST } from '@daodiseoanchor/types';
 import { TxResultRendering, TxStreamPhase } from '@libs/app-fns';
 import {
   _catchTxError,

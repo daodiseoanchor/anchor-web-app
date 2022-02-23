@@ -1,4 +1,4 @@
-//import { COLLATERAL_DENOMS } from '@anchor-protocol/anchor.js';
+//import { COLLATERAL_DENOMS } from '@daodiseoanchor/anchor.js';
 //import { CW20Addr, HumanAddr } from '@libs/types';
 
 export const __foo__ = 'bar';

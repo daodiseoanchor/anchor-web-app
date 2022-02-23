@@ -2,7 +2,7 @@ import {
   computeBorrowedAmount,
   computeBorrowLimit,
   computeLtv,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   bAsset,
   CW20Addr,
@@ -10,7 +10,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import { FormReturn } from '@libs/use-form';
 import big, { Big, BigSource } from 'big.js';
 import { computeLtvToRedeemAmount } from '../../logics/borrow/computeLtvToRedeemAmount';

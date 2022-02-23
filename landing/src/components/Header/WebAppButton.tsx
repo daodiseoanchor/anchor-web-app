@@ -1,4 +1,4 @@
-import { Labtop } from '@anchor-protocol/icons';
+import { Labtop } from '@daodiseoanchor/icons';
 import { links } from 'env';
 import styled from 'styled-components';
 

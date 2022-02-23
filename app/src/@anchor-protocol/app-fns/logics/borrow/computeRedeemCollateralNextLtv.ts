@@ -1,4 +1,4 @@
-import type { bAsset, Rate, u } from '@anchor-protocol/types';
+import type { bAsset, Rate, u } from '@daodiseoanchor/types';
 import { microfy } from '@libs/formatter';
 import big, { Big, BigSource } from 'big.js';
 

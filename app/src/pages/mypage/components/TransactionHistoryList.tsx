@@ -1,4 +1,4 @@
-import { MypageTxHistory } from '@anchor-protocol/app-fns';
+import { MypageTxHistory } from '@daodiseoanchor/app-fns';
 import { rulerLightColor, rulerShadowColor } from '@libs/styled-neumorphism';
 import { useWallet } from '@daodiseomoney/wallet-provider';
 import React from 'react';

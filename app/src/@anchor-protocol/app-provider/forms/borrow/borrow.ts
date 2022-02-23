@@ -2,7 +2,7 @@ import {
   BorrowBorrower,
   borrowBorrowForm,
   BorrowMarket,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { useFixedFee } from '@libs/app-provider';
 import { UST } from '@libs/types';
 import { useForm } from '@libs/use-form';

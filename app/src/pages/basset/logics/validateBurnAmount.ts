@@ -1,5 +1,5 @@
-import type { bLuna } from '@anchor-protocol/types';
-import { AnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+import type { bLuna } from '@daodiseoanchor/types';
+import { AnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { microfy } from '@libs/formatter';
 import { ReactNode } from 'react';
 

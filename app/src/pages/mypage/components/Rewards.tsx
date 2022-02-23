@@ -2,7 +2,7 @@ import {
   formatANCWithPostfixUnits,
   formatLP,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/HorizontalScrollTable';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

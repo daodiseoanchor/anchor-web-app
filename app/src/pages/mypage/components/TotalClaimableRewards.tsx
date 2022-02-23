@@ -2,8 +2,8 @@ import {
   formatANCWithPostfixUnits,
   formatUST,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
-import { ANC, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, UST } from '@daodiseoanchor/types';
 import { demicrofy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

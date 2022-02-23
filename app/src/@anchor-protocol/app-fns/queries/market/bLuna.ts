@@ -1,4 +1,4 @@
-import { bLuna, DateTime, Luna, Rate, u, UST } from '@anchor-protocol/types';
+import { bLuna, DateTime, Luna, Rate, u, UST } from '@daodiseoanchor/types';
 
 export interface MarketBLunaData {
   last_processed_batch: number;

@@ -1,4 +1,4 @@
-import { ANC, anchorToken, cw20, Rate } from '@anchor-protocol/types';
+import { ANC, anchorToken, cw20, Rate } from '@daodiseoanchor/types';
 import { formatRate } from '@libs/formatter';
 import big from 'big.js';
 import { getMsgTitle, isRegisterCollateralAttribute } from './getMsgTitle';

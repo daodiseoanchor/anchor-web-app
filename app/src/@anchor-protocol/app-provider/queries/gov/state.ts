@@ -1,4 +1,4 @@
-import { GovState, govStateQuery } from '@anchor-protocol/app-fns';
+import { GovState, govStateQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

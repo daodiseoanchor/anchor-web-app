@@ -1,5 +1,5 @@
-import { borrowRepayTx } from '@anchor-protocol/app-fns';
-import { u, UST } from '@anchor-protocol/types';
+import { borrowRepayTx } from '@daodiseoanchor/app-fns';
+import { u, UST } from '@daodiseoanchor/types';
 import { useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

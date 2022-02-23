@@ -1,13 +1,13 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useAnchorWebapp,
   useBAssetInfoAndBalanceTotalQuery,
   useDaodiseoSendTx,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import {
   AnchorBank,
   useAnchorBank,
-} from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   ANC_INPUT_MAXIMUM_DECIMAL_POINTS,
   ANC_INPUT_MAXIMUM_INTEGER_POINTS,
@@ -23,8 +23,8 @@ import {
   LUNA_INPUT_MAXIMUM_INTEGER_POINTS,
   UST_INPUT_MAXIMUM_DECIMAL_POINTS,
   UST_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { HumanAddr, Token, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { HumanAddr, Token, u, UST } from '@daodiseoanchor/types';
 import { useFixedFee } from '@libs/app-provider';
 import { min } from '@libs/big-math';
 import { demicrofy, microfy } from '@libs/formatter';

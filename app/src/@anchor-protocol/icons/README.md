@@ -2,7 +2,7 @@
 
 ```tsx
 import { IconButton } from '@material-ui/core';
-import { Wallet } from '@anchor-protocol/token-icons';
+import { Wallet } from '@daodiseoanchor/token-icons';
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import {
   BorrowBorrower,
   BorrowMarket,
   borrowProvideCollateralForm,
-} from '@anchor-protocol/app-fns';
-import { bAsset } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { bAsset } from '@daodiseoanchor/types';
 import { useCW20Balance, useFixedFee } from '@libs/app-provider';
 import { CW20Addr } from '@libs/types';
 import { useForm } from '@libs/use-form';

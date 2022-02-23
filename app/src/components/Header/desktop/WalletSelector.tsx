@@ -1,8 +1,8 @@
 import {
   useAirdropCheckQuery,
   useBAssetInfoAndBalanceTotalQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { FlatButton } from '@libs/neumorphism-ui/components/FlatButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

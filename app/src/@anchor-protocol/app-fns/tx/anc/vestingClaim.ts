@@ -1,5 +1,5 @@
-import { formatANCWithPostfixUnits } from '@anchor-protocol/notation';
-import { Gas, Rate, u, UST, ANC, HumanAddr } from '@anchor-protocol/types';
+import { formatANCWithPostfixUnits } from '@daodiseoanchor/notation';
+import { Gas, Rate, u, UST, ANC, HumanAddr } from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

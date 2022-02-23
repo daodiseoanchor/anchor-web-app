@@ -1,5 +1,5 @@
-import type { bLuna, Luna, u } from '@anchor-protocol/types';
-import { bluna } from '@anchor-protocol/types';
+import type { bLuna, Luna, u } from '@daodiseoanchor/types';
+import { bluna } from '@daodiseoanchor/types';
 import big, { Big } from 'big.js';
 
 export interface WithdrawHistory {

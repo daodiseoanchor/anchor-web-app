@@ -1,7 +1,7 @@
 import {
   bAssetInfoAndBalanceByTokenAddrQuery,
   BAssetInfoAndBalanceWithOracle,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { CW20Addr } from '@libs/types';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

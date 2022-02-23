@@ -1,18 +1,18 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useAnchorBank,
   useAnchorWebapp,
   useBondSwapTx,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import {
   formatLuna,
   formatLunaInput,
   formatUST,
   LUNA_INPUT_MAXIMUM_DECIMAL_POINTS,
   LUNA_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { TokenIcon } from '@anchor-protocol/token-icons';
-import { bLuna, NativeDenom, Rate, daodiseoswap, u } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
+import { bLuna, NativeDenom, Rate, daodiseoswap, u } from '@daodiseoanchor/types';
 import { daodiseoswapSimulationQuery } from '@libs/app-fns';
 import {
   demicrofy,

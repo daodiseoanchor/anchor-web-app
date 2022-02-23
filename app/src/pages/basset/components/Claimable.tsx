@@ -2,7 +2,7 @@ import {
   useBAssetClaimableRewardsTotalQuery,
   useBLunaClaimableRewards,
   useBLunaWithdrawableAmount,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { formatUTokenDecimal2 } from '@libs/formatter';
 import { FlatButton } from '@libs/neumorphism-ui/components/FlatButton';
 import { Section } from '@libs/neumorphism-ui/components/Section';

@@ -1,4 +1,4 @@
-import { DateTime, Num } from '@anchor-protocol/types';
+import { DateTime, Num } from '@daodiseoanchor/types';
 
 export interface RewardsAnchorLpRewardsData {
   anchorLpRewards: Array<{

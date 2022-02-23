@@ -3,9 +3,9 @@ import {
   useAncLpStakingStateQuery,
   useAncPriceQuery,
   useRewardsAncUstLpRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { formatANCWithPostfixUnits, formatLP } from '@anchor-protocol/notation';
-import { ANC, AncUstLP, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { formatANCWithPostfixUnits, formatLP } from '@daodiseoanchor/notation';
+import { ANC, AncUstLP, u, UST } from '@daodiseoanchor/types';
 import { useAstroportDepositQuery } from '@libs/app-provider';
 import { demicrofy } from '@libs/formatter';
 import { TooltipLabel } from '@libs/neumorphism-ui/components/TooltipLabel';

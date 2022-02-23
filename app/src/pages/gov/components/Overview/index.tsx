@@ -1,9 +1,9 @@
 import {
   formatUSTWithPostfixUnits,
   formatUTokenDecimal2,
-} from '@anchor-protocol/notation';
-import { anc160gif, GifIcon, TokenIcon } from '@anchor-protocol/token-icons';
-import { ANC, HumanAddr, Rate, Token, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { anc160gif, GifIcon, TokenIcon } from '@daodiseoanchor/token-icons';
+import { ANC, HumanAddr, Rate, Token, u, UST } from '@daodiseoanchor/types';
 import {
   useAncBalanceQuery,
   useAnchorWebapp,
@@ -13,7 +13,7 @@ import {
   useBorrowAPYQuery,
   useGovStateQuery,
   useRewardsAnchorLpRewardsQuery,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { formatRate } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

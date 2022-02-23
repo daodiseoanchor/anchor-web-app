@@ -5,7 +5,7 @@ import {
   CW20Addr,
   HumanAddr,
   u,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

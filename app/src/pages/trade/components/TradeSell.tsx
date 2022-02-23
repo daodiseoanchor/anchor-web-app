@@ -1,10 +1,10 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useAnchorWebapp,
   useAncPriceQuery,
   useAncSellTx,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   ANC_INPUT_MAXIMUM_DECIMAL_POINTS,
   ANC_INPUT_MAXIMUM_INTEGER_POINTS,
@@ -13,8 +13,8 @@ import {
   formatUST,
   formatUSTInput,
   UST_INPUT_MAXIMUM_DECIMAL_POINTS,
-} from '@anchor-protocol/notation';
-import { ANC, NativeDenom, daodiseoswap, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, NativeDenom, daodiseoswap, u, UST } from '@daodiseoanchor/types';
 import { daodiseoswapSimulationQuery } from '@libs/app-fns';
 import { useFixedFee } from '@libs/app-provider';
 import { demicrofy, formatFluidDecimalPoints, microfy } from '@libs/formatter';

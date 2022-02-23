@@ -1,4 +1,4 @@
-import { Rate } from '@anchor-protocol/types';
+import { Rate } from '@daodiseoanchor/types';
 import { formatRate } from '@libs/formatter';
 import { darkTheme } from '@libs/neumorphism-ui/themes/darkTheme';
 import { lightTheme } from '@libs/neumorphism-ui/themes/lightTheme';

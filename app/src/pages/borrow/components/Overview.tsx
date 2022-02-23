@@ -3,12 +3,12 @@ import {
   BorrowAPR,
   BorrowValue,
   CollateralValue,
-} from '@anchor-protocol/icons';
+} from '@daodiseoanchor/icons';
 import {
   formatUST,
   formatUSTWithPostfixUnits,
   MILLION,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import { demicrofy, formatRate, MICRO } from '@libs/formatter';
 import { IconCircle } from '@libs/neumorphism-ui/components/IconCircle';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

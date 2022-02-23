@@ -5,7 +5,7 @@ import {
   HumanAddr,
   moneyMarket,
   NativeDenom,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

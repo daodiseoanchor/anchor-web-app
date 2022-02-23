@@ -3,8 +3,8 @@ import {
   ANCHOR_TX_KEY,
   AnchorConstants,
   AnchorContractAddress,
-} from '@anchor-protocol/app-provider';
-import { CW20Addr, HumanAddr } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { CW20Addr, HumanAddr } from '@daodiseoanchor/types';
 import { DAODISEO_QUERY_KEY, TxRefetchMap } from '@libs/app-provider';
 import { Gas, Rate } from '@libs/types';
 import { NetworkInfo } from '@daodiseomoney/wallet-provider';

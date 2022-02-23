@@ -1,7 +1,7 @@
 import {
   MypageTxHistory,
   mypageTxHistoryQuery,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import { useCallback, useEffect, useState } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';

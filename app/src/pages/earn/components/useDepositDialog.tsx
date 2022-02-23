@@ -3,12 +3,12 @@ import {
   formatUSTInput,
   UST_INPUT_MAXIMUM_DECIMAL_POINTS,
   UST_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { u, UST } from '@daodiseoanchor/types';
 import {
   useEarnDepositForm,
   useEarnDepositTx,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { demicrofy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';

@@ -1,4 +1,4 @@
-import { CW20Addr, HumanAddr } from '@anchor-protocol/types';
+import { CW20Addr, HumanAddr } from '@daodiseoanchor/types';
 import { useAnchorWebapp } from '../contexts/context';
 import { useBAssetInfoListQuery } from '../queries/basset/bAssetInfoList';
 

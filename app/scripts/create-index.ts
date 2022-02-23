@@ -36,11 +36,11 @@ createIndex(path.resolve(__dirname, '../src/@libs/app-provider'), [
   './env',
   './types',
 ]);
-createIndex(path.resolve(__dirname, '../src/@anchor-protocol/app-fns'), [
+createIndex(path.resolve(__dirname, '../src/@daodiseoanchor/app-fns'), [
   './env',
   './types',
 ]);
-createIndex(path.resolve(__dirname, '../src/@anchor-protocol/app-provider'), [
+createIndex(path.resolve(__dirname, '../src/@daodiseoanchor/app-provider'), [
   './env',
   './types',
 ]);

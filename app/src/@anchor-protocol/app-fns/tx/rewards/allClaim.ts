@@ -1,5 +1,5 @@
-import { formatANC } from '@anchor-protocol/notation';
-import { ANC, CW20Addr, Gas, HumanAddr, Rate } from '@anchor-protocol/types';
+import { formatANC } from '@daodiseoanchor/notation';
+import { ANC, CW20Addr, Gas, HumanAddr, Rate } from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

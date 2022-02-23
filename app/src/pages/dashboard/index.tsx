@@ -5,9 +5,9 @@ import {
   formatUSTWithPostfixUnits,
   formatUTokenInteger,
   formatUTokenIntegerWithoutPostfixUnits,
-} from '@anchor-protocol/notation';
-import { TokenIcon } from '@anchor-protocol/token-icons';
-import { bAsset, bLuna, Luna, Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
+import { bAsset, bLuna, Luna, Rate, u, UST } from '@daodiseoanchor/types';
 import {
   useAnchorWebapp,
   useEarnEpochStatesQuery,
@@ -19,7 +19,7 @@ import {
   useMarketDepositAndBorrowQuery,
   useMarketStableCoinQuery,
   useMarketUstQuery,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/HorizontalScrollTable';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

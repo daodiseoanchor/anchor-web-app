@@ -1,4 +1,4 @@
-# `@anchor-protocol/notation`
+# `@daodiseoanchor/notation`
 
 TODO
 
@@ -9,7 +9,7 @@ TODO
 [\_\_tests\_\_/notation.test.ts](__tests__/notation.test.ts)
 
 ```ts
-import { aUST, bLuna, Luna, Percent, Rate, UST } from '@anchor-protocol/types';
+import { aUST, bLuna, Luna, Percent, Rate, UST } from '@daodiseoanchor/types';
 import { formatPercentage, formatRate } from '@libs/formatter';
 import {
   formatAUST,

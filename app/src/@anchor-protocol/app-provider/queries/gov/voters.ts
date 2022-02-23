@@ -1,5 +1,5 @@
-import { anchorToken } from '@anchor-protocol/types';
-import { govVotersQuery } from '@anchor-protocol/app-fns';
+import { anchorToken } from '@daodiseoanchor/types';
+import { govVotersQuery } from '@daodiseoanchor/app-fns';
 import { useCallback, useEffect, useState } from 'react';
 import { useAnchorWebapp } from '../../contexts/context';
 

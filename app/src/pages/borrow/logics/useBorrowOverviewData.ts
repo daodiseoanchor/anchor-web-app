@@ -4,14 +4,14 @@ import {
   computeBorrowLimit,
   computeCollateralsTotalUST,
   computeNetAPR,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useAnchorWebapp,
   useBorrowAPYQuery,
   useBorrowBorrowerQuery,
   useBorrowMarketQuery,
-} from '@anchor-protocol/app-provider';
-import { Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { Rate, u, UST } from '@daodiseoanchor/types';
 import big, { Big } from 'big.js';
 import { useMemo } from 'react';
 

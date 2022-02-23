@@ -1,4 +1,4 @@
-import { formatANCWithPostfixUnits } from '@anchor-protocol/notation';
+import { formatANCWithPostfixUnits } from '@daodiseoanchor/notation';
 import {
   ANC,
   cw20,
@@ -8,7 +8,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

@@ -1,6 +1,6 @@
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { Rate, u, UST } from '@anchor-protocol/types';
-import { BAssetLtv } from '@anchor-protocol/app-fns';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { Rate, u, UST } from '@daodiseoanchor/types';
+import { BAssetLtv } from '@daodiseoanchor/app-fns';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

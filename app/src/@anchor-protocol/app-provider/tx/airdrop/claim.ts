@@ -1,4 +1,4 @@
-import { Airdrop, airdropClaimTx } from '@anchor-protocol/app-fns';
+import { Airdrop, airdropClaimTx } from '@daodiseoanchor/app-fns';
 import { useGasPrice, useRefetchQueries } from '@libs/app-provider';
 import { u, UST } from '@libs/types';
 import { useStream } from '@rx-stream/react';

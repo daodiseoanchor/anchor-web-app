@@ -1,5 +1,5 @@
-import { useAirdropCheckQuery } from '@anchor-protocol/app-provider';
-import { Menu, MenuClose, MenuWallet } from '@anchor-protocol/icons';
+import { useAirdropCheckQuery } from '@daodiseoanchor/app-provider';
+import { Menu, MenuClose, MenuWallet } from '@daodiseoanchor/icons';
 import { IconToggleButton } from '@libs/neumorphism-ui/components/IconToggleButton';
 import {
   ConnectType,

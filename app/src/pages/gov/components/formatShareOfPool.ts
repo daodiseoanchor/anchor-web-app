@@ -1,4 +1,4 @@
-import { Rate } from '@anchor-protocol/types';
+import { Rate } from '@daodiseoanchor/types';
 import { formatRate } from '@libs/formatter';
 import big, { BigSource } from 'big.js';
 

@@ -1,4 +1,4 @@
-import { Wallet } from '@anchor-protocol/icons';
+import { Wallet } from '@daodiseoanchor/icons';
 import { Connection, ConnectType } from '@daodiseomoney/wallet-provider';
 import React from 'react';
 import styled, { keyframes } from 'styled-components';

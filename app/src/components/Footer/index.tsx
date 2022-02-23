@@ -1,5 +1,5 @@
-import { Discord } from '@anchor-protocol/icons';
-import { useLastSyncedHeightQuery } from '@anchor-protocol/app-provider';
+import { Discord } from '@daodiseoanchor/icons';
+import { useLastSyncedHeightQuery } from '@daodiseoanchor/app-provider';
 import { IconButton } from '@material-ui/core';
 import {
   Brightness3,

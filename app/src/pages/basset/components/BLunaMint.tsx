@@ -1,19 +1,19 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useAnchorBank,
   useAnchorWebapp,
   useBLunaExchangeRateQuery,
   useBondMintTx,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import {
   formatLuna,
   formatLunaInput,
   formatUST,
   LUNA_INPUT_MAXIMUM_DECIMAL_POINTS,
   LUNA_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { TokenIcon } from '@anchor-protocol/token-icons';
-import { bLuna, Gas, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
+import { bLuna, Gas, u, UST } from '@daodiseoanchor/types';
 import { useEstimateFee, useFixedFee } from '@libs/app-provider';
 import { floor } from '@libs/big-math';
 import { demicrofy, MICRO } from '@libs/formatter';

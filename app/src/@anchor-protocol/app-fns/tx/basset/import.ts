@@ -1,4 +1,4 @@
-import { exportCW20Decimals } from '@anchor-protocol/app-fns/functions/cw20Decimals';
+import { exportCW20Decimals } from '@daodiseoanchor/app-fns/functions/cw20Decimals';
 import {
   basset,
   bAsset,
@@ -10,7 +10,7 @@ import {
   Token,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

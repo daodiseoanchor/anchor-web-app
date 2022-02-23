@@ -1,4 +1,4 @@
-import { ArrowDown } from '@anchor-protocol/icons';
+import { ArrowDown } from '@daodiseoanchor/icons';
 import c from 'color';
 import React, { ComponentType, DetailedHTMLProps, HTMLAttributes } from 'react';
 import styled from 'styled-components';

@@ -1,15 +1,15 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useRewardsAllClaimTx,
   useRewardsAncUstLpRewardsQuery,
   useRewardsClaimableUstBorrowRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   formatANCWithPostfixUnits,
   formatUST,
-} from '@anchor-protocol/notation';
-import { ANC, u } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, u } from '@daodiseoanchor/types';
 import { useFixedFee } from '@libs/app-provider';
 import { demicrofy, formatUToken } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';

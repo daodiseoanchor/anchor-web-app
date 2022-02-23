@@ -1,6 +1,6 @@
-import { computeBorrowLimit } from '@anchor-protocol/app-fns';
-import type { bAsset, u, UST } from '@anchor-protocol/types';
-import { CW20Addr, moneyMarket } from '@anchor-protocol/types';
+import { computeBorrowLimit } from '@daodiseoanchor/app-fns';
+import type { bAsset, u, UST } from '@daodiseoanchor/types';
+import { CW20Addr, moneyMarket } from '@daodiseoanchor/types';
 import { Big, BigSource } from 'big.js';
 import { BAssetLtvs } from '../../queries/borrow/market';
 

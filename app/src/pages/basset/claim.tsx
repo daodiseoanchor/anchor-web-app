@@ -1,12 +1,12 @@
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import {
   useAnchorBank,
   useAnchorWebapp,
   useBAssetClaimableRewardsTotalQuery,
   useBAssetClaimTx,
   useBLunaClaimableRewards,
-} from '@anchor-protocol/app-provider';
-import { formatUST } from '@anchor-protocol/notation';
+} from '@daodiseoanchor/app-provider';
+import { formatUST } from '@daodiseoanchor/notation';
 import { useFixedFee } from '@libs/app-provider';
 import { demicrofy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';

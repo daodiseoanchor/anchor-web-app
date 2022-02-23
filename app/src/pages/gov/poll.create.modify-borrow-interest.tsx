@@ -1,6 +1,6 @@
-import { ExecuteMsg } from '@anchor-protocol/app-fns';
-import { moneyMarket, Rate } from '@anchor-protocol/types';
-import { useAnchorWebapp } from '@anchor-protocol/app-provider';
+import { ExecuteMsg } from '@daodiseoanchor/app-fns';
+import { moneyMarket, Rate } from '@daodiseoanchor/types';
+import { useAnchorWebapp } from '@daodiseoanchor/app-provider';
 import {
   formatExecuteMsgNumber,
   MAX_EXECUTE_MSG_DECIMALS,

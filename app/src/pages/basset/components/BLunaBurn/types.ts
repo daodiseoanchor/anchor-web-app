@@ -1,4 +1,4 @@
-import { bLuna, Luna, u, UST } from '@anchor-protocol/types';
+import { bLuna, Luna, u, UST } from '@daodiseoanchor/types';
 import { ConnectedWallet } from '@daodiseomoney/use-wallet';
 
 export interface BurnComponent {

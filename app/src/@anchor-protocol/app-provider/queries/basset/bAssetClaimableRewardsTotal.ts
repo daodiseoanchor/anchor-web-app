@@ -1,7 +1,7 @@
 import {
   BAssetClaimableRewardsTotal,
   bAssetClaimableRewardsTotalQuery,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { useBAssetInfoListQuery } from './bAssetInfoList';
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';

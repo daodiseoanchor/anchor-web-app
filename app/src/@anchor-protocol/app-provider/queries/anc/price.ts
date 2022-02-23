@@ -1,4 +1,4 @@
-import { AncPriceData, ancPriceQuery } from '@anchor-protocol/app-fns';
+import { AncPriceData, ancPriceQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

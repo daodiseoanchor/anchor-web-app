@@ -1,7 +1,7 @@
-import { BAssetLtvs, vectorizeOraclePrices } from '@anchor-protocol/app-fns';
+import { BAssetLtvs, vectorizeOraclePrices } from '@daodiseoanchor/app-fns';
 import { min, max } from '@libs/big-math';
-import type { Rate } from '@anchor-protocol/types';
-import { bAsset, CW20Addr, moneyMarket, u } from '@anchor-protocol/types';
+import type { Rate } from '@daodiseoanchor/types';
+import { bAsset, CW20Addr, moneyMarket, u } from '@daodiseoanchor/types';
 import { Big, BigSource } from 'big.js';
 
 export const computeLtvToRedeemAmount =

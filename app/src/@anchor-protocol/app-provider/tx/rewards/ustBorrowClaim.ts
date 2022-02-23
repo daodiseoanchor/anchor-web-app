@@ -1,4 +1,4 @@
-import { rewardsUstBorrowClaimTx } from '@anchor-protocol/app-fns';
+import { rewardsUstBorrowClaimTx } from '@daodiseoanchor/app-fns';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

@@ -1,4 +1,4 @@
-import { aUST, bLuna, Rate, u, UST } from '@anchor-protocol/types';
+import { aUST, bLuna, Rate, u, UST } from '@daodiseoanchor/types';
 
 export interface MarketUstData {
   borrow_rate: Rate;

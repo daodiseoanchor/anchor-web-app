@@ -1,5 +1,5 @@
-import { useAnchorWebapp } from '@anchor-protocol/app-provider';
-import { ANC, anchorToken, AncUstLP, cw20 } from '@anchor-protocol/types';
+import { useAnchorWebapp } from '@daodiseoanchor/app-provider';
+import { ANC, anchorToken, AncUstLP, cw20 } from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

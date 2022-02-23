@@ -1,4 +1,4 @@
-import { bluna } from '@anchor-protocol/types';
+import { bluna } from '@daodiseoanchor/types';
 import { Dec, Int } from '@daodiseomoney/daodiseo.js';
 
 test('claimable rewards error case 1', () => {

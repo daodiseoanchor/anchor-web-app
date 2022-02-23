@@ -6,7 +6,7 @@ import { ANCHOR_QUERY_KEY } from '../../env';
 import {
   AncVestingAccount,
   ancVestingAccountQuery,
-} from '@anchor-protocol/app-fns/queries/anc/vesting';
+} from '@daodiseoanchor/app-fns/queries/anc/vesting';
 import { useConnectedWallet } from '@daodiseomoney/use-wallet';
 
 const queryFn = createQueryFn(ancVestingAccountQuery);

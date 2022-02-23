@@ -2,9 +2,9 @@ import {
   computeBorrowedAmount,
   computeBorrowLimit,
   computeLtv,
-} from '@anchor-protocol/app-fns';
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { Gas, HumanAddr, Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { Gas, HumanAddr, Rate, u, UST } from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

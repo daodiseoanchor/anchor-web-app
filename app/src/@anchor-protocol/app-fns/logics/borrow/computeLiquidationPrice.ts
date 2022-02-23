@@ -1,4 +1,4 @@
-import { CW20Addr, moneyMarket, Rate, UST } from '@anchor-protocol/types';
+import { CW20Addr, moneyMarket, Rate, UST } from '@daodiseoanchor/types';
 import big from 'big.js';
 
 export function computeLiquidationPrice(

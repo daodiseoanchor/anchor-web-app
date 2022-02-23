@@ -1,4 +1,4 @@
-import { u, UST } from '@anchor-protocol/types';
+import { u, UST } from '@daodiseoanchor/types';
 import { Chart } from 'chart.js';
 import React, { Component, createRef } from 'react';
 

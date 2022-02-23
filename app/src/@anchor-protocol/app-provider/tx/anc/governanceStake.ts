@@ -1,5 +1,5 @@
-import { ancGovernanceStakeTx } from '@anchor-protocol/app-fns';
-import { ANC } from '@anchor-protocol/types';
+import { ancGovernanceStakeTx } from '@daodiseoanchor/app-fns';
+import { ANC } from '@daodiseoanchor/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

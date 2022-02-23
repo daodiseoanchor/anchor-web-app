@@ -1,4 +1,4 @@
-import { Rate } from '@anchor-protocol/types';
+import { Rate } from '@daodiseoanchor/types';
 import big, { Big, BigSource } from 'big.js';
 import { BorrowAPYData } from '../../queries/borrow/apy';
 

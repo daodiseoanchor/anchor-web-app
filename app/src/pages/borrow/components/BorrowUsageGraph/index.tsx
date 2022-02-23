@@ -1,5 +1,5 @@
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { Rate, u, UST } from '@anchor-protocol/types';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { Rate, u, UST } from '@daodiseoanchor/types';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { HorizontalGraphBar } from '@libs/neumorphism-ui/components/HorizontalGraphBar';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
@@ -14,7 +14,7 @@ import {
   RenderData,
   valueFunction,
 } from './render';
-import { ANCHOR_SAFE_RATIO } from '@anchor-protocol/app-fns';
+import { ANCHOR_SAFE_RATIO } from '@daodiseoanchor/app-fns';
 
 export interface BorrowUsageGraphProps {
   currentLtv: Rate<Big>;

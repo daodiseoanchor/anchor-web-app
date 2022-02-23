@@ -1,4 +1,4 @@
-import { MarketUstData, marketUstQuery } from '@anchor-protocol/app-fns';
+import { MarketUstData, marketUstQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

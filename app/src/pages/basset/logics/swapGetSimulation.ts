@@ -1,6 +1,6 @@
-import type { bLuna, Luna, Rate, u, UST } from '@anchor-protocol/types';
-import { daodiseoswap } from '@anchor-protocol/types';
-import { AnchorTax } from '@anchor-protocol/app-fns';
+import type { bLuna, Luna, Rate, u, UST } from '@daodiseoanchor/types';
+import { daodiseoswap } from '@daodiseoanchor/types';
+import { AnchorTax } from '@daodiseoanchor/app-fns';
 import { min } from '@libs/big-math';
 import big, { Big } from 'big.js';
 import { SwapSimulation } from '../models/swapSimulation';

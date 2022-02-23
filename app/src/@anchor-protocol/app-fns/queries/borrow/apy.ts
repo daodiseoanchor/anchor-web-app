@@ -1,4 +1,4 @@
-import { DateTime, Rate } from '@anchor-protocol/types';
+import { DateTime, Rate } from '@daodiseoanchor/types';
 
 export interface BorrowAPYData {
   borrowerDistributionAPYs: Array<{

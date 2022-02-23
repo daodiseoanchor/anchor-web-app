@@ -1,5 +1,5 @@
-import type { u, UST } from '@anchor-protocol/types';
-import { bluna } from '@anchor-protocol/types';
+import type { u, UST } from '@daodiseoanchor/types';
+import { bluna } from '@daodiseoanchor/types';
 import { Dec, Int } from '@daodiseomoney/daodiseo.js';
 import big, { Big } from 'big.js';
 

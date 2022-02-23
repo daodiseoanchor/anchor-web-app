@@ -1,7 +1,7 @@
 import {
   BAssetClaimableRewards,
   bAssetClaimableRewardsQuery,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';
 import { HumanAddr } from '@libs/types';

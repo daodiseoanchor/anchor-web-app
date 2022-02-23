@@ -1,8 +1,8 @@
 import {
   computeBorrowedAmount,
   computeBorrowLimit,
-} from '@anchor-protocol/app-fns';
-import { moneyMarket, Rate } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { moneyMarket, Rate } from '@daodiseoanchor/types';
 import { u, UST } from '@libs/types';
 import { FormReturn } from '@libs/use-form';
 import big, { Big } from 'big.js';

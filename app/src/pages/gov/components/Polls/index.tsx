@@ -1,10 +1,10 @@
-import { anchorToken } from '@anchor-protocol/types';
+import { anchorToken } from '@daodiseoanchor/types';
 import {
   useAncBalanceQuery,
   useAnchorWebapp,
   useGovPollsQuery,
   useGovStateQuery,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { List, ViewModule } from '@material-ui/icons';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';

@@ -1,4 +1,4 @@
-import { TEST_ADDRESSES } from '@anchor-protocol/app-fns/test-env';
+import { TEST_ADDRESSES } from '@daodiseoanchor/app-fns/test-env';
 import { TEST_HIVE_CLIENT } from '@libs/app-fns/test-env';
 import { borrowMarketQuery } from '../market';
 

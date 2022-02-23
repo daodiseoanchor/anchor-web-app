@@ -2,8 +2,8 @@ import {
   computeTotalDeposit,
   earnWithdrawForm,
   EarnWithdrawFormStates,
-} from '@anchor-protocol/app-fns';
-import { UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-fns';
+import { UST } from '@daodiseoanchor/types';
 import { useFixedFee } from '@libs/app-provider';
 import { useForm } from '@libs/use-form';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

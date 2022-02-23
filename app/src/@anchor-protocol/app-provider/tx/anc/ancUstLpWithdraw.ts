@@ -1,5 +1,5 @@
-import { ancAncUstLpWithdrawTx } from '@anchor-protocol/app-fns';
-import { AncUstLP } from '@anchor-protocol/types';
+import { ancAncUstLpWithdrawTx } from '@daodiseoanchor/app-fns';
+import { AncUstLP } from '@daodiseoanchor/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

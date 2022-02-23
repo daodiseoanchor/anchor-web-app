@@ -1,17 +1,17 @@
 import {
   computeLiquidationPrice,
   prettifySymbol,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useBorrowBorrowerQuery,
   useBorrowMarketQuery,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import {
   formatBAsset,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
-import { TokenIcon } from '@anchor-protocol/token-icons';
-import { bAsset, CW20Addr, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
+import { bAsset, CW20Addr, u, UST } from '@daodiseoanchor/types';
 import { demicrofy } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/HorizontalScrollTable';

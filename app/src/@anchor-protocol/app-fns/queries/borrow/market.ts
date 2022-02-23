@@ -5,7 +5,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   hiveFetch,
   HiveQueryClient,

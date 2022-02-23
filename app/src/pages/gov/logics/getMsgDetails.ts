@@ -1,6 +1,6 @@
-import { formatANC } from '@anchor-protocol/notation';
-import { anchorToken, moneyMarket } from '@anchor-protocol/types';
-import { AnchorContractAddress } from '@anchor-protocol/app-provider';
+import { formatANC } from '@daodiseoanchor/notation';
+import { anchorToken, moneyMarket } from '@daodiseoanchor/types';
+import { AnchorContractAddress } from '@daodiseoanchor/app-provider';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { AccountLink } from 'components/links/AccountLink';
 import { createElement, ReactNode } from 'react';

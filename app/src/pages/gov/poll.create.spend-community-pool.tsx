@@ -1,14 +1,14 @@
-import { ExecuteMsg } from '@anchor-protocol/app-fns';
+import { ExecuteMsg } from '@daodiseoanchor/app-fns';
 import {
   ANC_INPUT_MAXIMUM_DECIMAL_POINTS,
   ANC_INPUT_MAXIMUM_INTEGER_POINTS,
   formatANC,
-} from '@anchor-protocol/notation';
-import { ANC, anchorToken, HumanAddr, u } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, anchorToken, HumanAddr, u } from '@daodiseoanchor/types';
 import {
   useAncBalanceQuery,
   useAnchorWebapp,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import { demicrofy, microfy } from '@libs/formatter';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';

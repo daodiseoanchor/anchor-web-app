@@ -1,5 +1,5 @@
-import { useBAssetInfoAndBalanceTotalQuery } from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+import { useBAssetInfoAndBalanceTotalQuery } from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { buttonBaseStyle } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';
 import { DialogProps, OpenDialog, useDialog } from '@libs/use-dialog';

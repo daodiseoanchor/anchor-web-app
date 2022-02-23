@@ -1,6 +1,6 @@
-import { prettifySymbol } from '@anchor-protocol/app-fns';
-import { useBAssetInfoListQuery } from '@anchor-protocol/app-provider';
-import { TokenIcon } from '@anchor-protocol/token-icons';
+import { prettifySymbol } from '@daodiseoanchor/app-fns';
+import { useBAssetInfoListQuery } from '@daodiseoanchor/app-provider';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
 import { CenteredLayout } from 'components/layouts/CenteredLayout';
 import { MessageBox } from 'components/MessageBox';
 import { PageTitle, TitleContainer } from 'components/primitives/PageTitle';

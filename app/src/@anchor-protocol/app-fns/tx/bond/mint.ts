@@ -1,4 +1,4 @@
-import { formatLuna } from '@anchor-protocol/notation';
+import { formatLuna } from '@daodiseoanchor/notation';
 import {
   bLuna,
   Gas,
@@ -7,7 +7,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

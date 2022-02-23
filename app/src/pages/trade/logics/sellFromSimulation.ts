@@ -1,5 +1,5 @@
-import { ANC, Rate, daodiseoswap, u, UST } from '@anchor-protocol/types';
-import { AnchorTax } from '@anchor-protocol/app-fns';
+import { ANC, Rate, daodiseoswap, u, UST } from '@daodiseoanchor/types';
+import { AnchorTax } from '@daodiseoanchor/app-fns';
 import { min } from '@libs/big-math';
 import big, { Big, BigSource } from 'big.js';
 import { TradeSimulation } from 'pages/trade/models/tradeSimulation';

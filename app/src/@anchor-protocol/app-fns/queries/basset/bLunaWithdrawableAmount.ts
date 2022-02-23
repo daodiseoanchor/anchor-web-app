@@ -1,4 +1,4 @@
-import { bluna, HumanAddr } from '@anchor-protocol/types';
+import { bluna, HumanAddr } from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

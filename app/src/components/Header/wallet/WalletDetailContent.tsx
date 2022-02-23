@@ -1,5 +1,5 @@
-import { BAssetInfoAndBalancesTotal } from '@anchor-protocol/app-fns';
-import { AnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+import { BAssetInfoAndBalancesTotal } from '@daodiseoanchor/app-fns';
+import { AnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   formatANC,
   formatAUSTWithPostfixUnits,
@@ -7,7 +7,7 @@ import {
   formatLP,
   formatLuna,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import { demicrofy, truncate } from '@libs/formatter';
 import { FlatButton } from '@libs/neumorphism-ui/components/FlatButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

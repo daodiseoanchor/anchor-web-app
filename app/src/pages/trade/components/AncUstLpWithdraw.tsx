@@ -5,14 +5,14 @@ import {
   formatLP,
   formatLPInput,
   formatUST,
-} from '@anchor-protocol/notation';
-import { ANC, AncUstLP, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, AncUstLP, UST } from '@daodiseoanchor/types';
 import {
   useAncAncUstLpWithdrawTx,
   useAncPriceQuery,
   useRewardsAncUstLpRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { useFixedFee } from '@libs/app-provider';
 import { demicrofy, microfy } from '@libs/formatter';
 import { isZero } from '@libs/is-zero';
@@ -28,7 +28,7 @@ import { IconLineSeparator } from 'components/primitives/IconLineSeparator';
 import { SwapListItem, TxFeeList, TxFeeListItem } from 'components/TxFeeList';
 import { TxResultRenderer } from 'components/tx/TxResultRenderer';
 import { ViewAddressWarning } from 'components/ViewAddressWarning';
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import { formatShareOfPool } from 'pages/gov/components/formatShareOfPool';
 import { ancUstLpLpSimulation } from 'pages/trade/logics/ancUstLpLpSimulation';
 import { AncUstLpSimulation } from 'pages/trade/models/ancUstLpSimulation';

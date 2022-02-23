@@ -1,4 +1,4 @@
-import { Wallet } from '@anchor-protocol/icons';
+import { Wallet } from '@daodiseoanchor/icons';
 import { ButtonBaseProps } from '@material-ui/core';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

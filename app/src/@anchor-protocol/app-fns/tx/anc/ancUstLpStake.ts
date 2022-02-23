@@ -1,4 +1,4 @@
-import { formatLP } from '@anchor-protocol/notation';
+import { formatLP } from '@daodiseoanchor/notation';
 import {
   AncUstLP,
   CW20Addr,
@@ -7,7 +7,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

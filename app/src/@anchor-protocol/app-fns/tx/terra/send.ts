@@ -1,4 +1,4 @@
-import { formatUST } from '@anchor-protocol/notation';
+import { formatUST } from '@daodiseoanchor/notation';
 import {
   CW20Addr,
   Gas,
@@ -7,7 +7,7 @@ import {
   Token,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import { TxResultRendering, TxStreamPhase } from '@libs/app-fns';
 import {
   _catchTxError,

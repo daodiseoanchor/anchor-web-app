@@ -1,8 +1,8 @@
-import { formatUST } from '@anchor-protocol/notation';
-import type { Rate, UST } from '@anchor-protocol/types';
-import { CW20Addr, moneyMarket } from '@anchor-protocol/types';
+import { formatUST } from '@daodiseoanchor/notation';
+import type { Rate, UST } from '@daodiseoanchor/types';
+import { CW20Addr, moneyMarket } from '@daodiseoanchor/types';
 import { Big } from 'big.js';
-import { prettifySymbol } from '@anchor-protocol/app-fns/functions/prettifySymbol';
+import { prettifySymbol } from '@daodiseoanchor/app-fns/functions/prettifySymbol';
 
 export function computeEstimateLiquidationPrice(
   nextLtv: Rate<Big>,

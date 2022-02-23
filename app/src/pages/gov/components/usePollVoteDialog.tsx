@@ -4,14 +4,14 @@ import {
   formatANC,
   formatANCInput,
   formatUST,
-} from '@anchor-protocol/notation';
-import { ANC, u } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { ANC, u } from '@daodiseoanchor/types';
 import {
   useGovVoteAvailableQuery,
   useGovVoteTx,
   useRewardsAncGovernanceRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { useFixedFee } from '@libs/app-provider';
 import { demicrofy, microfy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
@@ -28,7 +28,7 @@ import big, { Big } from 'big.js';
 import { MessageBox } from 'components/MessageBox';
 import { TxFeeList, TxFeeListItem } from 'components/TxFeeList';
 import { TxResultRenderer } from 'components/tx/TxResultRenderer';
-import { validateTxFee } from '@anchor-protocol/app-fns';
+import { validateTxFee } from '@daodiseoanchor/app-fns';
 import React, {
   ChangeEvent,
   ReactNode,

@@ -12,14 +12,14 @@ import { moneyMarket } from './moneyMarket';
 export namespace anchorToken {
   export namespace collector {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/collector#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/collector#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/collector#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/collector#configresponse
      */
     export interface ConfigResponse {
       gov_contract: HumanAddr;
@@ -32,14 +32,14 @@ export namespace anchorToken {
 
   export namespace community {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/community#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/community#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/community#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/community#configresponse
      */
     export interface ConfigResponse {
       gov_contract: HumanAddr;
@@ -48,7 +48,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://app.gitbook.com/@anchor-protocol/s/anchor-2/smart-contracts/anchor-token/community#spend
+     * @see https://app.gitbook.com/@daodiseoanchor/s/anchor-2/smart-contracts/anchor-token/community#spend
      */
     export interface Spend {
       spend: {
@@ -60,14 +60,14 @@ export namespace anchorToken {
 
   export namespace distributor {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/dripper#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/dripper#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/dripper#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/dripper#configresponse
      */
     export interface ConfigResponse {
       gov_contract: HumanAddr;
@@ -79,14 +79,14 @@ export namespace anchorToken {
 
   export namespace gov {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#configresponse
      */
     export interface ConfigResponse {
       owner: CanonicalAddr;
@@ -125,7 +125,7 @@ export namespace anchorToken {
       | moneyMarket.oracle.RegisterFeeder;
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#poll
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#poll
      */
     export interface Poll {
       poll: {
@@ -134,7 +134,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#pollresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#pollresponse
      */
     export interface PollResponse {
       id: number;
@@ -153,7 +153,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#polls
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#polls
      */
     export interface Polls {
       polls: {
@@ -165,14 +165,14 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#pollsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#pollsresponse
      */
     export interface PollsResponse {
       polls: Array<PollResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#staker
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#staker
      */
     export interface Staker {
       staker: {
@@ -181,7 +181,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#stakerresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#stakerresponse
      */
     export interface StakerResponse {
       balance: u<ANC>;
@@ -198,14 +198,14 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#state
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#state
      */
     export interface State {
       state: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#stateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#stateresponse
      */
     export interface StateResponse {
       poll_count: number;
@@ -220,7 +220,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#voters
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#voters
      */
     export interface Voters {
       voters: {
@@ -232,7 +232,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#votersresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/gov#votersresponse
      */
     export interface VotersResponse {
       voters: Array<Voter>;
@@ -241,14 +241,14 @@ export namespace anchorToken {
 
   export namespace staking {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#configresponse
      */
     export interface ConfigResponse {
       anchor_token: HumanAddr;
@@ -258,7 +258,7 @@ export namespace anchorToken {
 
     // TODO remove after daodiseoswap
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stakerinfo
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stakerinfo
      */
     export interface StakerInfo {
       staker_info: {
@@ -268,7 +268,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stakerinforesponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stakerinforesponse
      */
     export interface StakerInfoResponse {
       staker: HumanAddr;
@@ -279,7 +279,7 @@ export namespace anchorToken {
     // TODO /
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#state
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#state
      */
     export interface State {
       state: {
@@ -288,7 +288,7 @@ export namespace anchorToken {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/anchor-token/staking#stateresponse
      */
     export interface StateResponse {
       last_distributed: number;

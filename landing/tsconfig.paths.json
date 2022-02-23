@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@anchor-protocol/*": [
-        "../../app/src/@anchor-protocol/*"
+      "@daodiseoanchor/*": [
+        "../../app/src/@daodiseoanchor/*"
       ],
       "@libs/*": [
         "../../app/src/@libs/*"

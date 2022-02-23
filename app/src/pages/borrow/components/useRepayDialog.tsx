@@ -1,15 +1,15 @@
-import { BorrowBorrower, BorrowMarket } from '@anchor-protocol/app-fns';
+import { BorrowBorrower, BorrowMarket } from '@daodiseoanchor/app-fns';
 import {
   useBorrowRepayForm,
   useBorrowRepayTx,
-} from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-provider';
 import {
   formatUST,
   formatUSTInput,
   UST_INPUT_MAXIMUM_DECIMAL_POINTS,
   UST_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { Rate, u, UST } from '@daodiseoanchor/types';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';

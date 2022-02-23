@@ -1,5 +1,5 @@
-import { Rate } from '@anchor-protocol/types';
-import { useAnchorWebapp } from '@anchor-protocol/app-provider';
+import { Rate } from '@daodiseoanchor/types';
+import { useAnchorWebapp } from '@daodiseoanchor/app-provider';
 import { formatRate } from '@libs/formatter';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';

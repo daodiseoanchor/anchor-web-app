@@ -1,5 +1,5 @@
-import { CW20Addr, Token, u, UST } from '@anchor-protocol/types';
-import { AnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+import { CW20Addr, Token, u, UST } from '@daodiseoanchor/types';
+import { AnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { BigSource } from 'big.js';
 
 export interface CurrencyInfo {

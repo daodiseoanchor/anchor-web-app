@@ -1,4 +1,4 @@
-import { bAsset, CW20Addr, u } from '@anchor-protocol/types';
+import { bAsset, CW20Addr, u } from '@daodiseoanchor/types';
 import big, { Big, BigSource } from 'big.js';
 import { createCollateralVector } from '../../models/collaterals';
 

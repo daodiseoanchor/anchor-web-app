@@ -2,12 +2,12 @@ import {
   prettifySymbol,
   vectorizeOraclePrices,
   vectorizeOverseerCollaterals,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useBorrowBorrowerQuery,
   useBorrowMarketQuery,
-} from '@anchor-protocol/app-provider';
-import { bAsset, Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { bAsset, Rate, u, UST } from '@daodiseoanchor/types';
 import { sum, vectorMultiply } from '@libs/big-math';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big, { Big } from 'big.js';

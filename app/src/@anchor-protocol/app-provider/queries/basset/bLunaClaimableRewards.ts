@@ -1,7 +1,7 @@
 import {
   BLunaClaimableRewards,
   bLunaClaimableRewardsQuery,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

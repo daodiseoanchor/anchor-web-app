@@ -1,4 +1,4 @@
-import { JSDateTime, u, UST } from '@anchor-protocol/types';
+import { JSDateTime, u, UST } from '@daodiseoanchor/types';
 import { dedupeTimestamp } from './utils/dedupeTimestamp';
 
 interface MarketDepositRaw {

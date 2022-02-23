@@ -1,4 +1,4 @@
-import { basset, HumanAddr } from '@anchor-protocol/types';
+import { basset, HumanAddr } from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

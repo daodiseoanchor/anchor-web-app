@@ -4,7 +4,7 @@ import {
   moneyMarket,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import { QueryClient, wasmFetch, WasmQuery } from '@libs/query-client';
 import big from 'big.js';
 import {

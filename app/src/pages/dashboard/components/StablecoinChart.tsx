@@ -1,5 +1,5 @@
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { MarketDepositAndBorrow } from '@anchor-protocol/app-fns';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { MarketDepositAndBorrow } from '@daodiseoanchor/app-fns';
 import { demicrofy } from '@libs/formatter';
 import big from 'big.js';
 import { Chart } from 'chart.js';

@@ -1,8 +1,8 @@
-import { AnchorTax } from '@anchor-protocol/app-fns';
+import { AnchorTax } from '@daodiseoanchor/app-fns';
 import {
   formatANCWithPostfixUnits,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import {
   ANC,
   cw20,
@@ -12,7 +12,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

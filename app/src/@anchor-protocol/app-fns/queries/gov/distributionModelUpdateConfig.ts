@@ -1,4 +1,4 @@
-import { HumanAddr, moneyMarket } from '@anchor-protocol/types';
+import { HumanAddr, moneyMarket } from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

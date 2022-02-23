@@ -1,4 +1,4 @@
-import { BorrowMarket, borrowMarketQuery } from '@anchor-protocol/app-fns';
+import { BorrowMarket, borrowMarketQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

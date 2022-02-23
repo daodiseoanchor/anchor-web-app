@@ -14,7 +14,7 @@ And you can run scripts
 - `yarn run app:build` Build `/app` directory (`/app/build` directory will created)
 - `yarn run app:test`
 - `yarn run app:coverage`
-- `yarn run app:pack` Build `/app/src/@anchor-protocol` packages (`/app/out` directory will created)
+- `yarn run app:pack` Build `/app/src/@daodiseoanchor` packages (`/app/out` directory will created)
 - `yarn run app:publish` Publish `/packages/out` directory to the NPM registry
 - `yarn run app:storybook` Development run Storybook
 - `yarn run app:build-storybook`

@@ -1,12 +1,12 @@
 import {
   computeBorrowedAmount,
   computeCollateralsTotalUST,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useBorrowBorrowerQuery,
   useBorrowMarketQuery,
-} from '@anchor-protocol/app-provider';
-import { u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { u, UST } from '@daodiseoanchor/types';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';
 import big from 'big.js';

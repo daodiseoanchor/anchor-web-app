@@ -1,4 +1,4 @@
-import { bAsset, CW20Addr, moneyMarket, u, UST } from '@anchor-protocol/types';
+import { bAsset, CW20Addr, moneyMarket, u, UST } from '@daodiseoanchor/types';
 import { sum, vectorMultiply } from '@libs/big-math';
 import { Big, BigSource } from 'big.js';
 import { BAssetLtvs } from '../../queries/borrow/market';

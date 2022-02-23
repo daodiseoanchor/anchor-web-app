@@ -1,4 +1,4 @@
-import { bLuna, Luna } from '@anchor-protocol/types';
+import { bLuna, Luna } from '@daodiseoanchor/types';
 import { useFixedFee } from '@libs/app-provider';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

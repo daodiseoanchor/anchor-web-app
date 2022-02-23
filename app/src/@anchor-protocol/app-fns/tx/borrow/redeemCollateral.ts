@@ -2,8 +2,8 @@ import {
   computeBorrowedAmount,
   computeBorrowLimit,
   computeLtv,
-} from '@anchor-protocol/app-fns';
-import { formatLuna } from '@anchor-protocol/notation';
+} from '@daodiseoanchor/app-fns';
+import { formatLuna } from '@daodiseoanchor/notation';
 import {
   bAsset,
   bLuna,
@@ -13,7 +13,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

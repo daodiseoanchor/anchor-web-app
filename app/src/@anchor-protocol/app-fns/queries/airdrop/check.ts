@@ -1,4 +1,4 @@
-import { ANC, HumanAddr, Rate, u } from '@anchor-protocol/types';
+import { ANC, HumanAddr, Rate, u } from '@daodiseoanchor/types';
 import { QueryClient } from '@libs/query-client';
 import { airdropStageCache } from '../../caches/airdropStage';
 import { airdropIsClaimedQuery } from './isClaimed';

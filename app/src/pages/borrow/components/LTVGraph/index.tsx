@@ -1,6 +1,6 @@
-import { ANCHOR_SAFE_RATIO } from '@anchor-protocol/app-fns';
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import type { Rate, u, UST } from '@anchor-protocol/types';
+import { ANCHOR_SAFE_RATIO } from '@daodiseoanchor/app-fns';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import type { Rate, u, UST } from '@daodiseoanchor/types';
 import { demicrofy, formatRate } from '@libs/formatter';
 import {
   HorizontalGraphBar,

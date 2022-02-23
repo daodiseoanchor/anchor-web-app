@@ -1,7 +1,7 @@
 import {
   formatANCWithPostfixUnits,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import {
   ANC,
   Gas,
@@ -10,7 +10,7 @@ import {
   daodiseoswap,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,

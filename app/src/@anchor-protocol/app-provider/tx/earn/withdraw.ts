@@ -1,5 +1,5 @@
-import { earnWithdrawTx } from '@anchor-protocol/app-fns';
-import { aUST, u, UST } from '@anchor-protocol/types';
+import { earnWithdrawTx } from '@daodiseoanchor/app-fns';
+import { aUST, u, UST } from '@daodiseoanchor/types';
 import { useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

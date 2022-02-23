@@ -8,7 +8,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 
 //export interface AnchorConstants {
 //  gasWanted: Gas;

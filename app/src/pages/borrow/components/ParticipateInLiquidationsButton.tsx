@@ -1,4 +1,4 @@
-import { ParticipateInLiquidations } from '@anchor-protocol/icons';
+import { ParticipateInLiquidations } from '@daodiseoanchor/icons';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { ButtonBaseProps } from '@material-ui/core';
 import { useParticipateInLiquidationsDialog } from 'pages/borrow/components/useParticipateInLiquidationsDialog';

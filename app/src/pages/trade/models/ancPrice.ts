@@ -1,4 +1,4 @@
-import { ANC, AncUstLP, u, UST } from '@anchor-protocol/types';
+import { ANC, AncUstLP, u, UST } from '@daodiseoanchor/types';
 
 export interface AncPrice {
   ANCPoolSize: u<ANC<string>>;

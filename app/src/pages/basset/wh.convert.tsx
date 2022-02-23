@@ -1,5 +1,5 @@
-import { prettifySymbol } from '@anchor-protocol/app-fns';
-import { useBAssetInfoByTokenSymbolQuery } from '@anchor-protocol/app-provider';
+import { prettifySymbol } from '@daodiseoanchor/app-fns';
+import { useBAssetInfoByTokenSymbolQuery } from '@daodiseoanchor/app-provider';
 import { Tab } from '@libs/neumorphism-ui/components/Tab';
 import { CenteredLayout } from 'components/layouts/CenteredLayout';
 import { PageTitle, TitleContainer } from 'components/primitives/PageTitle';

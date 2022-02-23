@@ -1,4 +1,4 @@
-import { TEST_ADDRESSES } from '@anchor-protocol/app-fns/test-env';
+import { TEST_ADDRESSES } from '@daodiseoanchor/app-fns/test-env';
 import { TEST_LCD_CLIENT } from '@libs/app-fns/test-env';
 import { AccAddress } from '@daodiseomoney/daodiseo.js';
 import { cw20MinterQuery } from '../minter';

@@ -1,12 +1,12 @@
-import { HumanAddr } from '@anchor-protocol/types';
+import { HumanAddr } from '@daodiseoanchor/types';
 import {
   borrowBorrowerQuery,
   borrowMarketQuery,
   computeBorrowedAmount,
   computeBorrowLimit,
   computeLtv,
-} from '@anchor-protocol/app-fns';
-import { AnchorContractAddress } from '@anchor-protocol/app-provider';
+} from '@daodiseoanchor/app-fns';
+import { AnchorContractAddress } from '@daodiseoanchor/app-provider';
 import { lastSyncedHeightQuery } from '@libs/app-fns';
 import { HiveQueryClient } from '@libs/query-client';
 

@@ -5,8 +5,8 @@ import {
   useRewardsAncGovernanceRewardsQuery,
   useRewardsAncUstLpRewardsQuery,
   useRewardsClaimableUstBorrowRewardsQuery,
-} from '@anchor-protocol/app-provider';
-import { ANC, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/app-provider';
+import { ANC, u, UST } from '@daodiseoanchor/types';
 import big, { Big } from 'big.js';
 import { useMemo } from 'react';
 

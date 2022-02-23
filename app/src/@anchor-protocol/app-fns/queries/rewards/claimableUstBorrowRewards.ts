@@ -4,7 +4,7 @@ import {
   CW20Addr,
   HumanAddr,
   moneyMarket,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

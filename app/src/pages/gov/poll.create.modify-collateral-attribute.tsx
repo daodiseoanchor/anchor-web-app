@@ -1,6 +1,6 @@
-import { ExecuteMsg } from '@anchor-protocol/app-fns';
-import { anchorToken, CW20Addr, Rate } from '@anchor-protocol/types';
-import { useAnchorWebapp } from '@anchor-protocol/app-provider';
+import { ExecuteMsg } from '@daodiseoanchor/app-fns';
+import { anchorToken, CW20Addr, Rate } from '@daodiseoanchor/types';
+import { useAnchorWebapp } from '@daodiseoanchor/app-provider';
 import { formatExecuteMsgNumber } from '@libs/formatter';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';

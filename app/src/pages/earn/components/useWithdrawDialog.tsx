@@ -1,17 +1,17 @@
-import { computeTotalDeposit } from '@anchor-protocol/app-fns';
+import { computeTotalDeposit } from '@daodiseoanchor/app-fns';
 import {
   useEarnEpochStatesQuery,
   useEarnWithdrawForm,
   useEarnWithdrawTx,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   formatUST,
   formatUSTInput,
   UST_INPUT_MAXIMUM_DECIMAL_POINTS,
   UST_INPUT_MAXIMUM_INTEGER_POINTS,
-} from '@anchor-protocol/notation';
-import { aUST, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { aUST, u, UST } from '@daodiseoanchor/types';
 import { demicrofy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { Dialog } from '@libs/neumorphism-ui/components/Dialog';

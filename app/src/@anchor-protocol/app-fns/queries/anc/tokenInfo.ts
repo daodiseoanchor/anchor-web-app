@@ -1,4 +1,4 @@
-import { ANC, cw20, CW20Addr } from '@anchor-protocol/types';
+import { ANC, cw20, CW20Addr } from '@daodiseoanchor/types';
 import {
   QueryClient,
   wasmFetch,

@@ -1,5 +1,5 @@
-import { formatANCWithPostfixUnits } from '@anchor-protocol/notation';
-import { anchorToken } from '@anchor-protocol/types';
+import { formatANCWithPostfixUnits } from '@daodiseoanchor/notation';
+import { anchorToken } from '@daodiseoanchor/types';
 import { demicrofy } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { HorizontalScrollTable } from '@libs/neumorphism-ui/components/HorizontalScrollTable';

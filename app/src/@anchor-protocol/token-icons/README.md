@@ -4,7 +4,7 @@ These icons are compatible with material-ui's icon.
 
 ```tsx
 import { IconButton } from '@material-ui/core';
-import { TokenIcon } from '@anchor-protocol/icons';
+import { TokenIcon } from '@daodiseoanchor/icons';
 
 function App() {
   return <TokenIcon token="ust" />;

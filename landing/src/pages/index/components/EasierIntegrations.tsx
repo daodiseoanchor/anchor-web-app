@@ -1,4 +1,4 @@
-import { CircleArrowRight } from '@anchor-protocol/icons';
+import { CircleArrowRight } from '@daodiseoanchor/icons';
 import { useElementIntersection } from '@libs/use-element-intersection';
 import { links } from 'env';
 import { useRef } from 'react';

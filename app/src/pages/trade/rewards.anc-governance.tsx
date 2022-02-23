@@ -1,4 +1,4 @@
-import { anc80gif, GifIcon } from '@anchor-protocol/token-icons';
+import { anc80gif, GifIcon } from '@daodiseoanchor/token-icons';
 import { RulerTab } from '@libs/neumorphism-ui/components/RulerTab';
 import { Section } from '@libs/neumorphism-ui/components/Section';
 import { Circles } from 'components/primitives/Circles';

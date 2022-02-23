@@ -1,4 +1,4 @@
-import { importCW20Decimals } from '@anchor-protocol/app-fns';
+import { importCW20Decimals } from '@daodiseoanchor/app-fns';
 import {
   QueryClient,
   wasmFetch,

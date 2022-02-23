@@ -1,4 +1,4 @@
-import { formatLuna } from '@anchor-protocol/notation';
+import { formatLuna } from '@daodiseoanchor/notation';
 import { demicrofy } from '@libs/formatter';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import {

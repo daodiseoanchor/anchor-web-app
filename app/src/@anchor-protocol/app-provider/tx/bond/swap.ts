@@ -1,5 +1,5 @@
-import { bondSwapTx } from '@anchor-protocol/app-fns';
-import { bLuna, Rate } from '@anchor-protocol/types';
+import { bondSwapTx } from '@daodiseoanchor/app-fns';
+import { bLuna, Rate } from '@daodiseoanchor/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

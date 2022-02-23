@@ -1,5 +1,5 @@
-import { ancAncUstLpProvideTx } from '@anchor-protocol/app-fns';
-import { ANC, Rate, u, UST } from '@anchor-protocol/types';
+import { ancAncUstLpProvideTx } from '@daodiseoanchor/app-fns';
+import { ANC, Rate, u, UST } from '@daodiseoanchor/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

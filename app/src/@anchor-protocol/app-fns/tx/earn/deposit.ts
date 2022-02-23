@@ -1,8 +1,8 @@
 import {
   formatAUSTWithPostfixUnits,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
-import { aUST, Gas, HumanAddr, Rate, u, UST } from '@anchor-protocol/types';
+} from '@daodiseoanchor/notation';
+import { aUST, Gas, HumanAddr, Rate, u, UST } from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

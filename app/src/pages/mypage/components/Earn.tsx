@@ -1,14 +1,14 @@
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { TokenIcon } from '@anchor-protocol/token-icons';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { TokenIcon } from '@daodiseoanchor/token-icons';
 import {
   computeCurrentAPY,
   computeTotalDeposit,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useAnchorWebapp,
   useEarnEpochStatesQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { demicrofy, formatRate } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';

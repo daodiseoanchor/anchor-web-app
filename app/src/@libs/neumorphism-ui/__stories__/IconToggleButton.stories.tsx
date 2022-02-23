@@ -1,5 +1,5 @@
 import { IconToggleButton } from '@libs/neumorphism-ui/components/IconToggleButton';
-import { Menu, MenuClose } from '@anchor-protocol/icons';
+import { Menu, MenuClose } from '@daodiseoanchor/icons';
 import React, { useState } from 'react';
 
 export default {

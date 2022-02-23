@@ -1,6 +1,6 @@
-import { ExecuteMsg } from '@anchor-protocol/app-fns';
-import { moneyMarket, Rate } from '@anchor-protocol/types';
-import { useAnchorWebapp } from '@anchor-protocol/app-provider';
+import { ExecuteMsg } from '@daodiseoanchor/app-fns';
+import { moneyMarket, Rate } from '@daodiseoanchor/types';
+import { useAnchorWebapp } from '@daodiseoanchor/app-provider';
 import { floor } from '@libs/big-math';
 import { formatExecuteMsgNumber } from '@libs/formatter';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';

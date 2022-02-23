@@ -1,5 +1,5 @@
-import { APYChart } from '@anchor-protocol/webapp-charts/APYChart';
-import { Rate } from '@anchor-protocol/types';
+import { APYChart } from '@daodiseoanchor/webapp-charts/APYChart';
+import { Rate } from '@daodiseoanchor/types';
 import React from 'react';
 
 export default {

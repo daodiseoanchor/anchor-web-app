@@ -1,17 +1,17 @@
 import {
   Airdrop as AirdropData,
   validateTxFee,
-} from '@anchor-protocol/app-fns';
+} from '@daodiseoanchor/app-fns';
 import {
   useAirdropCheckQuery,
   useAirdropClaimTx,
   useAnchorWebapp,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import {
   formatANCWithPostfixUnits,
   formatUST,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import { useGasPrice } from '@libs/app-provider';
 import { demicrofy } from '@libs/formatter';
 import { ActionButton } from '@libs/neumorphism-ui/components/ActionButton';

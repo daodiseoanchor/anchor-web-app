@@ -1,5 +1,5 @@
-import { HumanAddr } from '@anchor-protocol/types';
-import { AncBalance, ancBalanceQuery } from '@anchor-protocol/app-fns';
+import { HumanAddr } from '@daodiseoanchor/types';
+import { AncBalance, ancBalanceQuery } from '@daodiseoanchor/app-fns';
 import { EMPTY_QUERY_RESULT } from '@libs/app-provider';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';

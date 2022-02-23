@@ -1,5 +1,5 @@
-import type { u, UST } from '@anchor-protocol/types';
-import { moneyMarket } from '@anchor-protocol/types';
+import type { u, UST } from '@daodiseoanchor/types';
+import { moneyMarket } from '@daodiseoanchor/types';
 import { microfy } from '@libs/formatter';
 import big, { Big } from 'big.js';
 

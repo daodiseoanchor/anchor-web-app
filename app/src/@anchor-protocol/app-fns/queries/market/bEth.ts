@@ -1,4 +1,4 @@
-import { bAsset, DateTime, Rate, u, UST } from '@anchor-protocol/types';
+import { bAsset, DateTime, Rate, u, UST } from '@daodiseoanchor/types';
 
 export interface MarketBEthData {
   total_collateral: u<bAsset>;

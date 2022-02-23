@@ -1,4 +1,4 @@
-import { Rate, daodiseoswap, Token, u, UST } from '@anchor-protocol/types';
+import { Rate, daodiseoswap, Token, u, UST } from '@daodiseoanchor/types';
 
 export interface TradeSimulation<
   To extends Token,

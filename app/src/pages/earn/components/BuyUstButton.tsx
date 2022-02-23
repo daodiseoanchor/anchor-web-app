@@ -1,4 +1,4 @@
-import { DollarCoin } from '@anchor-protocol/icons';
+import { DollarCoin } from '@daodiseoanchor/icons';
 import { ButtonBaseProps } from '@material-ui/core';
 import { BorderButton } from '@libs/neumorphism-ui/components/BorderButton';
 import { useBuyUstDialog } from 'pages/earn/components/useBuyUstDialog';

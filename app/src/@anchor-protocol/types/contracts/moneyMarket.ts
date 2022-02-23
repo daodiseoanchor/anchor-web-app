@@ -12,7 +12,7 @@ import { ANC, aToken, bAsset } from '../currencies';
 export namespace moneyMarket {
   export namespace custody {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrower
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrower
      */
     export interface Borrower {
       borrower: {
@@ -21,7 +21,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowerresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowerresponse
      */
     export interface BorrowerResponse {
       borrower: HumanAddr;
@@ -30,7 +30,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowers
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowers
      */
     export interface Borrowers {
       borrowers: {
@@ -40,21 +40,21 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowersresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#borrowersresponse
      */
     export interface BorrowersResponse {
       borrowers: Array<BorrowerResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/custody-bluna-specific#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -74,7 +74,7 @@ export namespace moneyMarket {
 
   export namespace distributionModel {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#ancemissionrate
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#ancemissionrate
      */
     export interface AncEmissionRate {
       anc_emission_rate: {
@@ -85,21 +85,21 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#ancemissionrateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#ancemissionrateresponse
      */
     export interface AncEmissionRateResponse {
       emission_rate: Rate;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/distribution-model#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -122,7 +122,7 @@ export namespace moneyMarket {
 
   export namespace interestModel {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#borrowrate
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#borrowrate
      */
     export interface BorrowRate {
       borrow_rate: {
@@ -133,21 +133,21 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#borrowrateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#borrowrateresponse
      */
     export interface BorrowRateResponse {
       rate: Rate;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/interest-model#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -166,7 +166,7 @@ export namespace moneyMarket {
 
   export namespace market {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinfo
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinfo
      */
     export interface BorrowerInfo {
       borrower_info: {
@@ -176,7 +176,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinforesponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinforesponse
      */
     export interface BorrowerInfoResponse {
       borrower: HumanAddr;
@@ -187,7 +187,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowinfos
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowinfos
      */
     export interface BorrowerInfos {
       borrower_infos: {
@@ -197,21 +197,21 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinfosresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#borrowerinfosresponse
      */
     export interface BorrowerInfosResponse {
       borrower_infos: Array<BorrowerInfoResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#configresponse
      */
     export interface ConfigResponse {
       owner_addr: HumanAddr;
@@ -227,7 +227,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#epochstate
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#epochstate
      */
     export interface EpochState {
       epoch_state: {
@@ -236,7 +236,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#epochstateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#epochstateresponse
      */
     export interface EpochStateResponse {
       exchange_rate: UST;
@@ -244,14 +244,14 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#state
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#state
      */
     export interface State {
       state: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/market#stateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/market#stateresponse
      */
     export interface StateResponse {
       total_liabilities: u<UST>;
@@ -276,14 +276,14 @@ export namespace moneyMarket {
 
   export namespace oracle {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#configresponse
      */
     export interface ConfigResponse {
       owner: HumanAddr;
@@ -291,7 +291,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#feeder
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#feeder
      */
     export interface Feeder {
       feeder: {
@@ -300,7 +300,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#feederresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#feederresponse
      */
     export interface FeederResponse {
       asset: CW20Addr;
@@ -308,7 +308,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#price
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#price
      */
     export interface Price {
       price: {
@@ -318,7 +318,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#priceresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#priceresponse
      */
     export interface PriceResponse {
       rate: UST;
@@ -327,7 +327,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#prices
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#prices
      */
     export interface Prices {
       prices: {
@@ -337,7 +337,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/oracle#pricesresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/oracle#pricesresponse
      */
     export interface PricesResponse {
       prices: Array<{
@@ -357,7 +357,7 @@ export namespace moneyMarket {
 
   export namespace overseer {
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#allcollaterals
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#allcollaterals
      */
     export interface AllCollaterals {
       all_collaterals: {
@@ -367,14 +367,14 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#allcollateralsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#allcollateralsresponse
      */
     export interface AllCollateralsResponse {
       all_collaterals: Array<CollateralsResponse>;
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#borrowlimit
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#borrowlimit
      */
     export interface BorrowLimit {
       borrow_limit: {
@@ -384,7 +384,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#borrowlimitresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#borrowlimitresponse
      */
     export interface BorrowLimitResponse {
       borrower: HumanAddr;
@@ -392,7 +392,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#collaterals
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#collaterals
      */
     export interface Collaterals {
       collaterals: {
@@ -402,7 +402,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#collateralsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#collateralsresponse
      */
     export interface CollateralsResponse {
       borrower: HumanAddr;
@@ -410,14 +410,14 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#config-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#config-1
      */
     export interface Config {
       config: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#configresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#configresponse
      */
     export interface ConfigResponse {
       owner_addr: HumanAddr;
@@ -435,14 +435,14 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#distributionparams
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#distributionparams
      */
     export interface DistributionParams {
       distribution_params: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#distributionparamsresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#distributionparamsresponse
      */
     export interface DistributionParamsResponse {
       deposit_rate: Rate;
@@ -451,14 +451,14 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#epochstate
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#epochstate
      */
     export interface EpochState {
       epoch_state: {};
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#epochstateresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#epochstateresponse
      */
     export interface EpochStateResponse {
       deposit_rate: Rate;
@@ -490,7 +490,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#whitelist-1
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#whitelist-1
      */
     export interface Whitelist {
       whitelist: {
@@ -501,7 +501,7 @@ export namespace moneyMarket {
     }
 
     /**
-     * @see https://anchor-protocol.gitbook.io/anchor-2/smart-contracts/money-market/overseer#whitelistresponse
+     * @see https://daodiseoanchor.gitbook.io/anchor-2/smart-contracts/money-market/overseer#whitelistresponse
      */
     export interface WhitelistResponse {
       elems: Array<{

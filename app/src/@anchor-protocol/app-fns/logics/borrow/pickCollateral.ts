@@ -1,4 +1,4 @@
-import { CW20Addr, moneyMarket } from '@anchor-protocol/types';
+import { CW20Addr, moneyMarket } from '@daodiseoanchor/types';
 
 export function pickCollateral(
   collateralToken: CW20Addr,

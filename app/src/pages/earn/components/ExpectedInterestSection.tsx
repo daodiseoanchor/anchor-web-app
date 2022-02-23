@@ -1,10 +1,10 @@
-import { formatUSTWithPostfixUnits } from '@anchor-protocol/notation';
-import { u, UST } from '@anchor-protocol/types';
+import { formatUSTWithPostfixUnits } from '@daodiseoanchor/notation';
+import { u, UST } from '@daodiseoanchor/types';
 import {
   useAnchorWebapp,
   useEarnEpochStatesQuery,
-} from '@anchor-protocol/app-provider';
-import { useAnchorBank } from '@anchor-protocol/app-provider/hooks/useAnchorBank';
+} from '@daodiseoanchor/app-provider';
+import { useAnchorBank } from '@daodiseoanchor/app-provider/hooks/useAnchorBank';
 import { demicrofy } from '@libs/formatter';
 import { IconSpan } from '@libs/neumorphism-ui/components/IconSpan';
 import { InfoTooltip } from '@libs/neumorphism-ui/components/InfoTooltip';

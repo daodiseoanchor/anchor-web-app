@@ -1,4 +1,4 @@
-import { GovPoll, govPollQuery } from '@anchor-protocol/app-fns';
+import { GovPoll, govPollQuery } from '@daodiseoanchor/app-fns';
 import { createQueryFn } from '@libs/react-query-utils';
 import { useQuery, UseQueryResult } from 'react-query';
 import { useAnchorWebapp } from '../../contexts/context';

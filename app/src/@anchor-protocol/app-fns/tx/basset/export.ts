@@ -1,4 +1,4 @@
-import { BAssetInfo } from '@anchor-protocol/app-fns';
+import { BAssetInfo } from '@daodiseoanchor/app-fns';
 import {
   basset,
   bAsset,
@@ -8,7 +8,7 @@ import {
   Rate,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValue,
   pickEvent,

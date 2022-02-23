@@ -2,8 +2,8 @@ import {
   useAnchorBank,
   useBLunaClaimableRewards,
   useBLunaWithdrawableAmount,
-} from '@anchor-protocol/app-provider';
-import { formatUST } from '@anchor-protocol/notation';
+} from '@daodiseoanchor/app-provider';
+import { formatUST } from '@daodiseoanchor/notation';
 import { demicrofy, formatUToken } from '@libs/formatter';
 import { Luna, u } from '@libs/types';
 import big, { Big } from 'big.js';

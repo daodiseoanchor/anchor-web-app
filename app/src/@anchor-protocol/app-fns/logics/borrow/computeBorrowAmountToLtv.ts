@@ -1,4 +1,4 @@
-import type { Rate, u, UST } from '@anchor-protocol/types';
+import type { Rate, u, UST } from '@daodiseoanchor/types';
 import big, { Big, BigSource } from 'big.js';
 
 export const computeBorrowAmountToLtv =

@@ -1,5 +1,5 @@
-import { borrowRedeemCollateralTx } from '@anchor-protocol/app-fns';
-import { bAsset, CW20Addr } from '@anchor-protocol/types';
+import { borrowRedeemCollateralTx } from '@daodiseoanchor/app-fns';
+import { bAsset, CW20Addr } from '@daodiseoanchor/types';
 import { useFixedFee, useRefetchQueries } from '@libs/app-provider';
 import { useStream } from '@rx-stream/react';
 import { useConnectedWallet } from '@daodiseomoney/wallet-provider';

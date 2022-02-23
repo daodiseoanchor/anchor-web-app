@@ -2,7 +2,7 @@ import {
   formatANCWithPostfixUnits,
   formatLP,
   formatUSTWithPostfixUnits,
-} from '@anchor-protocol/notation';
+} from '@daodiseoanchor/notation';
 import {
   ANC,
   AncUstLP,
@@ -14,7 +14,7 @@ import {
   daodiseoswap,
   u,
   UST,
-} from '@anchor-protocol/types';
+} from '@daodiseoanchor/types';
 import {
   pickAttributeValueByKey,
   pickEvent,
